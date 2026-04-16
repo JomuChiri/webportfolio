@@ -19,6 +19,47 @@ if (!(Test-Path $manifestPath)) {
 $html = Get-Content -Path $indexPath -Raw
 $manifest = Get-Content -Path $manifestPath -Raw | ConvertFrom-Json
 
+function Ensure-BaseHrefScript {
+  param([string]$Html)
+
+  if ($Html -match 'window\.location\.pathname') {
+    return $Html
+  }
+
+  $script = @"
+<script>
+      (function () {
+        const path = window.location.pathname;
+        const last = path.split('/').pop() || '';
+        const hasExtension = last.includes('.');
+        if (!path.endsWith('/') && !hasExtension) {
+          const base = document.createElement('base');
+          base.href = path + '/';
+          document.head.prepend(base);
+        }
+      })();
+    </script>
+"@
+
+  return $Html -replace '<head>', "<head>`r`n$script"
+}
+
+function Remove-DuplicateBaseScripts {
+  param([string]$Html)
+
+  $matches = [regex]::Matches($Html, '<script>\s*\(function \(\) \{\s*const path = window\.location\.pathname;[\s\S]*?\}\)\(\);\s*</script>', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+  if ($matches.Count -le 1) {
+    return $Html
+  }
+
+  $out = $Html
+  for ($idx = 1; $idx -lt $matches.Count; $idx++) {
+    $m = $matches[$idx]
+    $out = $out.Remove($m.Index, $m.Length)
+  }
+  return $out
+}
+
 function Upsert-MetaTag {
   param([string]$Html, [string]$AttributeName, [string]$AttributeValue, [string]$Content)
 
@@ -36,18 +77,9 @@ function Upsert-IconLink {
 
   $iconTag = "<link rel=`"icon`" type=`"image/png`" href=`"$Href`"/>"
   $appleTag = "<link rel=`"apple-touch-icon`" href=`"$Href`"/>"
-
-  $htmlOut = [regex]::Replace($Html, '<link\s+[^>]*rel="icon"[^>]*>', $iconTag, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
-  if ($htmlOut -eq $Html) {
-    $htmlOut = $htmlOut -replace "</head>", "  $iconTag`r`n</head>"
-  }
-
-  $htmlOut2 = [regex]::Replace($htmlOut, '<link\s+[^>]*rel="apple-touch-icon"[^>]*>', $appleTag, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
-  if ($htmlOut2 -eq $htmlOut) {
-    $htmlOut2 = $htmlOut2 -replace "</head>", "  $appleTag`r`n</head>"
-  }
-
-  return $htmlOut2
+  $cleaned = [regex]::Replace($Html, '<link\s+[^>]*rel="icon"[^>]*>\s*', '', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+  $cleaned = [regex]::Replace($cleaned, '<link\s+[^>]*rel="apple-touch-icon"[^>]*>\s*', '', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+  return $cleaned -replace "</head>", "  $iconTag`r`n  $appleTag`r`n</head>"
 }
 
 function Remove-ImageMeta {
@@ -118,6 +150,8 @@ $descMatch = [regex]::Match($html, '<meta\s+name="description"\s+content="(.*?)"
 $pageDesc = if ($descMatch.Success) { $descMatch.Groups[1].Value.Trim() } else { "Professional portfolio website generated from verified profile information." }
 
 if ($manifest.mode -eq "image") {
+  $html = Remove-DuplicateBaseScripts -Html $html
+  $html = Ensure-BaseHrefScript -Html $html
   $html = Normalize-ProfileImages -Html $html -HeroSrc "assets/hero.jpg"
   $html = Upsert-IconLink -Html $html -Href "assets/favicon.png"
   $html = Upsert-MetaTag -Html $html -AttributeName "property" -AttributeValue "og:type" -Content "website"

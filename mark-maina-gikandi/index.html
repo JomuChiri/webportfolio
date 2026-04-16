@@ -1,6 +1,19 @@
 ﻿<!DOCTYPE html>
 
 <html class="scroll-smooth" lang="en"><head>
+<script>
+      (function () {
+        const path = window.location.pathname;
+        const last = path.split('/').pop() || '';
+        const hasExtension = last.includes('.');
+        if (!path.endsWith('/') && !hasExtension) {
+          const base = document.createElement('base');
+          base.href = path + '/';
+          document.head.prepend(base);
+        }
+      })();
+    </script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Mark Maina Gikandi | CRO Expert Portfolio</title>
@@ -12,7 +25,6 @@
 <meta property="og:image" content="assets/og-image.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="assets/og-image.jpg"/>
-<link rel="icon" type="image/png" href="assets/favicon.png"/>
 <!-- Fonts & Icons -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -101,12 +113,9 @@
         text-shadow: 0 0 20px rgba(0, 218, 243, 0.4);
       }
     </style>
-  <link rel="apple-touch-icon" href="assets/favicon.png"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-  <link rel="icon" type="image/png" href="assets/favicon.png"/>
-  <link rel="apple-touch-icon" href="assets/favicon.png"/>
-  <link rel="icon" type="image/png" href="assets/favicon.png"/>
+      <link rel="icon" type="image/png" href="assets/favicon.png"/>
   <link rel="apple-touch-icon" href="assets/favicon.png"/>
 </head>
 <body class="bg-surface font-body text-on-surface">
@@ -449,5 +458,8 @@
 </div>
 </footer>
 </body></html>
+
+
+
 
 
