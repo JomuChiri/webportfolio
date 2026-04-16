@@ -116,10 +116,10 @@
                     Step 1: Submission
                 </div>
 <h1 class="text-5xl font-extrabold text-primary leading-[1.1] tracking-tight">
-                    Start your <br/>portfolio request
+                    Start your <br/>personal brand request
                 </h1>
 <p class="text-lg text-on-surface-variant leading-relaxed font-body">
-                    Fill in the details below. We will use them to build your portfolio and contact you on WhatsApp. 
+                    Fill in the details below. We will use them to build your client-winning personal brand website and contact you on WhatsApp.
                     <span class="block mt-4 font-semibold text-primary">Price: Ksh 2,500</span>
 </p>
 <div class="p-6 rounded-xl bg-surface-container-high border-l-4 border-primary space-y-3">
@@ -128,7 +128,7 @@
                         Mandatory Documentation
                     </p>
 <p class="text-sm text-on-surface-variant">
-                        Please share at least one: <strong>LinkedIn URL</strong> or <strong>CV upload</strong>. This ensures we have enough content to curate your professional exhibit.
+                        Please share at least one: <strong>LinkedIn URL</strong> or <strong>CV upload</strong>. You can also upload brand files, portfolio samples, and profile images to strengthen your personal brand.
                     </p>
 </div>
 <div class="hidden lg:block relative rounded-2xl overflow-hidden aspect-video shadow-2xl">
@@ -182,6 +182,32 @@
 </div>
 </div>
 </div>
+<div class="space-y-4 rounded-2xl bg-surface-container-low p-6 border border-outline-variant/40">
+<h3 class="text-base font-bold text-primary font-headline">Personal Brand Assets (Optional but Recommended)</h3>
+<p class="text-sm text-on-surface-variant">Upload files that help us position you better: profile photos, logo, portfolio samples, case studies, testimonials, certifications, or media kit.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface font-label" for="profile_image">Profile Image</label>
+<div class="relative group">
+<input accept=".jpg,.jpeg,.png,.webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" id="profile_image" name="profile_image" type="file"/>
+<div class="w-full px-5 py-4 bg-surface-container-highest rounded-xl border-2 border-dashed border-outline-variant group-hover:border-surface-tint transition-all flex items-center justify-between">
+<span class="text-sm text-outline group-hover:text-surface-tint truncate" id="profile-image-label">Choose .jpg, .png...</span>
+<span class="material-symbols-outlined text-outline text-xl">image</span>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-on-surface font-label" for="brand_assets">Brand/Work Files</label>
+<div class="relative group">
+<input accept=".pdf,.doc,.docx,.ppt,.pptx,.zip,.jpg,.jpeg,.png,.webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" id="brand_assets" multiple="" name="brand_assets" type="file"/>
+<div class="w-full px-5 py-4 bg-surface-container-highest rounded-xl border-2 border-dashed border-outline-variant group-hover:border-surface-tint transition-all flex items-center justify-between">
+<span class="text-sm text-outline group-hover:text-surface-tint truncate" id="brand-assets-label">Upload multiple files</span>
+<span class="material-symbols-outlined text-outline text-xl">folder_zip</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <!-- WhatsApp -->
 <div class="space-y-2">
@@ -203,7 +229,7 @@
 <!-- Additional Details -->
 <div class="space-y-2">
 <label class="block text-sm font-semibold text-on-surface font-label" for="additional">Anything else you want included?</label>
-<textarea class="w-full px-5 py-4 bg-surface-container-highest border-none rounded-xl focus:ring-2 focus:ring-surface-tint focus:bg-surface-container-lowest transition-all placeholder:text-outline resize-none" id="additional" name="additional" placeholder="Tell us about specific projects, colors you like, or unique skills..." rows="4"></textarea>
+<textarea class="w-full px-5 py-4 bg-surface-container-highest border-none rounded-xl focus:ring-2 focus:ring-surface-tint focus:bg-surface-container-lowest transition-all placeholder:text-outline resize-none" id="additional" name="additional" placeholder="Tell us about target clients, signature services, tone, projects, and proof points you want highlighted..." rows="4"></textarea>
 </div>
 <div class="pt-4 space-y-6">
 <div class="flex items-start gap-3">
@@ -213,7 +239,7 @@
                             </label>
 </div>
 <button class="w-full cta-gradient text-on-primary py-5 rounded-2xl font-extrabold text-lg shadow-lg hover:opacity-90 active:scale-[0.98] transition-all flex justify-center items-center gap-3 group" id="submit-btn" type="submit">
-<span>Submit My Portfolio Request</span>
+<span>Submit My Personal Brand Request</span>
 <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </button>
 <p class="text-center text-sm text-on-surface-variant italic">
@@ -242,9 +268,13 @@
         const form = document.getElementById('portfolio-form');
         const linkedinInput = document.getElementById('linkedin');
         const cvInput = document.getElementById('cv');
+        const profileImageInput = document.getElementById('profile_image');
+        const brandAssetsInput = document.getElementById('brand_assets');
         const errorDiv = document.getElementById('form-error');
         const submitBtn = document.getElementById('submit-btn');
         const fileLabel = document.getElementById('file-label');
+        const profileImageLabel = document.getElementById('profile-image-label');
+        const brandAssetsLabel = document.getElementById('brand-assets-label');
         const nextUrl = document.getElementById('next-url');
         const query = new URLSearchParams(window.location.search);
         const errorMap = {
@@ -271,10 +301,29 @@
                 fileLabel.classList.add('text-primary');
             }
         });
+        
+        profileImageInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                profileImageLabel.textContent = e.target.files[0].name;
+                profileImageLabel.classList.add('text-primary');
+            }
+        });
+
+        brandAssetsInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                const count = e.target.files.length;
+                brandAssetsLabel.textContent = count === 1 ? e.target.files[0].name : `${count} files selected`;
+                brandAssetsLabel.classList.add('text-primary');
+            }
+        });
 
         form.addEventListener('submit', (e) => {
             const file = cvInput.files && cvInput.files[0];
+            const profileImageFile = profileImageInput.files && profileImageInput.files[0];
+            const brandAssetFiles = brandAssetsInput.files ? Array.from(brandAssetsInput.files) : [];
             const maxBytes = 8 * 1024 * 1024;
+            const maxAssetBytes = 12 * 1024 * 1024;
+            const maxAssetCount = 6;
             let linkedinValue = linkedinInput.value.trim();
 
             if (linkedinValue && !/^https?:\/\//i.test(linkedinValue)) {
@@ -308,6 +357,21 @@
                 errorDiv.querySelector('span:last-child').textContent = 'CV file is too large. Please upload a file under 8MB.';
                 errorDiv.classList.remove('hidden');
                 cvInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else if (profileImageFile && profileImageFile.size > maxAssetBytes) {
+                e.preventDefault();
+                errorDiv.querySelector('span:last-child').textContent = 'Profile image is too large. Please upload an image under 12MB.';
+                errorDiv.classList.remove('hidden');
+                profileImageInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else if (brandAssetFiles.length > maxAssetCount) {
+                e.preventDefault();
+                errorDiv.querySelector('span:last-child').textContent = 'Please upload up to 6 brand/work files.';
+                errorDiv.classList.remove('hidden');
+                brandAssetsInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else if (brandAssetFiles.some((asset) => asset.size > maxAssetBytes)) {
+                e.preventDefault();
+                errorDiv.querySelector('span:last-child').textContent = 'One or more brand/work files exceed 12MB. Please reduce file size.';
+                errorDiv.classList.remove('hidden');
+                brandAssetsInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
             } else {
                 errorDiv.classList.add('hidden');
                 submitBtn.disabled = true;
