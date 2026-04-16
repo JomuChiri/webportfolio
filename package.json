@@ -6,6 +6,10 @@
   "scripts": {
     "stitch:smoke": "node scripts/stitch-smoke.mjs",
     "stitch:generate": "node scripts/stitch-generate.mjs",
+    "portfolio:media": "powershell -ExecutionPolicy Bypass -File scripts/prepare-portfolio-media.ps1",
+    "portfolio:prompt": "powershell -ExecutionPolicy Bypass -File scripts/build-stitch-prompt.ps1",
+    "portfolio:qa": "powershell -ExecutionPolicy Bypass -File scripts/qa-portfolio.ps1",
+    "portfolio:run": "powershell -ExecutionPolicy Bypass -File scripts/run-portfolio-pipeline.ps1",
     "publish:prep": "powershell -ExecutionPolicy Bypass -File scripts/publish-prep.ps1",
     "deploy:vercel": "powershell -ExecutionPolicy Bypass -File scripts/deploy-vercel.ps1"
   },

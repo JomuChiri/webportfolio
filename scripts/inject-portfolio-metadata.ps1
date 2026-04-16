@@ -1,0 +1,119 @@
+﻿param(
+  [Parameter(Mandatory = $true)][string]$ProjectDir,
+  [string]$IndexFile = "index.html"
+)
+
+$ErrorActionPreference = "Stop"
+
+$projectPath = (Resolve-Path $ProjectDir).Path
+$indexPath = Join-Path $projectPath $IndexFile
+$manifestPath = Join-Path $projectPath "assets/media-manifest.json"
+
+if (!(Test-Path $indexPath)) {
+  throw "index.html not found: $indexPath"
+}
+if (!(Test-Path $manifestPath)) {
+  throw "media-manifest.json not found: $manifestPath"
+}
+
+$html = Get-Content -Path $indexPath -Raw
+$manifest = Get-Content -Path $manifestPath -Raw | ConvertFrom-Json
+
+function Upsert-MetaTag {
+  param([string]$Html, [string]$AttributeName, [string]$AttributeValue, [string]$Content)
+
+  $pattern = '<meta\s+[^>]*' + [regex]::Escape($AttributeName) + '="' + [regex]::Escape($AttributeValue) + '"[^>]*>'
+  $tag = "<meta $AttributeName=`"$AttributeValue`" content=`"$Content`"/>"
+  if ($Html -match $pattern) {
+    return [regex]::Replace($Html, $pattern, $tag, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+  }
+
+  return $Html -replace "</head>", "  $tag`r`n</head>"
+}
+
+function Upsert-IconLink {
+  param([string]$Html, [string]$Href)
+
+  $iconTag = "<link rel=`"icon`" type=`"image/png`" href=`"$Href`"/>"
+  $appleTag = "<link rel=`"apple-touch-icon`" href=`"$Href`"/>"
+
+  $htmlOut = [regex]::Replace($Html, '<link\s+[^>]*rel="icon"[^>]*>', $iconTag, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+  if ($htmlOut -eq $Html) {
+    $htmlOut = $htmlOut -replace "</head>", "  $iconTag`r`n</head>"
+  }
+
+  $htmlOut2 = [regex]::Replace($htmlOut, '<link\s+[^>]*rel="apple-touch-icon"[^>]*>', $appleTag, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+  if ($htmlOut2 -eq $htmlOut) {
+    $htmlOut2 = $htmlOut2 -replace "</head>", "  $appleTag`r`n</head>"
+  }
+
+  return $htmlOut2
+}
+
+function Remove-ImageMeta {
+  param([string]$Html)
+
+  $patterns = @(
+    '<meta\s+[^>]*property="og:image"[^>]*>\s*',
+    '<meta\s+[^>]*property="og:image:width"[^>]*>\s*',
+    '<meta\s+[^>]*property="og:image:height"[^>]*>\s*',
+    '<meta\s+[^>]*name="twitter:image"[^>]*>\s*',
+    '<meta\s+[^>]*name="twitter:card"[^>]*>\s*',
+    '<link\s+[^>]*rel="icon"[^>]*>\s*',
+    '<link\s+[^>]*rel="apple-touch-icon"[^>]*>\s*'
+  )
+
+  $out = $Html
+  foreach ($p in $patterns) {
+    $out = [regex]::Replace($out, $p, '', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+  }
+  return $out
+}
+
+function Ensure-HeroImage {
+  param([string]$Html, [string]$HeroSrc)
+
+  if ($Html -match [regex]::Escape($HeroSrc)) {
+    return $Html
+  }
+
+  $heroTag = '<img src="' + $HeroSrc + '" alt="Portfolio profile image" loading="eager" class="w-44 h-44 rounded-full object-cover shadow-lg border-4 border-white/60"/>'
+  $insertMarkup = "`r`n<div class=`"max-w-7xl mx-auto px-8 pt-8`">$heroTag</div>"
+
+  $headerMatch = [regex]::Match($Html, '<header[^>]*>', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+  if ($headerMatch.Success) {
+    $insertAt = $headerMatch.Index + $headerMatch.Length
+    return $Html.Insert($insertAt, $insertMarkup)
+  }
+
+  $mainMatch = [regex]::Match($Html, '<main[^>]*>', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+  if ($mainMatch.Success) {
+    $insertAt = $mainMatch.Index + $mainMatch.Length
+    return $Html.Insert($insertAt, $insertMarkup)
+  }
+
+  return $Html
+}
+
+$titleMatch = [regex]::Match($html, '<title>(.*?)</title>', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+$pageTitle = if ($titleMatch.Success) { $titleMatch.Groups[1].Value.Trim() } else { "Professional Portfolio" }
+$descMatch = [regex]::Match($html, '<meta\s+name="description"\s+content="(.*?)"\s*/?>', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+$pageDesc = if ($descMatch.Success) { $descMatch.Groups[1].Value.Trim() } else { "Professional portfolio website generated from verified profile information." }
+
+if ($manifest.mode -eq "image") {
+  $html = Upsert-IconLink -Html $html -Href "assets/favicon.png"
+  $html = Upsert-MetaTag -Html $html -AttributeName "property" -AttributeValue "og:type" -Content "website"
+  $html = Upsert-MetaTag -Html $html -AttributeName "property" -AttributeValue "og:title" -Content $pageTitle
+  $html = Upsert-MetaTag -Html $html -AttributeName "property" -AttributeValue "og:description" -Content $pageDesc
+  $html = Upsert-MetaTag -Html $html -AttributeName "property" -AttributeValue "og:image" -Content "assets/og-image.jpg"
+  $html = Upsert-MetaTag -Html $html -AttributeName "property" -AttributeValue "og:image:width" -Content "1200"
+  $html = Upsert-MetaTag -Html $html -AttributeName "property" -AttributeValue "og:image:height" -Content "630"
+  $html = Upsert-MetaTag -Html $html -AttributeName "name" -AttributeValue "twitter:card" -Content "summary_large_image"
+  $html = Upsert-MetaTag -Html $html -AttributeName "name" -AttributeValue "twitter:image" -Content "assets/og-image.jpg"
+  $html = Ensure-HeroImage -Html $html -HeroSrc "assets/hero.jpg"
+} else {
+  $html = Remove-ImageMeta -Html $html
+}
+
+Set-Content -Path $indexPath -Value $html -Encoding UTF8
+Write-Host "Updated portfolio metadata and hero image policy: $indexPath"

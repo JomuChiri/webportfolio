@@ -18,6 +18,17 @@ This folder (`C:\Users\muchi\OneDrive\Documents\webportfolio`) is the parent wor
 - Generated pages must use actual copywriter content, not placeholders.
 - If the copy package is missing or unreadable, stop and report failure.
 
+## Mandatory User-Image Rule
+- Intake may include a user profile image for each portfolio project.
+- When image is available, pipeline must:
+  - use user image in hero section,
+  - generate and link favicon from user image,
+  - generate and link social card image (`assets/og-image.jpg`) for Open Graph/Twitter tags.
+- Required social tags in image mode:
+  - `og:type`, `og:title`, `og:description`, `og:image`, `og:image:width`, `og:image:height`
+  - `twitter:card=summary_large_image`, `twitter:image`
+- If image is missing or unreadable, continue in no-image mode and record it in delivery notes.
+
 ## Active Agents
 - `.agents/copywriter-agent.md`
 - `.agents/designer-coder-agent.md`

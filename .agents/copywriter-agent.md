@@ -43,6 +43,7 @@ Create high-quality website copy and SEO-ready content for each mini-project, pl
 - Offer/services
 - Tone preference
 - Target pages
+- Optional user image context (name/role/photo) to align hero and social preview copy guidance
 
 ## Outputs (must produce all)
 1. `copy/website-copy.md` (complete page-by-page copy)
