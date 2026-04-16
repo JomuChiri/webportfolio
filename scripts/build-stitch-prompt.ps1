@@ -85,6 +85,8 @@ Hard requirements:
 - Use the actual provided copy. Do not use placeholder text.
 - Do not invent facts, credentials, dates, metrics, IDs, or company claims not present in the copy package.
 - Preserve factual values exactly where specified (for example certification IDs, percentages, and timelines).
+- Return a complete, valid HTML document (<!doctype html> ... </html>) for web deployment.
+- Do not return markdown, prose explanations, or copy-package text dumps as final output.
 - Generate semantic, accessible HTML with clear heading hierarchy and keyboard-friendly navigation.
 - Include a homepage at index.html and ensure all internal navigation links resolve correctly.
 - Keep copy faithful to source text while improving layout, readability, and visual hierarchy.

@@ -55,10 +55,28 @@ async function main() {
 
   const project = stitch.project(projectId);
   const screen = await project.generate(prompt, deviceType);
-  const htmlUrl = await screen.getHtml();
+  let htmlUrl = await screen.getHtml();
   const imageUrl = await screen.getImage();
 
-  const html = await fetchText(htmlUrl);
+  let html = await fetchText(htmlUrl);
+  let looksLikeHtml =
+    /<\s*html[\s>]/i.test(html) ||
+    /<!doctype\s+html/i.test(html) ||
+    /<\s*body[\s>]/i.test(html);
+  if (!looksLikeHtml) {
+    // Force a fresh get_screen lookup in case cached generation payload has stale URLs.
+    const refreshed = await project.getScreen(screen.screenId || screen.id);
+    htmlUrl = await refreshed.getHtml();
+    html = await fetchText(htmlUrl);
+    looksLikeHtml =
+      /<\s*html[\s>]/i.test(html) ||
+      /<!doctype\s+html/i.test(html) ||
+      /<\s*body[\s>]/i.test(html);
+  }
+  if (!looksLikeHtml) {
+    const preview = String(html || "").slice(0, 180).replace(/\s+/g, " ");
+    throw new Error(`Stitch returned non-HTML content. Stop immediately. preview="${preview}"`);
+  }
   await fs.writeFile(path.join(outputDir, "index.html"), html, "utf8");
 
   try {

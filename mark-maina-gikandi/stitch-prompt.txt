@@ -1,0 +1,223 @@
+﻿Design and generate a complete multi-section personal portfolio website for mark-maina-gikandi using the EXACT content package below.
+
+Hard requirements:
+- Use the actual provided copy. Do not use placeholder text.
+- Do not invent facts, credentials, dates, metrics, IDs, or company claims not present in the copy package.
+- Preserve factual values exactly where specified (for example certification IDs, percentages, and timelines).
+- Return a complete, valid HTML document (<!doctype html> ... </html>) for web deployment.
+- Do not return markdown, prose explanations, or copy-package text dumps as final output.
+- Generate semantic, accessible HTML with clear heading hierarchy and keyboard-friendly navigation.
+- Include a homepage at index.html and ensure all internal navigation links resolve correctly.
+- Keep copy faithful to source text while improving layout, readability, and visual hierarchy.
+- Apply metadata and information architecture intent from the SEO pack.
+- Apply visual language, palette, typography mood, and component guidance from design direction.
+- Social/Media requirements:
+- A user profile image is available at: C:\Users\muchi\OneDrive\Documents\webportfolio\mark-maina-gikandi\assets\FJ3xI.jpg
+- Use this user image in the hero section (real image, not placeholder).
+- Use the user image as browser icon source by linking favicon to ./assets/favicon.png.
+- Set Open Graph/Twitter preview image to ./assets/og-image.jpg.
+- Include these social tags in <head>: og:type, og:title, og:description, og:image, og:image:width=1200, og:image:height=630, twitter:card=summary_large_image, twitter:image.
+
+Output intent:
+- Professional, modern, engineering-leadership portfolio style.
+- Designed for desktop-first responsiveness, with solid mobile behavior.
+
+=== COPY PACKAGE: website-copy.md ===
+# Website Copy Package
+
+## Client Name
+Mark Maina Gikandi
+
+## Professional Title
+CRO Expert
+
+## Core Positioning
+Conversion Rate Optimization specialist helping businesses turn traffic into qualified leads, sales, and measurable growth.
+
+## Audience
+Business owners, ecommerce brands, founders, and marketing teams seeking better conversion performance.
+
+## Contact and Intake Details
+- LinkedIn: https://linkedin.com/in/mark-maina-web-dev
+- WhatsApp: +254799830928
+- Email: mcanthony987@gmail.com
+- Extra note from client: I want it for my clients.
+
+---
+
+## Homepage (`/`)
+
+### SEO Title
+Mark Maina Gikandi | CRO Expert Portfolio
+
+### Hero
+**Headline:**
+I help businesses convert more visitors into paying customers.
+
+**Subheadline:**
+I am Mark Maina Gikandi, a CRO Expert focused on practical conversion strategy, testing, UX optimization, and data-backed growth.
+
+**Primary CTA:**
+Book a CRO Consultation
+
+**Secondary CTA:**
+View My CRO Approach
+
+### Value Snapshot
+- Conversion strategy tailored to business goals
+- Data-driven optimization decisions
+- Clear testing roadmap and performance reporting
+
+### About Preview
+I work with businesses that already have traffic but need stronger conversion outcomes. My focus is identifying friction points, improving user journeys, and implementing high-impact CRO opportunities.
+
+### Services Section
+**Section Title:**
+CRO Services
+
+- Conversion audit and funnel diagnosis
+- Landing page optimization
+- A/B testing strategy and experiment design
+- User journey and UX friction analysis
+- Checkout and lead-form optimization
+- CRO reporting and growth recommendations
+
+### Process Section
+**Section Title:**
+How I work
+
+**Step 1:** Audit and baseline analysis
+
+**Step 2:** Prioritized CRO roadmap
+
+**Step 3:** Test, optimize, and measure
+
+### Proof/Trust Section
+**Section Title:**
+Why clients work with me
+
+- Structured, measurable CRO process
+- Communication in clear business language
+- Focus on outcomes that matter to revenue and lead quality
+
+### Contact CTA
+**Headline:**
+Ready to improve your conversions?
+
+**Body:**
+Let’s review your funnel and identify the fastest opportunities for growth.
+
+**Buttons:**
+- Contact on WhatsApp
+- Connect on LinkedIn
+
+---
+
+## Optional Secondary Sections (same page anchors)
+
+### FAQ
+**Q:** What kind of businesses do you work with?
+
+**A:** I support service businesses, ecommerce teams, and growth-focused brands that want better conversion outcomes.
+
+**Q:** What should I prepare before we work together?
+
+**A:** Share your current goals, analytics access, and key funnel pages so we can identify priorities quickly.
+
+### Final Note
+Use professional, concise, client-facing language throughout. Avoid hype and unverifiable performance claims.
+
+
+=== COPY PACKAGE: seo-pack.md ===
+# SEO Pack
+
+## Primary SEO Goal
+Position Mark Maina Gikandi as a trusted CRO Expert for businesses looking to improve conversion performance.
+
+## Target Audience
+- Founders and business owners
+- Ecommerce brands
+- Marketing teams and growth managers
+- Service businesses seeking lead quality improvements
+
+## Core Keywords
+- CRO expert
+- conversion rate optimization specialist
+- conversion optimization consultant
+- landing page optimization expert
+- funnel optimization consultant
+
+## Secondary Keywords
+- improve website conversions
+- increase lead conversion rate
+- CRO for ecommerce
+- UX conversion optimization
+- A/B testing strategy consultant
+
+## Metadata
+
+### Homepage Title
+Mark Maina Gikandi | CRO Expert Portfolio
+
+### Homepage Meta Description
+Portfolio website of Mark Maina Gikandi, CRO Expert helping businesses optimize funnels, improve user journeys, and increase conversion performance.
+
+## URL Recommendation
+- `/` for single-page portfolio with section anchors
+
+## On-Page SEO Notes
+- Use one H1 on homepage.
+- Include CRO, conversion optimization, and testing language naturally.
+- Add internal anchor links for About, Services, Process, and Contact.
+- Include descriptive image alt text for profile photo.
+
+## Open Graph / Twitter Notes
+- Use professional title and summary aligned with CRO positioning.
+- Social preview image should use the client profile photo styled into branded card.
+
+## Schema Suggestion
+- `Person` schema for Mark Maina Gikandi
+- Include `sameAs` link to LinkedIn profile
+- Include contact email and role title where appropriate
+
+
+=== COPY PACKAGE: design-direction.md ===
+# Design Direction
+
+## Brand Feel
+- Professional, sharp, and trustworthy
+- Data-driven and business-focused
+- Premium consulting tone without visual clutter
+
+## Visual Language
+- Clean high-contrast layout with strong hierarchy
+- Modern card sections for services and process
+- Balanced whitespace and concise content blocks
+
+## Color Direction
+- Primary: Deep navy for authority and credibility
+- Accent: Electric cyan or teal for optimization/growth cues
+- Neutral: White and cool gray backgrounds
+
+## Typography Mood
+- Bold, modern sans-serif for headings
+- Highly readable sans-serif for body copy
+- Strong spacing and readable line length for client scanning
+
+## Media and Identity Rules
+- Use provided client profile image in hero section.
+- Use profile image-derived favicon.
+- Use branded social card image for Open Graph and Twitter previews.
+- If image is unavailable, activate no-image mode and keep layout balanced.
+
+## UX Priorities
+1. Quick credibility in first screen
+2. Fast scan of services and process
+3. Obvious contact actions (WhatsApp + LinkedIn)
+4. Smooth mobile readability and tap targets
+
+## Accessibility Notes
+- Maintain semantic heading structure.
+- Ensure adequate color contrast.
+- Keep interactive elements keyboard accessible.
+
