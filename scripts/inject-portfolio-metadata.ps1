@@ -80,19 +80,36 @@ function Ensure-HeroImage {
   $heroTag = '<img src="' + $HeroSrc + '" alt="Portfolio profile image" loading="eager" class="w-44 h-44 rounded-full object-cover shadow-lg border-4 border-white/60"/>'
   $insertMarkup = "`r`n<div class=`"max-w-7xl mx-auto px-8 pt-8`">$heroTag</div>"
 
-  $headerMatch = [regex]::Match($Html, '<header[^>]*>', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
-  if ($headerMatch.Success) {
-    $insertAt = $headerMatch.Index + $headerMatch.Length
-    return $Html.Insert($insertAt, $insertMarkup)
-  }
-
-  $mainMatch = [regex]::Match($Html, '<main[^>]*>', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
-  if ($mainMatch.Success) {
-    $insertAt = $mainMatch.Index + $mainMatch.Length
+  $heroSectionMatch = [regex]::Match($Html, '<section[^>]*id="hero"[^>]*>', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+  if ($heroSectionMatch.Success) {
+    $insertAt = $heroSectionMatch.Index + $heroSectionMatch.Length
     return $Html.Insert($insertAt, $insertMarkup)
   }
 
   return $Html
+}
+
+function Normalize-ProfileImages {
+  param([string]$Html, [string]$HeroSrc)
+
+  $out = $Html
+  # Remove previously injected nav/header profile block from older runs.
+  $out = [regex]::Replace(
+    $out,
+    '<div\s+class="max-w-7xl\s+mx-auto\s+px-8\s+pt-8">\s*<img\s+[^>]*src="assets/hero\.jpg"[^>]*>\s*</div>\s*',
+    '',
+    [System.Text.RegularExpressions.RegexOptions]::IgnoreCase
+  )
+
+  # Replace common external stock/AI portrait URLs with provided hero image.
+  $out = [regex]::Replace(
+    $out,
+    '<img([^>]*?)\s+src="https?://[^"]*(googleusercontent|unsplash|pexels|pixabay|freepik|shutterstock)[^"]*"([^>]*)>',
+    '<img$1 src="' + $HeroSrc + '"$3>',
+    [System.Text.RegularExpressions.RegexOptions]::IgnoreCase
+  )
+
+  return $out
 }
 
 $titleMatch = [regex]::Match($html, '<title>(.*?)</title>', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
@@ -101,6 +118,7 @@ $descMatch = [regex]::Match($html, '<meta\s+name="description"\s+content="(.*?)"
 $pageDesc = if ($descMatch.Success) { $descMatch.Groups[1].Value.Trim() } else { "Professional portfolio website generated from verified profile information." }
 
 if ($manifest.mode -eq "image") {
+  $html = Normalize-ProfileImages -Html $html -HeroSrc "assets/hero.jpg"
   $html = Upsert-IconLink -Html $html -Href "assets/favicon.png"
   $html = Upsert-MetaTag -Html $html -AttributeName "property" -AttributeValue "og:type" -Content "website"
   $html = Upsert-MetaTag -Html $html -AttributeName "property" -AttributeValue "og:title" -Content $pageTitle
