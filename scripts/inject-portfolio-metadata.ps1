@@ -60,6 +60,18 @@ function Remove-DuplicateBaseScripts {
   return $out
 }
 
+function Normalize-CopyrightYear {
+  param([string]$Html)
+
+  $year = (Get-Date).Year
+  return [regex]::Replace(
+    $Html,
+    '©\s*\d{4}',
+    "© $year",
+    [System.Text.RegularExpressions.RegexOptions]::IgnoreCase
+  )
+}
+
 function Upsert-MetaTag {
   param([string]$Html, [string]$AttributeName, [string]$AttributeValue, [string]$Content)
 
@@ -150,6 +162,7 @@ $descMatch = [regex]::Match($html, '<meta\s+name="description"\s+content="(.*?)"
 $pageDesc = if ($descMatch.Success) { $descMatch.Groups[1].Value.Trim() } else { "Professional portfolio website generated from verified profile information." }
 
 if ($manifest.mode -eq "image") {
+  $html = Normalize-CopyrightYear -Html $html
   $html = Remove-DuplicateBaseScripts -Html $html
   $html = Ensure-BaseHrefScript -Html $html
   $html = Normalize-ProfileImages -Html $html -HeroSrc "assets/hero.jpg"
