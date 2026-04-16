@@ -1,0 +1,16 @@
+.vercel
+.vercel-publish
+node_modules/
+.netlify-publish/
+.netlify-publish-live/
+.netlify-publish-new/
+.netlify-publish-old-*/
+antigravity-awesome-skills/
+stitch-sdk/
+stitch-skills/
+*.zip
+*.log
+dist/
+build/
+.DS_Store
+Thumbs.db

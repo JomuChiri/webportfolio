@@ -1,0 +1,58 @@
+﻿Design and generate a complete HTML landing page for WebPortfolio Kenya.
+Purpose: Convert visitors to start form submissions.
+Output requirements:
+- Generate semantic accessible HTML only.
+- Save as index.html style page with modern, trustworthy design.
+- Include links to submit.html for CTA buttons.
+- No placeholder text.
+- Use exact copy and values below.
+- Currency must appear exactly as: Ksh 2,500.
+- Must include testimonials, top freelancer categories, and clear how-it-works steps.
+- Keep visuals modern and approachable.
+
+COPY TO USE:
+Headline: Your LinkedIn or CV, turned into a portfolio website in minutes.
+Subheadline: Get a professional portfolio URL you can share with clients, recruiters, and collaborators. Submit your LinkedIn profile or upload your CV, and we handle the rest.
+Price line: Only Ksh 2,500
+CTA primary: Start My Portfolio
+CTA helper text: Takes about 2 minutes to submit your details.
+
+Value strip bullets:
+- Professional online presence without coding
+- Built from your real experience and achievements
+- Easy-to-share personal portfolio URL
+
+Section heading: Your experience is strong. Your online presentation should be too.
+Body: Most professionals have valuable experience scattered across a CV, LinkedIn profile, and WhatsApp chats. A portfolio brings your work, skills, and story into one polished destination that is easy to send and easy to trust.
+
+How it works:
+1) Share your details: On the next page, paste your LinkedIn URL and/or upload your CV, then add your WhatsApp number.
+2) We build your portfolio: We write, structure, and design your portfolio from your real professional background.
+3) You receive your live URL: We send you your portfolio link, ready to share with clients, recruiters, and opportunities.
+
+Testimonials heading: Professionals who moved faster with a portfolio
+Testimonial 1: "I used to send only my CV and rarely got replies. After sharing my portfolio link, prospects finally saw my work clearly, and I landed two new clients in one month." — Akinyi M., Freelance Graphic Designer
+Testimonial 2: "My LinkedIn had the details, but the portfolio made my profile feel complete. Recruiters told me it was easy to evaluate my experience in one place." — Brian K., Data Analyst
+Testimonial 3: "I now send one link on WhatsApp instead of multiple files. It looks professional and has improved how clients respond to me." — Faith N., Virtual Assistant
+Disclaimer: These are individual experiences; results vary by field, profile strength, and market demand.
+
+Top categories heading: Top freelancer categories that benefit from a professional portfolio
+Categories: Graphic Designers, Web Developers, Digital Marketers, Virtual Assistants, Content Writers & Copywriters, Social Media Managers, Video Editors, Data Analysts, UI/UX Designers, Photographers.
+Supporting line: If you already have a CV or LinkedIn profile, you already have the foundation. We turn it into a stronger online presence.
+
+Pricing section:
+Heading: Simple, transparent pricing
+Price: Ksh 2,500
+Includes:
+- Portfolio setup from LinkedIn/CV
+- Professional single-page or multi-section layout
+- Your personal portfolio URL to share
+
+Final CTA headline: Ready to get your professional portfolio URL?
+Final CTA body: Start now by sharing your LinkedIn URL and/or CV plus WhatsApp number.
+Final CTA button: Continue to Submission Form
+
+Visual direction:
+- Deep blue primary, warm orange CTA accents, white/light gray neutrals
+- Rounded cards, soft shadows, clean sans-serif
+- Strong hierarchy and mobile-friendly spacing

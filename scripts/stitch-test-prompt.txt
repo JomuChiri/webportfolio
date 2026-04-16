@@ -1,0 +1,2 @@
+﻿Create a simple personal portfolio landing page with a hero, projects section, and contact section.
+Use clean spacing and modern typography.

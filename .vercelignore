@@ -1,0 +1,12 @@
+node_modules
+.netlify-publish
+.netlify-publish-live
+.netlify-publish-new
+.netlify-publish-old-*
+.netlify-deploy*
+stitch-sdk
+antigravity-awesome-skills
+stitch_bundle_1.js
+stitch_bundle_2.js
+mcp_snippet.txt
+FJ3xI.jpg

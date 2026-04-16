@@ -1,0 +1,39 @@
+﻿Design and generate a complete HTML submission form page for WebPortfolio Kenya.
+Output requirements:
+- Semantic accessible HTML.
+- Page filename intent submit.html.
+- Form method POST action /api/portfolio-submit with enctype multipart/form-data.
+- Include all listed fields and helper/error placeholders.
+- No placeholder text outside the provided copy.
+- Keep design visually consistent with landing page.
+
+COPY TO USE:
+Headline: Start your portfolio request
+Subheadline: Fill in the details below. We will use them to build your portfolio and contact you on WhatsApp.
+Intro: Please share at least one: LinkedIn URL or CV upload.
+
+Form fields:
+- Full Name (required)
+- Professional Title (required)
+- LinkedIn Profile URL (optional)
+- Upload CV (optional, accept .pdf,.doc,.docx)
+- WhatsApp Number (required)
+- Email Address (required)
+- Anything else you want included? (optional)
+
+Validation guidance text:
+- You must provide at least a LinkedIn URL or a CV upload.
+- WhatsApp number is required so we can contact you quickly.
+
+Consent line:
+By submitting, you confirm the information shared is accurate and you allow us to use it to create your portfolio website.
+
+Button text: Submit My Portfolio Request
+Secondary line: Price: Ksh 2,500
+Reassurance text: After submission, you will see a confirmation page with next steps.
+
+Required behavior hooks in HTML:
+- Include small inline script that prevents submit if both LinkedIn and CV are missing.
+- On valid submit, show button loading text: Submitting...
+- Provide an element with id=form-error for client-side validation errors.
+- Include top nav link back to index.html

@@ -1,0 +1,31 @@
+﻿Design and generate a complete HTML thank-you page for WebPortfolio Kenya.
+Output requirements:
+- Semantic accessible HTML.
+- Page filename intent thank-you.html.
+- Include clear success state and next steps.
+- Add button links to index.html and submit.html.
+
+COPY TO USE:
+Headline: Thank you. Your request is in.
+Body: We have received your details. Our team will review your LinkedIn/CV information and contact you on WhatsApp to confirm the next steps.
+
+What happens next heading: What happens next
+Bullets:
+- We review your submitted profile details.
+- We reach out on WhatsApp for any quick clarifications.
+- We build your professional portfolio.
+- We send your live portfolio URL.
+
+Reminder:
+Title: Service fee
+Body: Your portfolio setup fee is Ksh 2,500.
+
+Buttons:
+- Back to Home
+- Submit Another Request
+
+Final note:
+Keep your phone available on WhatsApp so we can move quickly.
+
+Visual direction:
+- Consistent with landing page, include subtle success green highlights.
