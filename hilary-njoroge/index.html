@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<script>
+      (function () {
+        const path = window.location.pathname;
+        const last = path.split('/').pop() || '';
+        const hasExtension = last.includes('.');
+        if (!path.endsWith('/') && !hasExtension) {
+          const base = document.createElement('base');
+          base.href = path + '/';
+          document.head.prepend(base);
+        }
+      })();
+    </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hilary Njiru Njoroge | Administrative Excellence Portfolio</title>
+<meta content="Hilary Njiru Njoroge is a detail-oriented administrative professional specializing in Office Operations, Financial Documentation, and ERP Systems." name="description"/>
+<!-- SEO & Social Meta Tags -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Hilary Njiru Njoroge | Administrative Excellence Portfolio"/>
+<meta property="og:description" content="Professional portfolio website generated from verified profile information."/>
+<meta property="og:image" content="assets/og-image.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="assets/og-image.jpg"/>
+<!-- JSON-LD Person Schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hilary Njiru Njoroge",
+      "jobTitle": "Administrative Professional",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Thika",
+        "addressCountry": "Kenya"
+      },
+      "email": "njiruhilary@gmail.com",
+      "telephone": "0792191183",
+      "url": "https://hilarynjiru.com"
+    }
+    </script>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "tertiary-fixed": "#ffddba",
+              "on-primary-container": "#81a8ce",
+              "surface-bright": "#f7f9ff",
+              "on-secondary-fixed-variant": "#004d64",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "outline": "#72777e",
+              "tertiary": "#371f00",
+              "on-secondary-container": "#07637f",
+              "on-surface": "#001d33",
+              "on-background": "#001d33",
+              "surface-container-low": "#edf4ff",
+              "secondary-container": "#98defe",
+              "on-surface-variant": "#42474e",
+              "on-tertiary-container": "#cd9a5f",
+              "primary-container": "#0f3d5e",
+              "outline-variant": "#c2c7ce",
+              "surface": "#f7f9ff",
+              "secondary-fixed": "#bde9ff",
+              "on-secondary-fixed": "#001f2a",
+              "surface-dim": "#bfddfe",
+              "on-tertiary-fixed": "#2b1700",
+              "on-secondary": "#ffffff",
+              "inverse-primary": "#a3caf2",
+              "on-error-container": "#93000a",
+              "tertiary-fixed-dim": "#f4bc7e",
+              "secondary": "#0f6682",
+              "error-container": "#ffdad6",
+              "surface-container-lowest": "#ffffff",
+              "inverse-surface": "#12334c",
+              "primary-fixed": "#cee5ff",
+              "on-primary-fixed-variant": "#204a6b",
+              "surface-variant": "#cee5ff",
+              "surface-container-high": "#d8eaff",
+              "on-tertiary-fixed-variant": "#643f0b",
+              "on-primary": "#ffffff",
+              "primary": "#002741",
+              "on-tertiary": "#ffffff",
+              "tertiary-container": "#553200",
+              "on-primary-fixed": "#001d33",
+              "secondary-fixed-dim": "#8ad0ef",
+              "surface-container": "#e3efff",
+              "inverse-on-surface": "#e8f2ff",
+              "background": "#f7f9ff",
+              "primary-fixed-dim": "#a3caf2",
+              "surface-tint": "#3a6285",
+              "surface-container-highest": "#cee5ff"
+            },
+            "borderRadius": {
+              "DEFAULT": "0.125rem",
+              "lg": "0.25rem",
+              "xl": "0.5rem",
+              "full": "0.75rem"
+            },
+            "spacing": {
+              "margin-desktop": "48px",
+              "stack-md": "24px",
+              "container-max": "1200px",
+              "margin-mobile": "16px",
+              "base": "8px",
+              "stack-sm": "12px",
+              "gutter": "24px",
+              "stack-lg": "48px"
+            },
+            "fontFamily": {
+              "display-lg": ["Manrope"],
+              "label-md": ["Public Sans"],
+              "label-sm": ["Public Sans"],
+              "headline-md": ["Manrope"],
+              "headline-lg-mobile": ["Manrope"],
+              "body-lg": ["Public Sans"],
+              "body-md": ["Public Sans"],
+              "headline-lg": ["Manrope"]
+            },
+            "fontSize": {
+              "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+              "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+              "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+              "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+              "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+              "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+              "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+              "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .timeline-thread {
+        position: relative;
+      }
+      .timeline-thread::before {
+        content: '';
+        position: absolute;
+        left: -24px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #c2c7ce;
+      }
+      @media (min-width: 768px) {
+        .timeline-thread::before {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+  <link rel="icon" type="image/png" href="assets/favicon.png"/>
+  <link rel="apple-touch-icon" href="assets/favicon.png"/>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm h-20 transition-all duration-300">
+<div class="max-w-[1200px] mx-auto px-margin-desktop flex justify-between items-center h-full">
+<span class="font-headline-md text-headline-md font-bold text-primary">Hilary Njiru Njoroge</span>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#experience">Experience</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#skills">Skills</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+<a class="bg-primary-container text-white px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-opacity-90 transition-all" href="#contact">Book a Consultation</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-32 pb-20 md:pt-48 md:pb-32 bg-surface">
+<div class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7">
+<h1 class="font-display-lg text-display-lg text-primary mb-stack-md">Administrative Support That Keeps Work Moving</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-xl">
+                    I am Hilary Njiru Njoroge, a professional dedicated to precision in administrative and financial operations. I ensure that your business workflows remain seamless, organized, and focused on growth.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary-container text-white px-8 py-4 rounded font-label-md text-label-md text-center hover:shadow-lg transition-all" href="#contact">Book a Consultation</a>
+<a class="border border-secondary text-secondary px-8 py-4 rounded font-label-md text-label-md text-center hover:bg-secondary/5 transition-all" href="#experience">View Experience</a>
+</div>
+</div>
+<div class="md:col-span-5 relative mt-stack-lg md:mt-0">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+<img alt="Hilary Njiru Njoroge" class="w-full h-full object-cover" data-alt="A professional headshot of Hilary Njiru Njoroge, an administrative expert, set against a clean and minimal corporate office backdrop. The lighting is bright and high-key, emphasizing a modern light-mode aesthetic. Hilary projects a calm, confident, and competent demeanor. The color palette is composed of sophisticated deep blues and crisp whites, perfectly aligning with a premium professional identity." src="assets/hero.jpg"/>
+</div>
+<!-- Accent Shape -->
+<div class="absolute -z-10 -bottom-6 -right-6 w-full h-full bg-secondary-container/20 rounded-2xl"></div>
+</div>
+</div>
+</header>
+<!-- Trust Strip -->
+<div class="bg-surface-container py-stack-md border-y border-outline-variant/30">
+<div class="max-w-[1200px] mx-auto px-margin-desktop flex flex-wrap justify-between items-center gap-gutter text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">business_center</span>
+<span class="font-label-md uppercase tracking-wider">Office Operations</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">account_balance_wallet</span>
+<span class="font-label-md uppercase tracking-wider">Financial Documentation</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">settings_suggest</span>
+<span class="font-label-md uppercase tracking-wider">ERP Systems</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">description</span>
+<span class="font-label-md uppercase tracking-wider">Document Management</span>
+</div>
+</div>
+</div>
+<!-- Metrics Section -->
+<section class="py-stack-lg bg-surface-container-lowest">
+<div class="max-w-[1200px] mx-auto px-margin-desktop text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary">Structured Administration for Reliable Daily Operations</h2>
+</div>
+<div class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Metric Card 1 -->
+<div class="bg-white p-stack-md rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow text-center">
+<p class="font-display-lg text-primary text-4xl mb-2">30%</p>
+<p class="font-label-md text-secondary">office efficiency improvement</p>
+</div>
+<!-- Metric Card 2 -->
+<div class="bg-white p-stack-md rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow text-center">
+<p class="font-display-lg text-primary text-4xl mb-2">25%</p>
+<p class="font-label-md text-secondary">faster task completion</p>
+</div>
+<!-- Metric Card 3 -->
+<div class="bg-white p-stack-md rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow text-center">
+<p class="font-display-lg text-primary text-4xl mb-2">20%</p>
+<p class="font-label-md text-secondary">lower communication-related errors</p>
+</div>
+<!-- Metric Card 4 -->
+<div class="bg-white p-stack-md rounded-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow text-center">
+<p class="font-display-lg text-primary text-4xl mb-2">70+</p>
+<p class="font-label-md text-secondary">weekly invoices processed (98% accuracy)</p>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-stack-lg bg-surface" id="about">
+<div class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5">
+<div class="h-96 rounded-xl bg-primary-container relative overflow-hidden">
+<img alt="Professional Environment" class="w-full h-full object-cover opacity-60" data-alt="A wide-angle shot of a bright, contemporary office interior featuring clean architectural lines and organized desk spaces. The space is flooded with soft natural daylight, emphasizing a sense of clarity and professionalism. The aesthetic is modern corporate, with a color palette of soft greys, whites, and deep corporate blues. The atmosphere is quiet, productive, and highly organized." src="assets/hero.jpg"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-6xl">verified_user</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-7">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">About Me</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
+                    Hilary Njiru Njoroge is a detail-oriented administrative professional with a strong foundation in bookkeeping, office management, and ERP systems. With experience spanning fair trade coordination and cooperative financial assistance, Hilary excels at bridging the gap between high-level operations and daily transactional accuracy.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                    Beyond standard administration, my focus is on creating systems that scale. I believe that reliable administrative support isn't just about finishing tasksâ€”it's about building the infrastructure that allows a team to succeed without friction.
+                </p>
+<div class="grid grid-cols-2 gap-stack-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">school</span>
+<span class="font-label-md">Catholic University of Eastern Africa</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<span class="font-label-md">Thika, Kenya</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-stack-lg bg-surface-container-low" id="experience">
+<div class="max-w-[1200px] mx-auto px-margin-desktop mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center">Professional Experience</h2>
+</div>
+<div class="max-w-[800px] mx-auto px-margin-desktop timeline-thread">
+<!-- Experience 1 -->
+<div class="mb-stack-lg relative bg-white p-gutter rounded-lg border border-outline-variant shadow-sm ml-6 md:ml-0">
+<div class="flex flex-col md:flex-row md:justify-between items-start md:items-center mb-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Fair Trade Assistant Secretary</h3>
+<p class="font-label-md text-secondary">Dummen Orange</p>
+</div>
+<span class="text-on-surface-variant font-label-md bg-surface-container px-3 py-1 rounded">2020 - Present</span>
+</div>
+<ul class="space-y-3">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0">check_circle</span>
+<p class="font-body-md text-body-md">Optimized office operations, resulting in a 30% increase in workflow efficiency across administrative departments.</p>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0">check_circle</span>
+<p class="font-body-md text-body-md">Streamlined document management and communication protocols, reducing errors by 20%.</p>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0">check_circle</span>
+<p class="font-body-md text-body-md">Ensured 100% compliance with fair trade standards through meticulous reporting and documentation.</p>
+</li>
+</ul>
+</div>
+<!-- Experience 2 -->
+<div class="mb-stack-lg relative bg-white p-gutter rounded-lg border border-outline-variant shadow-sm ml-6 md:ml-0">
+<div class="flex flex-col md:flex-row md:justify-between items-start md:items-center mb-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Accounts Assistant (Intern)</h3>
+<p class="font-label-md text-secondary">Thika Giki Farmers Cooperative</p>
+</div>
+<span class="text-on-surface-variant font-label-md bg-surface-container px-3 py-1 rounded">2019 - 2020</span>
+</div>
+<ul class="space-y-3">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0">check_circle</span>
+<p class="font-body-md text-body-md">Managed weekly processing of over 70 invoices with 98% payment accuracy.</p>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0">check_circle</span>
+<p class="font-body-md text-body-md">Supported audit preparation and financial reporting using Sage ERP systems.</p>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0">check_circle</span>
+<p class="font-body-md text-body-md">Maintained rigorous data entry standards for member accounts, ensuring zero discrepancies in records.</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-stack-lg bg-surface" id="skills">
+<div class="max-w-[1200px] mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-lg text-center">Skills &amp; Expertise</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Professional Skills -->
+<div class="bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant">
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-md flex items-center gap-2">
+<span class="material-symbols-outlined">psychology</span>
+                        Professional Skills
+                    </h3>
+<div class="flex flex-wrap gap-stack-sm">
+<div class="flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full border border-secondary/20">
+<span class="material-symbols-outlined text-sm">inventory</span>
+<span class="font-label-sm">Office Administration</span>
+</div>
+<div class="flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full border border-secondary/20">
+<span class="material-symbols-outlined text-sm">account_balance</span>
+<span class="font-label-sm">Basic Bookkeeping</span>
+</div>
+<div class="flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full border border-secondary/20">
+<span class="material-symbols-outlined text-sm">fact_check</span>
+<span class="font-label-sm">Records Management</span>
+</div>
+<div class="flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full border border-secondary/20">
+<span class="material-symbols-outlined text-sm">groups</span>
+<span class="font-label-sm">Team Coordination</span>
+</div>
+<div class="flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full border border-secondary/20">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span class="font-label-sm">Compliance Auditing</span>
+</div>
+</div>
+</div>
+<!-- Tools and Systems -->
+<div class="bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant">
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-md flex items-center gap-2">
+<span class="material-symbols-outlined">data_object</span>
+                        Tools and Systems
+                    </h3>
+<div class="flex flex-wrap gap-stack-sm">
+<div class="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-sm">computer</span>
+<span class="font-label-sm">Sage ERP</span>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-sm">table_view</span>
+<span class="font-label-sm">Microsoft Excel (Advanced)</span>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-sm">draft</span>
+<span class="font-label-sm">MS Office Suite</span>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-sm">cloud</span>
+<span class="font-label-sm">Cloud Document Management</span>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-sm">mail</span>
+<span class="font-label-sm">Professional Outlook</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-stack-lg bg-surface-container" id="contact">
+<div class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">Need Reliable Administrative Support?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">
+                    I am available for consultation on office workflow optimization, administrative support roles, and financial documentation assistance.
+                </p>
+<div class="space-y-stack-sm">
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant">Email</p>
+<a class="font-headline-md text-primary hover:text-secondary transition-colors" href="mailto:njiruhilary@gmail.com">njiruhilary@gmail.com</a>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant">Phone</p>
+<a class="font-headline-md text-primary hover:text-secondary transition-colors" href="tel:0792191183">0792191183</a>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="font-label-sm text-on-surface-variant">Location</p>
+<p class="font-headline-md text-primary">Thika, Kenya</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-gutter rounded-xl shadow-lg border border-outline-variant">
+<form class="space-y-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-on-surface-variant mb-2">Name</label>
+<input class="w-full p-3 rounded border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="Your Name" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-on-surface-variant mb-2">Email</label>
+<input class="w-full p-3 rounded border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="Your Email" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-on-surface-variant mb-2">Message</label>
+<textarea class="w-full p-3 rounded border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="How can I help you today?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-white py-4 rounded font-label-md hover:bg-opacity-90 transition-all" type="submit">Send Inquiry</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-lowest w-full py-stack-lg border-t border-outline-variant/30">
+<div class="max-w-[1200px] mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-gutter">
+<div class="max-w-md">
+<span class="font-headline-md text-headline-md font-bold text-primary mb-stack-sm block">Hilary Njiru Njoroge</span>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                    Administrative support professional focused on enhancing organizational efficiency through structured operations and financial precision.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80">
+                    Â© 2026 Hilary Njiru Njoroge. All rights reserved.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-label-md text-primary font-bold uppercase tracking-widest">Connect</p>
+<div class="flex gap-stack-sm">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="mailto:njiruhilary@gmail.com">Email</a>
+</div>
+<div class="mt-4">
+<p class="font-label-sm text-on-surface-variant">Education</p>
+<p class="font-body-md text-primary">Catholic University of Eastern Africa</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Micro-interaction Scripts -->
+<script>
+        // Simple Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.querySelector('nav div div');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            // In a real app, this would toggle a mobile menu modal/overlay
+            console.log('Mobile menu toggled');
+        });
+
+        // Smooth reveal on scroll for metric cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.bg-white.p-stack-md').forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(card);
+        });
+
+        // Sticky nav shadow on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body></html>

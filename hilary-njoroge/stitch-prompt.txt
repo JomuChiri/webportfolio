@@ -1,0 +1,356 @@
+﻿Design and generate a complete multi-section personal portfolio website for hilary-njoroge using the EXACT content package below.
+
+Hard requirements:
+- Use the actual provided copy. Do not use placeholder text.
+- Do not invent facts, credentials, dates, metrics, IDs, or company claims not present in the copy package.
+- Preserve factual values exactly where specified (for example certification IDs, percentages, and timelines).
+- Return a complete, valid HTML document (<!doctype html> ... </html>) for web deployment.
+- Do not return markdown, prose explanations, or copy-package text dumps as final output.
+- Generate semantic, accessible HTML with clear heading hierarchy and keyboard-friendly navigation.
+- Include a homepage at index.html and ensure all internal navigation links resolve correctly.
+- Keep copy faithful to source text while improving layout, readability, and visual hierarchy.
+- Apply metadata and information architecture intent from the SEO pack.
+- Apply visual language, palette, typography mood, and component guidance from design direction.
+- Social/Media requirements:
+- A user profile image is available at: C:\Users\muchi\OneDrive\Documents\webportfolio\hilary-njoroge\assets\Njoroge Hilary.jpg
+- Use this user image in the hero section (real image, not placeholder).
+- Use the user image as browser icon source by linking favicon to ./assets/favicon.png.
+- Set Open Graph/Twitter preview image to ./assets/og-image.jpg.
+- Include these social tags in <head>: og:type, og:title, og:description, og:image, og:image:width=1200, og:image:height=630, twitter:card=summary_large_image, twitter:image.
+
+Output intent:
+- Professional, modern, engineering-leadership portfolio style.
+- Designed for desktop-first responsiveness, with solid mobile behavior.
+
+=== COPY PACKAGE: website-copy.md ===
+# Website Copy Package - Hilary Njiru Njoroge
+
+## Source Basis
+- Primary source: `NJOROGE HILARY RESUME.pdf`
+- Secondary source: LinkedIn profile URL provided by client intake: `https://www.linkedin.com/in/hilary-njoroge-aaa338283/`
+
+## Voice Profile
+- Professional, organized, and dependable
+- Clear and practical communication
+- Credible administrative and operations support positioning
+
+## Personal Brand Conversion Framework
+
+### Positioning Statement
+Hilary Njiru Njoroge is an administrative professional who helps teams run smoother operations through structured office support, accurate financial documentation, and reliable communication workflows.
+
+### Ideal Client Profile
+- SMEs, cooperatives, NGOs, and operations teams that need dependable administrative support
+- Leaders who want stronger document control, reporting consistency, and cleaner office processes
+- Finance and operations departments requiring accurate invoice and ledger support
+
+### Signature Service Framing
+- Office Administration and Workflow Support
+- Administrative Documentation and Filing Systems
+- Invoice Processing and Accounts Support Coordination
+- ERP-enabled record and workflow management
+
+### Proof Stack
+- Improved office efficiency by 30% through administrative workflow improvements
+- Reduced task completion time by 25% through process streamlining
+- Improved communication quality, reducing errors and miscommunication by 20%
+- Improved task turnaround time by 30% via better meeting and follow-up coordination
+- Processed 70+ invoices weekly with 98% payment accuracy support
+- Supported monthly and quarterly financial reports with 98% on-time submission
+- Reduced audit delays by 20% by providing required documentation within deadlines
+- Reduced document retrieval time by 30% through improved file organization
+
+### CTA Strategy
+- Primary CTA: `Book a Consultation`
+- Secondary CTA: `View Experience`
+
+## Homepage (`/`)
+
+### Hero
+Headline:
+Administrative Support That Keeps Work Moving
+
+Subheadline:
+I am Hilary Njiru Njoroge, an administrative professional focused on office operations, financial documentation support, and process efficiency. I help teams stay organized, responsive, and accountable.
+
+Primary CTA:
+Book a Consultation
+
+Secondary CTA:
+View Experience
+
+### Trust Strip
+- Office Operations and Administrative Support
+- Financial Documentation and Ledger Support
+- ERP Systems and Workflow Coordination
+- Document Management and Compliance Focus
+
+### Positioning Section
+Section Title:
+Structured Administration for Reliable Daily Operations
+
+Body:
+I support organizations by managing essential administrative functions with accuracy and consistency. From documentation and scheduling to finance support processes, I focus on systems that reduce delays, improve communication, and maintain professional standards.
+
+### Key Results
+- 30% office efficiency improvement
+- 25% faster task completion
+- 20% lower communication-related errors
+- 70+ invoices processed weekly with 98% payment accuracy support
+
+## About (`/about`)
+
+### Intro
+Hilary Njiru Njoroge is a detail-oriented, results-driven administrative professional with practical experience supporting office and finance operations.
+
+### About Narrative
+Hilary is committed to efficient office operations, high-quality administrative support, and careful document handling. With experience in both fair trade administrative coordination and accounts support, she brings a disciplined approach to workflow management, reporting support, and confidentiality.
+
+### Core Strengths
+- Office administration and operations management
+- Financial documentation and ledger management
+- Invoice processing and accounts support
+- ERP systems management
+- Meeting and communication coordination
+- Document control and records organization
+- Audit documentation support
+
+## Experience (`/experience`)
+
+### Role 1
+Fair Trade Assistant Secretary - Dummen Orange (Fides Kenya Ltd)
+January 2023 - January 2024
+
+Highlights:
+- Implemented administrative workflows that improved office efficiency by 30%.
+- Reduced task completion time by 25% through process improvements.
+- Facilitated communication for meetings and projects with timely updates and follow-ups.
+- Reduced errors and miscommunication by 20%.
+- Managed official documentation with full compliance to handling procedures and confidentiality standards.
+- Implemented a digital filing system that reduced paperwork by 20%.
+- Improved overall task turnaround time by 30%.
+
+### Role 2
+Accounts Assistant (Intern) - Thika Giki Farmers Cooperative
+March 2021 - February 2022
+
+Highlights:
+- Processed 70+ invoices weekly with 98% payment accuracy support.
+- Supported monthly and quarterly financial reporting with 98% on-time submission.
+- Assisted internal and external audits by preparing and sharing required documentation on time.
+- Helped reduce audit delays by 20%.
+- Responded promptly to finance-related queries and maintained organized financial records.
+- Helped reduce document retrieval time by 30%.
+
+## Education (`/education`)
+
+- Bachelor of Commerce (Management), Catholic University of Eastern Africa
+
+## Skills and Tools (`/skills`)
+
+### Professional Skills
+- Office Administration and Operations Management
+- Financial Documentation and Ledger Management
+- Invoice Processing and Accounts Support
+- ERP Systems Management
+
+### Tools and Systems
+- ERP systems
+- Financial ledger and reconciliation tools
+- Document management systems
+- Scheduling and calendar platforms
+- Data entry and reporting tools
+- Committee governance documentation systems
+
+### Languages
+- English
+- Kiswahili
+
+## Contact (`/contact`)
+
+Headline:
+Need Reliable Administrative Support?
+
+Body:
+Hilary is available for administrative support, office process coordination, and finance documentation assistance.
+
+Contact details:
+- Email: njiruhilary@gmail.com
+- Phone: 0792191183
+- Location: Thika, Kenya
+- LinkedIn: https://www.linkedin.com/in/hilary-njoroge-aaa338283/
+
+Primary CTA:
+Book a Consultation
+
+Secondary CTA:
+Connect on LinkedIn
+
+## Footer Copy
+Hilary Njiru Njoroge | Administrative Professional | Office Operations | Finance Documentation Support
+
+
+=== COPY PACKAGE: seo-pack.md ===
+# SEO Pack - Hilary Njiru Njoroge Portfolio
+
+## Sources
+- Resume content from `NJOROGE HILARY RESUME.pdf`
+- LinkedIn profile URL reference provided in intake
+
+## SEO Objective
+Position Hilary Njiru Njoroge as a reliable administrative professional in Kenya for office operations support, financial documentation coordination, and process improvement.
+
+## Primary Keywords
+- Hilary Njiru Njoroge
+- Administrative Professional Kenya
+- Office Administrator Thika
+- Administrative Support Specialist Kenya
+- Accounts Support and Documentation Kenya
+
+## Secondary Keywords
+- office operations management support
+- invoice processing and ledger management
+- ERP systems administration support
+- document management and compliance support
+- audit documentation support Kenya
+- administrative workflow improvement
+
+## Metadata by Page
+
+### Home (`/`)
+- Meta Title: Hilary Njiru Njoroge | Administrative Professional in Kenya
+- Meta Description: Administrative professional focused on office operations, process efficiency, financial documentation support, and reliable communication workflows.
+- Focus Keywords: Administrative Professional Kenya, Office Administrator Thika
+
+### About (`/about`)
+- Meta Title: About Hilary Njoroge | Office and Administrative Operations
+- Meta Description: Learn about Hilary Njiru Njoroge's background in administrative operations, document control, and finance support coordination.
+- Focus Keywords: administrative support specialist Kenya, office operations support
+
+### Experience (`/experience`)
+- Meta Title: Experience | Hilary Njoroge Administrative and Accounts Support
+- Meta Description: Explore Hilary's work in fair trade administration and accounts support, including measurable workflow and documentation improvements.
+- Focus Keywords: accounts support Kenya, administrative workflow improvement
+
+### Education (`/education`)
+- Meta Title: Education | Hilary Njiru Njoroge
+- Meta Description: Academic background in Bachelor of Commerce (Management) from the Catholic University of Eastern Africa.
+- Focus Keywords: Bachelor of Commerce Management Kenya
+
+### Skills (`/skills`)
+- Meta Title: Skills and Tools | Hilary Njoroge
+- Meta Description: Office administration, financial documentation, ERP systems support, and records management skills.
+- Focus Keywords: office administration skills Kenya, ERP systems support
+
+### Contact (`/contact`)
+- Meta Title: Contact Hilary Njoroge | Administrative Support Services
+- Meta Description: Contact Hilary Njiru Njoroge for professional administrative support and office operations assistance in Kenya.
+- Focus Keywords: hire administrative professional Kenya, office support Thika
+
+## URL Structure
+- `/`
+- `/about`
+- `/experience`
+- `/education`
+- `/skills`
+- `/contact`
+
+## Internal Linking Strategy
+- Home links to: About, Experience, Skills, Contact
+- About links to: Experience, Skills, Contact
+- Experience links to: Skills, Contact
+- Education links to: About, Contact
+- Skills links to: Experience, Contact
+
+## On-Page SEO Checklist
+- Keep one clear H1 per page/section.
+- Include geographic relevance naturally (Thika, Kenya).
+- Keep measurable outcomes visible where relevant.
+- Use descriptive anchor text for internal navigation.
+- Include Person schema with name, location, email, and LinkedIn URL.
+
+## Schema Recommendations
+- Person
+- WebSite
+- BreadcrumbList
+
+
+=== COPY PACKAGE: design-direction.md ===
+# Design Direction - Hilary Njiru Njoroge
+
+## Brand Positioning
+Professional, trustworthy, and structured personal brand for an administrative specialist. The website should communicate reliability, precision, and readiness to support modern office operations.
+
+## Visual Tone
+- Clean and polished
+- Corporate but warm
+- Detail-oriented and process-driven
+
+## Color System
+- Primary: `#0F3D5E` (Deep Blue - trust and professionalism)
+- Secondary: `#1F6F8B` (Teal Blue - clarity and calm)
+- Accent: `#2E8B57` (Structured Green - growth and efficiency)
+- Surface: `#F6F9FC` (Soft Light Background)
+- Text Primary: `#102A43`
+- Text Secondary: `#486581`
+
+## Typography Mood
+- Headings: confident, contemporary, high legibility
+- Body text: neutral sans-serif, comfortable spacing, business readable
+- Tone cues: concise, clear, not verbose
+
+## Layout and Component Guidance
+
+### Global Layout
+- Desktop-first responsive layout with clean mobile stacking.
+- Use generous whitespace and clear section separation.
+- Keep section ordering intuitive: Hero -> Proof -> About -> Experience -> Skills -> Contact.
+
+### Header / Navigation
+- Sticky top navigation with straightforward links.
+- Include clear CTA button (`Book a Consultation`) in header.
+
+### Hero Section
+- Prominent name and role.
+- Short, high-trust positioning statement.
+- Use provided user image as hero visual.
+- Place primary and secondary CTAs side by side on desktop, stacked on mobile.
+
+### Proof and Metrics
+- Use metric cards for key outcomes (30%, 25%, 20%, 98%, 70+).
+- Keep copy factual and concise.
+
+### Experience Section
+- Timeline or card-based layout with role, organization, date range, and achievements.
+- Highlight measurable outcomes in bold visual callouts.
+
+### Skills Section
+- Split into two groups: Professional Skills and Tools & Systems.
+- Use icon-supported chips or compact cards for scanability.
+
+### Contact Section
+- Keep direct and action-oriented.
+- Surface email, phone, location, and LinkedIn clearly.
+- Include strong CTA and simple contact pathway.
+
+## Accessibility and UX Rules
+- Minimum AA contrast across text/background combinations.
+- Semantic heading hierarchy (`h1` to `h3` as needed).
+- Keyboard-focus visible on all interactive elements.
+- Buttons and links must have clear hover and focus states.
+- Ensure images include meaningful `alt` text.
+
+## Motion and Interaction
+- Subtle fade/slide-in on section reveal.
+- Keep animations minimal and professional.
+- Avoid distracting motion effects.
+
+## Metadata and Media Policy
+- Use generated `assets/favicon.png` as favicon.
+- Use `assets/og-image.jpg` for Open Graph and Twitter large summary card metadata.
+- Include required social metadata tags for image mode.
+
+## Visual Reference Notes
+- Portrait and profile image should feel natural and professional.
+- Design language should support credibility for administrative and office support roles.
+
