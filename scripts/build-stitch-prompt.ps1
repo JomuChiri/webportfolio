@@ -79,7 +79,7 @@ if ($hasUserImage) {
 }
 
 $prompt = @"
-Design and generate a complete multi-section personal portfolio website for $projectName using the EXACT content package below.
+Design and generate a complete multi-section sustainability and circular economy brand website for $projectName using the EXACT content package below.
 
 Hard requirements:
 - Use the actual provided copy. Do not use placeholder text.
@@ -96,7 +96,7 @@ Hard requirements:
 $mediaInstruction
 
 Output intent:
-- Professional, modern, engineering-leadership portfolio style.
+- Professional, modern sustainability brand style.
 - Designed for desktop-first responsiveness, with solid mobile behavior.
 
 === COPY PACKAGE: website-copy.md ===

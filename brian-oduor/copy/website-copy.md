@@ -8,6 +8,7 @@
 
 ## Voice Profile
 - Professional, calm, and practical
+- Sustainability-led and community-aware
 - Credible without sounding overproduced
 - Modern, concise, and easy to scan
 - Grounded in real work and real responsibilities
@@ -15,20 +16,22 @@
 ## Personal Brand Conversion Framework
 
 ### Positioning Statement
-Brian Oduor is an operations professional focused on circular economy systems, recycling operations, and practical sustainability delivery.
+Brian Oduor is a sustainability-focused operations professional helping advance practical circular economy and environmental solutions through collaboration, continuous learning, and operational leadership.
 
 ### Ideal Client Profile
 - Sustainability teams and circular economy partners
-- Recycling and recovery ecosystem stakeholders
-- Employers seeking operations leadership
+- Recycling and waste management ecosystem stakeholders
+- Employers seeking operations leadership with environmental focus
 - Community, private-sector, and public-sector collaborators
-- Recruiters evaluating operations and environmental impact roles
+- Recruiters evaluating operations and sustainability roles
 
-### Signature Service / Offer Framing
-- Operations leadership for circular economy programs
-- Practical coordination across collection, logistics, and reporting
-- Stakeholder alignment for recycling and recovery systems
-- Community-centered sustainability execution
+### Signature Brand Themes
+- Circular economy systems
+- Waste management and recycling
+- Environmental stewardship
+- Community impact
+- Stakeholder collaboration
+- Continuous learning
 
 ### Proof Stack
 - Operations Manager at Shabi Solutions
@@ -36,17 +39,17 @@ Brian Oduor is an operations professional focused on circular economy systems, r
 - Experience coordinating communities, private-sector partners, and government stakeholders
 - Public LinkedIn profile and professional headshot
 - Relevant background in hospitality and social media marketing studies
-- Certifications and profile signals that support a modern professional presence
+- Certifications and courses that support a lifelong learning mindset
 
 ### CTA Strategy
-- Primary CTA: `Connect on LinkedIn`
-- Secondary CTA: `Email Brian`
+- Primary CTA: `Let's Build Sustainable Recovery Systems Together`
+- Secondary CTA: `Connect on LinkedIn`
 
 ## Homepage (`/`)
 
 ### Hero
 Eyebrow:
-Operations and Sustainability
+Sustainability and Circular Economy
 
 Headline:
 Brian Oduor
@@ -55,15 +58,18 @@ Subheadline:
 Operations Manager at Shabi Solutions, focused on circular economy systems, recycling, and practical sustainability delivery.
 
 Primary CTA:
-Connect on LinkedIn
+Let's Build Sustainable Recovery Systems Together
 
 Secondary CTA:
-Email Brian
+Connect on LinkedIn
+
+Hero Support Line:
+Turning waste into value through practical recovery systems, responsible resource management, and collaborative environmental action.
 
 ### Trust Strip
 - Operations Manager at Shabi Solutions
 - Circular economy and EPR focus
-- Community, private-sector, and government collaboration
+- Waste management and recycling practitioner
 - Nairobi, Kenya
 
 ### About Section
@@ -76,15 +82,33 @@ Brian Oduor describes his approach as simple and practical. He works within an e
 Support Line:
 His work centers on building systems that support recycling, Extended Producer Responsibility (EPR), and material recovery.
 
-### Summary Section
+### Sustainability Mission Section
+Section Title:
+Sustainability Mission
+
+Body:
+Brian’s mission is rooted in circular economy principles, sustainable resource management, and community-centered environmental responsibility. He is motivated by the belief that recycling ecosystems can create practical value when people, systems, and stakeholders work together with a shared sense of purpose.
+
+Support Points:
+- Promote responsible production and consumption
+- Support recycling ecosystems that keep materials in use
+- Advance community empowerment through practical environmental solutions
+- Strengthen collaboration across the circular economy value chain
+
+### What Brian Does Section
 Section Title:
 What Brian Does
 
+Section Intro:
+Brian’s work is best understood through outcomes. He supports the systems and relationships that make circular economy operations more coordinated, traceable, and effective.
+
 Cards:
-- Plans, coordinates, and optimizes day-to-day operations
-- Supports community collection networks and aggregation
-- Oversees logistics and market linkages
-- Works with recyclers, processors, and stakeholders
+- Material recovery systems that support circular value chains
+- Waste collection networks that connect communities to practical recovery pathways
+- Circular economy operations that improve coordination and follow-through
+- Stakeholder collaboration across communities, recyclers, processors, and partners
+- Environmental sustainability initiatives with real operational grounding
+- Operational efficiency through structured reporting and traceability
 
 ### Experience Section
 Section Title:
@@ -134,6 +158,49 @@ Kenya Coast National Polytechnic - Diploma in Hospitality and Hotel Management
 Dates:
 February 2016 - November 2019
 
+### Professional Development Section
+Section Title:
+Professional Development
+
+Intro:
+Brian’s learning profile shows a commitment to environmental sustainability, digital capability, and practical business thinking. Where issue dates were provided, they are listed below. Where they were not, they are marked clearly.
+
+Certifications:
+- Midjourney — Issued: 7 January 2026
+- Agribusiness 1 — Issued: 23 January 2026
+- Digital and Social Media Marketing — Issued: 23 January 2026
+- Agriculture as a Business – Part 1 — Issued: 25 January 2026
+- Business Model Canvas for Agribusinesses — Issued: 28 January 2026
+- Climate Smart Agribusiness: Adaptation — Issued: 28 January 2026
+- Conflict Management and Resolution — Issued: 30 January 2026
+- Climate Action Training for the Fashion Industry — Issued: 25 March 2026
+- Digital Safety and Security — Issued: 14 April 2026
+
+Additional Courses:
+- Battery End-of-Life Management and Recycling — Date not provided
+- Circularity for Decision-Makers in the Textile and Apparel Industry — Date not provided
+- Carbon Finance and Markets — Date not provided
+- Cooling Carbon Markets — Date not provided
+- Data Protection Basics — Date not provided
+
+### Areas of Interest Section
+Section Title:
+Areas of Interest
+
+Body:
+Brian’s ongoing interests reflect a sustainability-oriented professional who is actively thinking about how systems can be improved over time.
+
+Interest List:
+- Waste Management
+- Recycling Systems
+- Circular Economy
+- Sustainability Strategy
+- Environmental Impact
+- Climate Action
+- Sustainable Supply Chains
+- Resource Recovery
+- Community-Based Environmental Solutions
+
 ### Skills Section
 Section Title:
 Selected Skills
@@ -148,19 +215,12 @@ Skills List:
 - Stakeholder collaboration
 - Sustainability implementation
 
-### Certification Section
-Section Title:
-Certifications
-
-Certification Item:
-Midjourney
-
 ### Contact Section
 Section Title:
-Contact Brian
+Let's Build Sustainable Recovery Systems Together
 
 Body:
-Brian’s profile is built for practical collaboration. If you want to connect about operations, sustainability, or circular economy work, LinkedIn is the fastest place to continue the conversation.
+Brian is open to professional networking, sustainability partnerships, circular economy discussions, waste management initiatives, recycling operations, and community impact conversations.
 
 Contact Details:
 - Email: `ochiengoduorbrian2022@gmail.com`
@@ -169,10 +229,10 @@ Contact Details:
 - LinkedIn: `https://www.linkedin.com/in/brian-oduor-794a113a2`
 
 Primary CTA:
-Connect on LinkedIn
+Let's Build Sustainable Recovery Systems Together
 
 Secondary CTA:
-Email Brian
+Connect on LinkedIn
 
 ## Footer Copy
 Brian Oduor | Operations Manager | Circular Economy | Sustainability

@@ -1,12 +1,12 @@
 # SEO Pack - Brian Oduor
 
 ## Primary Goal
-Create a searchable personal portfolio for Brian Oduor that reflects his verified operations, circular economy, and sustainability background.
+Create a searchable sustainability and circular economy brand website for Brian Oduor that reflects his verified operations, recycling, and environmental background.
 
 ## Target Search Intent
 - People searching for Brian Oduor by name
 - Recruiters reviewing Brian’s operations and sustainability profile
-- Circular economy and recycling partners looking for a practical collaborator
+- Sustainability and circular economy partners looking for collaboration
 - Visitors arriving from LinkedIn who want a clearer professional summary
 
 ## Primary Keywords
@@ -15,33 +15,36 @@ Create a searchable personal portfolio for Brian Oduor that reflects his verifie
 - Brian Oduor operations manager
 - Brian Oduor sustainability
 - Brian Oduor circular economy
-- Brian Oduor Nairobi
+- Brian Oduor waste management
+- Brian Oduor recycling
 
 ## Secondary Keywords
-- operations manager portfolio
-- circular economy professional
+- sustainability professional website
+- circular economy brand website
 - recycling operations
 - EPR sustainability
 - material recovery
 - Nairobi Kenya professional profile
+- community impact sustainability
+- environmental stewardship
 
 ## Metadata
 Title:
-Brian Oduor | Operations and Sustainability Portfolio
+Brian Oduor | Sustainability and Circular Economy Portfolio
 
 Meta Description:
-Brian Oduor is an Operations Manager at Shabi Solutions focused on circular economy systems, recycling, EPR, and practical sustainability delivery.
+Brian Oduor is an Operations Manager at Shabi Solutions focused on circular economy systems, waste management, recycling, EPR, and practical sustainability delivery.
 
 Suggested URL Slug:
 /
 
 Canonical Intent:
-Keep the homepage as the main entry point and use anchored sections for experience, education, skills, and contact.
+Keep the homepage as the main entry point and use anchored sections for mission, experience, development, interests, and contact.
 
 ## Social Metadata
 - `og:type`: website
-- `og:title`: Brian Oduor | Operations and Sustainability Portfolio
-- `og:description`: Brian Oduor is an Operations Manager at Shabi Solutions focused on circular economy systems, recycling, EPR, and practical sustainability delivery.
+- `og:title`: Brian Oduor | Sustainability and Circular Economy Portfolio
+- `og:description`: Brian Oduor is an Operations Manager at Shabi Solutions focused on circular economy systems, waste management, recycling, EPR, and practical sustainability delivery.
 - `og:image`: assets/og-image.jpg
 - `og:image:width`: 1200
 - `og:image:height`: 630
@@ -52,17 +55,21 @@ Keep the homepage as the main entry point and use anchored sections for experien
 - Hero
 - Trust strip
 - About
+- Sustainability mission
+- What Brian does
 - Experience
 - Education
-- Skills and certifications
-- Contact
+- Professional development
+- Areas of interest
+- Skills and contact
 
 ## Internal Link Map
 - `#hero`
 - `#about`
+- `#mission`
 - `#experience`
-- `#education`
-- `#skills`
+- `#development`
+- `#interest`
 - `#contact`
 
 ## Content Notes

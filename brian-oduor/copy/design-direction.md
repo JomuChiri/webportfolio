@@ -1,7 +1,7 @@
 # Design Direction - Brian Oduor
 
 ## Visual Goal
-Create a premium personal portfolio that feels practical, composed, and credible, with an understated sustainability-forward tone.
+Create a premium sustainability brand website that feels practical, composed, and credible, with a strong circular economy and environmental stewardship tone.
 
 ## Brand Feeling
 - Professional
@@ -9,13 +9,14 @@ Create a premium personal portfolio that feels practical, composed, and credible
 - Practical
 - Trustworthy
 - Modern
+- Purpose-driven
 
 ## Color Direction
 - Deep forest green: main accent for sustainability and authority
 - Charcoal: primary text and contrast
 - Warm sand: background warmth and softness
 - Muted gold: subtle premium highlights
-- Slate blue: supporting contrast that fits the portrait and keeps the page cool
+- Slate blue: supporting contrast that keeps the page grounded
 
 ## Typography Mood
 - Headings: refined serif with editorial weight
@@ -29,6 +30,7 @@ Create a premium personal portfolio that feels practical, composed, and credible
 - Short sections with strong hierarchy
 - Cards and panels that feel orderly and precise
 - Enough spacing to make the page feel premium, not crowded
+- Use section cards to make mission, development, and interests feel intentional
 
 ## UI Style
 - Soft gradient or subtly textured background
@@ -52,7 +54,7 @@ Create a premium personal portfolio that feels practical, composed, and credible
 ## Copy Treatment
 - Use the verified copy package as the source of truth
 - Keep copy short, factual, and easy to skim
-- Let the portrait, role, and structure do most of the work
+- Let the portrait, mission, and structure do most of the work
 
 ## Overall Direction
-The final site should feel like a strong personal brand page for an operations professional who works in sustainability and circular economy systems. It should be refined, trustworthy, and practical.
+The final site should feel like a strong personal brand page for a sustainability-focused operations professional helping advance practical circular economy and environmental solutions through collaboration, continuous learning, and operational leadership.
