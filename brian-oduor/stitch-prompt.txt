@@ -1,0 +1,285 @@
+﻿Design and generate a complete multi-section personal portfolio website for brian-oduor using the EXACT content package below.
+
+Hard requirements:
+- Use the actual provided copy. Do not use placeholder text.
+- Do not invent facts, credentials, dates, metrics, IDs, or company claims not present in the copy package.
+- Preserve factual values exactly where specified (for example certification IDs, percentages, and timelines).
+- Return a complete, valid HTML document (<!doctype html> ... </html>) for web deployment.
+- Do not return markdown, prose explanations, or copy-package text dumps as final output.
+- Generate semantic, accessible HTML with clear heading hierarchy and keyboard-friendly navigation.
+- Include a homepage at index.html and ensure all internal navigation links resolve correctly.
+- Keep copy faithful to source text while improving layout, readability, and visual hierarchy.
+- Apply metadata and information architecture intent from the SEO pack.
+- Apply visual language, palette, typography mood, and component guidance from design direction.
+- Social/Media requirements:
+- A user profile image is available at: C:\Users\muchi\OneDrive\Documents\brian oduor.jpg
+- Use this user image in the hero section (real image, not placeholder).
+- Use the user image as browser icon source by linking favicon to ./assets/favicon.png.
+- Set Open Graph/Twitter preview image to ./assets/og-image.jpg.
+- Include these social tags in <head>: og:type, og:title, og:description, og:image, og:image:width=1200, og:image:height=630, twitter:card=summary_large_image, twitter:image.
+
+Output intent:
+- Professional, modern, engineering-leadership portfolio style.
+- Designed for desktop-first responsiveness, with solid mobile behavior.
+
+=== COPY PACKAGE: website-copy.md ===
+# Website Copy Package - Brian Oduor
+
+## Source Basis
+- Client name: Brian Oduor
+- Supplied headshot: `brian oduor.jpg`
+- LinkedIn profile URL provided by intake: `https://www.linkedin.com/in/brian-oduor-794a113a2`
+
+## Voice Profile
+- Professional, polished, and direct
+- Calm confidence with a premium feel
+- Clear, concise, and easy to scan
+- Trust-building without sounding stiff
+
+## Personal Brand Conversion Framework
+
+### Positioning Statement
+Brian Oduor is presented as a modern professional with a clean, credible personal brand that makes it easy for visitors to understand who he is and how to connect with him.
+
+### Ideal Client Profile
+- Recruiters and hiring teams
+- Professional contacts and collaborators
+- Clients or partners who want a trustworthy first impression
+- Anyone arriving from LinkedIn who wants a clearer, more memorable profile experience
+
+### Signature Offer / Service Framing
+- A polished digital first impression
+- A personal brand presence that feels credible and current
+- A simple path from introduction to connection
+- A portfolio experience that reinforces professionalism across touchpoints
+
+### Proof Stack
+- Supplied professional headshot
+- Public LinkedIn profile link
+- Consistent identity across photo, name, and portfolio
+- Premium visual presentation that signals care and credibility
+- Clear call-to-action paths that make contact easy
+
+### CTA Strategy
+- Primary CTA: `Connect on LinkedIn`
+- Secondary CTA: `View Profile`
+
+## Homepage (`/`)
+
+### Hero
+Eyebrow:
+Professional Portfolio
+
+Headline:
+Brian Oduor
+
+Subheadline:
+A polished digital introduction that presents Brian with clarity, confidence, and a clean path to connect.
+
+Primary CTA:
+Connect on LinkedIn
+
+Secondary CTA:
+View Profile
+
+### Trust Strip
+- Professional headshot-led introduction
+- Built for LinkedIn-first discovery
+- Clean, premium visual hierarchy
+- Easy navigation and clear calls to action
+
+### About Section
+Section Title:
+A Clear First Impression
+
+Body:
+Brian Oduorâ€™s portfolio is designed to feel composed, modern, and trustworthy. It brings together a strong portrait, refined typography, and concise messaging so the page communicates professionalism immediately.
+
+Support Line:
+The goal is simple: help visitors understand Brian quickly, remember him easily, and know exactly where to continue the conversation.
+
+### Professional Snapshot
+Section Title:
+What This Portfolio Communicates
+
+Cards:
+- A confident and polished personal brand
+- A clean digital presence that feels current
+- A direct route to Brianâ€™s LinkedIn profile
+- A portfolio layout that keeps the focus on clarity
+
+### Highlights Section
+Section Title:
+Designed for Clarity
+
+Body:
+This portfolio avoids clutter and keeps the experience focused. The visual system gives Brian a premium presence while leaving room for future updates, achievements, or projects if he wants to expand the site later.
+
+Bullets:
+- Strong identity
+- Minimal friction
+- Professional presentation
+- Easy connection flow
+
+### LinkedIn Section
+Section Title:
+Continue on LinkedIn
+
+Body:
+If you are here to learn more about Brian, LinkedIn is the fastest place to continue the conversation and review his broader professional presence.
+
+Link Label:
+Open LinkedIn Profile
+
+### Contact Section
+Section Title:
+Letâ€™s Connect
+
+Body:
+Brianâ€™s portfolio is built to make connection simple. Use the primary link to continue on LinkedIn, or explore the profile from the top of the page for a quick overview.
+
+Primary CTA:
+Connect on LinkedIn
+
+Secondary CTA:
+View Profile
+
+## Footer Copy
+Brian Oduor | Professional Portfolio | LinkedIn-Ready Personal Brand
+
+
+=== COPY PACKAGE: seo-pack.md ===
+# SEO Pack - Brian Oduor
+
+## Primary Goal
+Create a polished, searchable personal portfolio for Brian Oduor that supports LinkedIn discovery, brand credibility, and straightforward contact paths.
+
+## Target Search Intent
+- People searching for Brian Oduor by name
+- Recruiters checking Brian Oduorâ€™s professional presence
+- Visitors coming from LinkedIn who want a cleaner portfolio experience
+- Professional contacts looking for a direct way to connect
+
+## Primary Keywords
+- Brian Oduor portfolio
+- Brian Oduor LinkedIn
+- Brian Oduor professional portfolio
+- Brian Oduor personal brand
+- Brian Oduor profile website
+- Brian Oduor contact
+
+## Secondary Keywords
+- professional portfolio website
+- LinkedIn-ready personal brand
+- modern personal portfolio
+- clean professional website
+- executive profile website
+
+## Metadata
+Title:
+Brian Oduor | Professional Portfolio
+
+Meta Description:
+A polished personal portfolio for Brian Oduor, featuring a professional headshot, a clear brand statement, and a direct link to his LinkedIn profile.
+
+Suggested URL Slug:
+/ 
+
+Canonical Intent:
+Use the homepage as the primary entry point and keep navigation simple with anchored sections.
+
+## Social Metadata
+- `og:type`: website
+- `og:title`: Brian Oduor | Professional Portfolio
+- `og:description`: A polished personal portfolio for Brian Oduor, built for credibility, clarity, and easy connection.
+- `og:image`: assets/og-image.jpg
+- `og:image:width`: 1200
+- `og:image:height`: 630
+- `twitter:card`: summary_large_image
+- `twitter:image`: assets/og-image.jpg
+
+## Information Architecture
+- Hero
+- Trust strip
+- About
+- Professional snapshot
+- Highlights
+- LinkedIn link
+- Contact CTA
+
+## Internal Link Map
+- `#hero`
+- `#about`
+- `#highlights`
+- `#linkedin`
+- `#contact`
+
+## Content Notes
+- Keep copy concise and premium.
+- Avoid fabricating roles, employers, awards, or metrics.
+- Prioritize Brianâ€™s name, portrait, LinkedIn presence, and connection path.
+- Keep the page readable on mobile with short paragraphs and clear section headings.
+
+
+=== COPY PACKAGE: design-direction.md ===
+# Design Direction - Brian Oduor
+
+## Visual Goal
+Create a premium, calm, and credibility-first personal portfolio that feels refined, modern, and human.
+
+## Brand Feeling
+- Confident
+- Polished
+- Warm
+- Trustworthy
+- Minimal without feeling cold
+
+## Color Direction
+- Deep burgundy: primary accent that complements the suit in the headshot
+- Ink navy: for structure, depth, and headline contrast
+- Warm ivory: for the main background and breathing room
+- Soft gold: for subtle highlights and premium detail
+- Cool slate: for supporting text and dividers
+
+## Typography Mood
+- Headings: an elegant serif with presence and character
+- Body: a clean sans-serif with strong readability
+- Type feel: editorial, composed, and modern
+- Avoid generic corporate defaults and overly playful display fonts
+
+## Layout Direction
+- Hero-first composition with the supplied headshot as the visual anchor
+- Large, confident name treatment
+- Short, high-impact supporting copy
+- Card-based sections with generous spacing
+- Strong contrast between hero and supporting content
+- Mobile layout should stack cleanly without losing hierarchy
+
+## UI Style
+- Soft gradient or textured background instead of flat white
+- Rounded but restrained cards
+- Subtle shadows and borders
+- One strong accent color used sparingly
+- Clear CTA buttons with distinct primary and secondary styling
+- Simple navigation with anchor links
+
+## Imagery Direction
+- Use the provided portrait in the hero section
+- Generate and link favicon from the same image
+- Generate and link social card image at `assets/og-image.jpg`
+- Keep image presentation crisp and intentional
+
+## Interaction Direction
+- Gentle reveal effects on scroll
+- Light hover states on cards and buttons
+- No heavy motion, no distracting effects
+- Keep transitions smooth and understated
+
+## Copy Treatment
+- Use the supplied copy exactly as the source of truth
+- Keep lines short and scannable
+- Let the portrait and typography carry most of the visual weight
+
+## Overall Direction
+This should feel like a premium personal brand landing page rather than a generic resume site. The page should be sparse, elegant, and easy to trust at a glance.
+
