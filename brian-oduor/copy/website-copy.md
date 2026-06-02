@@ -223,8 +223,9 @@ Body:
 Brian is open to professional networking, sustainability partnerships, circular economy discussions, waste management initiatives, recycling operations, and community impact conversations.
 
 Contact Details:
+- Contact reference: `34412-80118`
+- Work: `+254716095480`
 - Email: `ochiengoduorbrian2022@gmail.com`
-- Phone: `+254716095480`
 - Location: Nairobi, Nairobi County, Kenya
 - LinkedIn: `https://www.linkedin.com/in/brian-oduor-794a113a2`
 
