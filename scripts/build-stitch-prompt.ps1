@@ -63,10 +63,10 @@ $hasUserImage = -not [string]::IsNullOrWhiteSpace($resolvedUserImage)
 $mediaInstruction = ""
 if ($hasUserImage) {
   $mediaInstruction = @"
-- A user profile image is available at: $resolvedUserImage
-- Use this user image in the hero section (real image, not placeholder).
-- Use the user image as browser icon source by linking favicon to ./assets/favicon.png.
-- Set Open Graph/Twitter preview image to ./assets/og-image.jpg.
+- A user profile image is available and has already been prepared into project assets.
+- Use `./assets/hero.jpg` in the hero section (real image, not placeholder).
+- Use `./assets/favicon.png` for the browser icon.
+- Set Open Graph/Twitter preview image to `./assets/og-image.jpg`.
 - Include these social tags in <head>: og:type, og:title, og:description, og:image, og:image:width=1200, og:image:height=630, twitter:card=summary_large_image, twitter:image.
 "@
 } else {

@@ -1,46 +1,47 @@
 # SEO Pack - Brian Oduor
 
 ## Primary Goal
-Create a polished, searchable personal portfolio for Brian Oduor that supports LinkedIn discovery, brand credibility, and straightforward contact paths.
+Create a searchable personal portfolio for Brian Oduor that reflects his verified operations, circular economy, and sustainability background.
 
 ## Target Search Intent
 - People searching for Brian Oduor by name
-- Recruiters checking Brian Oduor’s professional presence
-- Visitors coming from LinkedIn who want a cleaner portfolio experience
-- Professional contacts looking for a direct way to connect
+- Recruiters reviewing Brian’s operations and sustainability profile
+- Circular economy and recycling partners looking for a practical collaborator
+- Visitors arriving from LinkedIn who want a clearer professional summary
 
 ## Primary Keywords
 - Brian Oduor portfolio
 - Brian Oduor LinkedIn
-- Brian Oduor professional portfolio
-- Brian Oduor personal brand
-- Brian Oduor profile website
-- Brian Oduor contact
+- Brian Oduor operations manager
+- Brian Oduor sustainability
+- Brian Oduor circular economy
+- Brian Oduor Nairobi
 
 ## Secondary Keywords
-- professional portfolio website
-- LinkedIn-ready personal brand
-- modern personal portfolio
-- clean professional website
-- executive profile website
+- operations manager portfolio
+- circular economy professional
+- recycling operations
+- EPR sustainability
+- material recovery
+- Nairobi Kenya professional profile
 
 ## Metadata
 Title:
-Brian Oduor | Professional Portfolio
+Brian Oduor | Operations and Sustainability Portfolio
 
 Meta Description:
-A polished personal portfolio for Brian Oduor, featuring a professional headshot, a clear brand statement, and a direct link to his LinkedIn profile.
+Brian Oduor is an Operations Manager at Shabi Solutions focused on circular economy systems, recycling, EPR, and practical sustainability delivery.
 
 Suggested URL Slug:
-/ 
+/
 
 Canonical Intent:
-Use the homepage as the primary entry point and keep navigation simple with anchored sections.
+Keep the homepage as the main entry point and use anchored sections for experience, education, skills, and contact.
 
 ## Social Metadata
 - `og:type`: website
-- `og:title`: Brian Oduor | Professional Portfolio
-- `og:description`: A polished personal portfolio for Brian Oduor, built for credibility, clarity, and easy connection.
+- `og:title`: Brian Oduor | Operations and Sustainability Portfolio
+- `og:description`: Brian Oduor is an Operations Manager at Shabi Solutions focused on circular economy systems, recycling, EPR, and practical sustainability delivery.
 - `og:image`: assets/og-image.jpg
 - `og:image:width`: 1200
 - `og:image:height`: 630
@@ -51,20 +52,21 @@ Use the homepage as the primary entry point and keep navigation simple with anch
 - Hero
 - Trust strip
 - About
-- Professional snapshot
-- Highlights
-- LinkedIn link
-- Contact CTA
+- Experience
+- Education
+- Skills and certifications
+- Contact
 
 ## Internal Link Map
 - `#hero`
 - `#about`
-- `#highlights`
-- `#linkedin`
+- `#experience`
+- `#education`
+- `#skills`
 - `#contact`
 
 ## Content Notes
-- Keep copy concise and premium.
-- Avoid fabricating roles, employers, awards, or metrics.
-- Prioritize Brian’s name, portrait, LinkedIn presence, and connection path.
-- Keep the page readable on mobile with short paragraphs and clear section headings.
+- Keep wording factual and sourced.
+- Avoid adding employers, awards, or metrics not present in the source PDF.
+- Use Brian’s full name and role early in the page for clarity and SEO.
+- Keep contact details visible and easy to scan.

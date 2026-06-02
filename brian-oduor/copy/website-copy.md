@@ -2,122 +2,177 @@
 
 ## Source Basis
 - Client name: Brian Oduor
+- LinkedIn profile URL: `https://www.linkedin.com/in/brian-oduor-794a113a2`
 - Supplied headshot: `brian oduor.jpg`
-- LinkedIn profile URL provided by intake: `https://www.linkedin.com/in/brian-oduor-794a113a2`
+- Verified summary PDF source: `Profile.pdf`
 
 ## Voice Profile
-- Professional, polished, and direct
-- Calm confidence with a premium feel
-- Clear, concise, and easy to scan
-- Trust-building without sounding stiff
+- Professional, calm, and practical
+- Credible without sounding overproduced
+- Modern, concise, and easy to scan
+- Grounded in real work and real responsibilities
 
 ## Personal Brand Conversion Framework
 
 ### Positioning Statement
-Brian Oduor is presented as a modern professional with a clean, credible personal brand that makes it easy for visitors to understand who he is and how to connect with him.
+Brian Oduor is an operations professional focused on circular economy systems, recycling operations, and practical sustainability delivery.
 
 ### Ideal Client Profile
-- Recruiters and hiring teams
-- Professional contacts and collaborators
-- Clients or partners who want a trustworthy first impression
-- Anyone arriving from LinkedIn who wants a clearer, more memorable profile experience
+- Sustainability teams and circular economy partners
+- Recycling and recovery ecosystem stakeholders
+- Employers seeking operations leadership
+- Community, private-sector, and public-sector collaborators
+- Recruiters evaluating operations and environmental impact roles
 
-### Signature Offer / Service Framing
-- A polished digital first impression
-- A personal brand presence that feels credible and current
-- A simple path from introduction to connection
-- A portfolio experience that reinforces professionalism across touchpoints
+### Signature Service / Offer Framing
+- Operations leadership for circular economy programs
+- Practical coordination across collection, logistics, and reporting
+- Stakeholder alignment for recycling and recovery systems
+- Community-centered sustainability execution
 
 ### Proof Stack
-- Supplied professional headshot
-- Public LinkedIn profile link
-- Consistent identity across photo, name, and portfolio
-- Premium visual presentation that signals care and credibility
-- Clear call-to-action paths that make contact easy
+- Operations Manager at Shabi Solutions
+- Direct work in circular economy, EPR, and material recovery
+- Experience coordinating communities, private-sector partners, and government stakeholders
+- Public LinkedIn profile and professional headshot
+- Relevant background in hospitality and social media marketing studies
+- Certifications and profile signals that support a modern professional presence
 
 ### CTA Strategy
 - Primary CTA: `Connect on LinkedIn`
-- Secondary CTA: `View Profile`
+- Secondary CTA: `Email Brian`
 
 ## Homepage (`/`)
 
 ### Hero
 Eyebrow:
-Professional Portfolio
+Operations and Sustainability
 
 Headline:
 Brian Oduor
 
 Subheadline:
-A polished digital introduction that presents Brian with clarity, confidence, and a clean path to connect.
+Operations Manager at Shabi Solutions, focused on circular economy systems, recycling, and practical sustainability delivery.
 
 Primary CTA:
 Connect on LinkedIn
 
 Secondary CTA:
-View Profile
+Email Brian
 
 ### Trust Strip
-- Professional headshot-led introduction
-- Built for LinkedIn-first discovery
-- Clean, premium visual hierarchy
-- Easy navigation and clear calls to action
+- Operations Manager at Shabi Solutions
+- Circular economy and EPR focus
+- Community, private-sector, and government collaboration
+- Nairobi, Kenya
 
 ### About Section
 Section Title:
-A Clear First Impression
+Practical Work, Simple Approach
 
 Body:
-Brian Oduor’s portfolio is designed to feel composed, modern, and trustworthy. It brings together a strong portrait, refined typography, and concise messaging so the page communicates professionalism immediately.
+Brian Oduor describes his approach as simple and practical. He works within an environmental enterprise that is helping drive Africa’s transition toward a circular economy, with a clear focus on turning waste into value and supporting responsible production and consumption.
 
 Support Line:
-The goal is simple: help visitors understand Brian quickly, remember him easily, and know exactly where to continue the conversation.
+His work centers on building systems that support recycling, Extended Producer Responsibility (EPR), and material recovery.
 
-### Professional Snapshot
+### Summary Section
 Section Title:
-What This Portfolio Communicates
+What Brian Does
 
 Cards:
-- A confident and polished personal brand
-- A clean digital presence that feels current
-- A direct route to Brian’s LinkedIn profile
-- A portfolio layout that keeps the focus on clarity
+- Plans, coordinates, and optimizes day-to-day operations
+- Supports community collection networks and aggregation
+- Oversees logistics and market linkages
+- Works with recyclers, processors, and stakeholders
 
-### Highlights Section
+### Experience Section
 Section Title:
-Designed for Clarity
+Experience
 
-Body:
-This portfolio avoids clutter and keeps the experience focused. The visual system gives Brian a premium presence while leaving room for future updates, achievements, or projects if he wants to expand the site later.
+Role 1 Title:
+Operations Manager
 
-Bullets:
-- Strong identity
-- Minimal friction
-- Professional presentation
-- Easy connection flow
+Role 1 Company:
+Shabi Solutions
 
-### LinkedIn Section
+Role 1 Date:
+January 2026 - Present
+
+Role 1 Body:
+Brian leads operational work that connects communities to the circular economy. His role includes collector onboarding, material-flow tracking, traceability, data reporting, partner relationships, and continuous improvement for EPR-aligned outcomes.
+
+Role 1 Highlights:
+- Manages community collection networks
+- Coordinates aggregation and logistics
+- Maintains traceability and reporting
+- Supports audit-ready EPR outcomes
+
+Role 2 Title:
+Hospitality Specialist
+
+Role 2 Company:
+Fastruck leisure entertainment
+
+Role 2 Date:
+Date not shown in source
+
+Role 2 Body:
+Brian also has hospitality experience, adding service-oriented communication and practical workplace coordination to his profile.
+
+### Education Section
 Section Title:
-Continue on LinkedIn
+Education
 
-Body:
-If you are here to learn more about Brian, LinkedIn is the fastest place to continue the conversation and review his broader professional presence.
+Education Item 1:
+ATINGI - Bachelor’s Degree, Social media marketer
+Dates:
+December 2025 - February 2026
 
-Link Label:
-Open LinkedIn Profile
+Education Item 2:
+Kenya Coast National Polytechnic - Diploma in Hospitality and Hotel Management
+Dates:
+February 2016 - November 2019
+
+### Skills Section
+Section Title:
+Selected Skills
+
+Skills List:
+- Software as a Service (SaaS)
+- Recruiting
+- Hospitality Industry
+- Circular economy operations
+- Recycling coordination
+- Material recovery systems
+- Stakeholder collaboration
+- Sustainability implementation
+
+### Certification Section
+Section Title:
+Certifications
+
+Certification Item:
+Midjourney
 
 ### Contact Section
 Section Title:
-Let’s Connect
+Contact Brian
 
 Body:
-Brian’s portfolio is built to make connection simple. Use the primary link to continue on LinkedIn, or explore the profile from the top of the page for a quick overview.
+Brian’s profile is built for practical collaboration. If you want to connect about operations, sustainability, or circular economy work, LinkedIn is the fastest place to continue the conversation.
+
+Contact Details:
+- Email: `ochiengoduorbrian2022@gmail.com`
+- Phone: `+254716095480`
+- Location: Nairobi, Nairobi County, Kenya
+- LinkedIn: `https://www.linkedin.com/in/brian-oduor-794a113a2`
 
 Primary CTA:
 Connect on LinkedIn
 
 Secondary CTA:
-View Profile
+Email Brian
 
 ## Footer Copy
-Brian Oduor | Professional Portfolio | LinkedIn-Ready Personal Brand
+Brian Oduor | Operations Manager | Circular Economy | Sustainability

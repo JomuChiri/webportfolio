@@ -56,7 +56,18 @@ async function main() {
   const project = stitch.project(projectId);
   const screen = await project.generate(prompt, deviceType);
   let htmlUrl = await screen.getHtml();
-  const imageUrl = await screen.getImage();
+  let imageUrl = await screen.getImage();
+
+  if (!htmlUrl && screen?.data?.htmlCode?.downloadUrl) {
+    htmlUrl = screen.data.htmlCode.downloadUrl;
+  }
+  if (!imageUrl && screen?.data?.screenshot?.downloadUrl) {
+    imageUrl = screen.data.screenshot.downloadUrl;
+  }
+
+  if (!htmlUrl) {
+    throw new Error("Stitch returned no HTML download URL.");
+  }
 
   let html = await fetchText(htmlUrl);
   let looksLikeHtml =
@@ -80,8 +91,10 @@ async function main() {
   await fs.writeFile(path.join(outputDir, "index.html"), html, "utf8");
 
   try {
-    const imgBytes = await fetchBytes(imageUrl);
-    await fs.writeFile(path.join(outputDir, "stitch-screen.png"), imgBytes);
+    if (imageUrl) {
+      const imgBytes = await fetchBytes(imageUrl);
+      await fs.writeFile(path.join(outputDir, "stitch-screen.png"), imgBytes);
+    }
   } catch {
     // Screenshot is optional for pipeline continuity.
   }

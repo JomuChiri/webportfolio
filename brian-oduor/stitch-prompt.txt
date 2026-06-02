@@ -12,9 +12,9 @@ Hard requirements:
 - Apply metadata and information architecture intent from the SEO pack.
 - Apply visual language, palette, typography mood, and component guidance from design direction.
 - Social/Media requirements:
-- A user profile image is available at: C:\Users\muchi\OneDrive\Documents\webportfolio\brian-oduor\assets\brian oduor.jpg
-- Use this user image in the hero section (real image, not placeholder).
-- Use the user image as browser icon source by linking favicon to ./assets/favicon.png.
+- A user profile image is available and has already been prepared into project assets.
+- Use ./assets/hero.jpg in the hero section (real image, not placeholder).
+- Use ./assets/favicon.png for the browser icon.
 - Set Open Graph/Twitter preview image to ./assets/og-image.jpg.
 - Include these social tags in <head>: og:type, og:title, og:description, og:image, og:image:width=1200, og:image:height=630, twitter:card=summary_large_image, twitter:image.
 
@@ -27,171 +27,227 @@ Output intent:
 
 ## Source Basis
 - Client name: Brian Oduor
+- LinkedIn profile URL: `https://www.linkedin.com/in/brian-oduor-794a113a2`
 - Supplied headshot: `brian oduor.jpg`
-- LinkedIn profile URL provided by intake: `https://www.linkedin.com/in/brian-oduor-794a113a2`
+- Verified summary PDF source: `Profile.pdf`
 
 ## Voice Profile
-- Professional, polished, and direct
-- Calm confidence with a premium feel
-- Clear, concise, and easy to scan
-- Trust-building without sounding stiff
+- Professional, calm, and practical
+- Credible without sounding overproduced
+- Modern, concise, and easy to scan
+- Grounded in real work and real responsibilities
 
 ## Personal Brand Conversion Framework
 
 ### Positioning Statement
-Brian Oduor is presented as a modern professional with a clean, credible personal brand that makes it easy for visitors to understand who he is and how to connect with him.
+Brian Oduor is an operations professional focused on circular economy systems, recycling operations, and practical sustainability delivery.
 
 ### Ideal Client Profile
-- Recruiters and hiring teams
-- Professional contacts and collaborators
-- Clients or partners who want a trustworthy first impression
-- Anyone arriving from LinkedIn who wants a clearer, more memorable profile experience
+- Sustainability teams and circular economy partners
+- Recycling and recovery ecosystem stakeholders
+- Employers seeking operations leadership
+- Community, private-sector, and public-sector collaborators
+- Recruiters evaluating operations and environmental impact roles
 
-### Signature Offer / Service Framing
-- A polished digital first impression
-- A personal brand presence that feels credible and current
-- A simple path from introduction to connection
-- A portfolio experience that reinforces professionalism across touchpoints
+### Signature Service / Offer Framing
+- Operations leadership for circular economy programs
+- Practical coordination across collection, logistics, and reporting
+- Stakeholder alignment for recycling and recovery systems
+- Community-centered sustainability execution
 
 ### Proof Stack
-- Supplied professional headshot
-- Public LinkedIn profile link
-- Consistent identity across photo, name, and portfolio
-- Premium visual presentation that signals care and credibility
-- Clear call-to-action paths that make contact easy
+- Operations Manager at Shabi Solutions
+- Direct work in circular economy, EPR, and material recovery
+- Experience coordinating communities, private-sector partners, and government stakeholders
+- Public LinkedIn profile and professional headshot
+- Relevant background in hospitality and social media marketing studies
+- Certifications and profile signals that support a modern professional presence
 
 ### CTA Strategy
 - Primary CTA: `Connect on LinkedIn`
-- Secondary CTA: `View Profile`
+- Secondary CTA: `Email Brian`
 
 ## Homepage (`/`)
 
 ### Hero
 Eyebrow:
-Professional Portfolio
+Operations and Sustainability
 
 Headline:
 Brian Oduor
 
 Subheadline:
-A polished digital introduction that presents Brian with clarity, confidence, and a clean path to connect.
+Operations Manager at Shabi Solutions, focused on circular economy systems, recycling, and practical sustainability delivery.
 
 Primary CTA:
 Connect on LinkedIn
 
 Secondary CTA:
-View Profile
+Email Brian
 
 ### Trust Strip
-- Professional headshot-led introduction
-- Built for LinkedIn-first discovery
-- Clean, premium visual hierarchy
-- Easy navigation and clear calls to action
+- Operations Manager at Shabi Solutions
+- Circular economy and EPR focus
+- Community, private-sector, and government collaboration
+- Nairobi, Kenya
 
 ### About Section
 Section Title:
-A Clear First Impression
+Practical Work, Simple Approach
 
 Body:
-Brian Oduorâ€™s portfolio is designed to feel composed, modern, and trustworthy. It brings together a strong portrait, refined typography, and concise messaging so the page communicates professionalism immediately.
+Brian Oduor describes his approach as simple and practical. He works within an environmental enterprise that is helping drive Africaâ€™s transition toward a circular economy, with a clear focus on turning waste into value and supporting responsible production and consumption.
 
 Support Line:
-The goal is simple: help visitors understand Brian quickly, remember him easily, and know exactly where to continue the conversation.
+His work centers on building systems that support recycling, Extended Producer Responsibility (EPR), and material recovery.
 
-### Professional Snapshot
+### Summary Section
 Section Title:
-What This Portfolio Communicates
+What Brian Does
 
 Cards:
-- A confident and polished personal brand
-- A clean digital presence that feels current
-- A direct route to Brianâ€™s LinkedIn profile
-- A portfolio layout that keeps the focus on clarity
+- Plans, coordinates, and optimizes day-to-day operations
+- Supports community collection networks and aggregation
+- Oversees logistics and market linkages
+- Works with recyclers, processors, and stakeholders
 
-### Highlights Section
+### Experience Section
 Section Title:
-Designed for Clarity
+Experience
 
-Body:
-This portfolio avoids clutter and keeps the experience focused. The visual system gives Brian a premium presence while leaving room for future updates, achievements, or projects if he wants to expand the site later.
+Role 1 Title:
+Operations Manager
 
-Bullets:
-- Strong identity
-- Minimal friction
-- Professional presentation
-- Easy connection flow
+Role 1 Company:
+Shabi Solutions
 
-### LinkedIn Section
+Role 1 Date:
+January 2026 - Present
+
+Role 1 Body:
+Brian leads operational work that connects communities to the circular economy. His role includes collector onboarding, material-flow tracking, traceability, data reporting, partner relationships, and continuous improvement for EPR-aligned outcomes.
+
+Role 1 Highlights:
+- Manages community collection networks
+- Coordinates aggregation and logistics
+- Maintains traceability and reporting
+- Supports audit-ready EPR outcomes
+
+Role 2 Title:
+Hospitality Specialist
+
+Role 2 Company:
+Fastruck leisure entertainment
+
+Role 2 Date:
+Date not shown in source
+
+Role 2 Body:
+Brian also has hospitality experience, adding service-oriented communication and practical workplace coordination to his profile.
+
+### Education Section
 Section Title:
-Continue on LinkedIn
+Education
 
-Body:
-If you are here to learn more about Brian, LinkedIn is the fastest place to continue the conversation and review his broader professional presence.
+Education Item 1:
+ATINGI - Bachelorâ€™s Degree, Social media marketer
+Dates:
+December 2025 - February 2026
 
-Link Label:
-Open LinkedIn Profile
+Education Item 2:
+Kenya Coast National Polytechnic - Diploma in Hospitality and Hotel Management
+Dates:
+February 2016 - November 2019
+
+### Skills Section
+Section Title:
+Selected Skills
+
+Skills List:
+- Software as a Service (SaaS)
+- Recruiting
+- Hospitality Industry
+- Circular economy operations
+- Recycling coordination
+- Material recovery systems
+- Stakeholder collaboration
+- Sustainability implementation
+
+### Certification Section
+Section Title:
+Certifications
+
+Certification Item:
+Midjourney
 
 ### Contact Section
 Section Title:
-Letâ€™s Connect
+Contact Brian
 
 Body:
-Brianâ€™s portfolio is built to make connection simple. Use the primary link to continue on LinkedIn, or explore the profile from the top of the page for a quick overview.
+Brianâ€™s profile is built for practical collaboration. If you want to connect about operations, sustainability, or circular economy work, LinkedIn is the fastest place to continue the conversation.
+
+Contact Details:
+- Email: `ochiengoduorbrian2022@gmail.com`
+- Phone: `+254716095480`
+- Location: Nairobi, Nairobi County, Kenya
+- LinkedIn: `https://www.linkedin.com/in/brian-oduor-794a113a2`
 
 Primary CTA:
 Connect on LinkedIn
 
 Secondary CTA:
-View Profile
+Email Brian
 
 ## Footer Copy
-Brian Oduor | Professional Portfolio | LinkedIn-Ready Personal Brand
+Brian Oduor | Operations Manager | Circular Economy | Sustainability
 
 
 === COPY PACKAGE: seo-pack.md ===
 # SEO Pack - Brian Oduor
 
 ## Primary Goal
-Create a polished, searchable personal portfolio for Brian Oduor that supports LinkedIn discovery, brand credibility, and straightforward contact paths.
+Create a searchable personal portfolio for Brian Oduor that reflects his verified operations, circular economy, and sustainability background.
 
 ## Target Search Intent
 - People searching for Brian Oduor by name
-- Recruiters checking Brian Oduorâ€™s professional presence
-- Visitors coming from LinkedIn who want a cleaner portfolio experience
-- Professional contacts looking for a direct way to connect
+- Recruiters reviewing Brianâ€™s operations and sustainability profile
+- Circular economy and recycling partners looking for a practical collaborator
+- Visitors arriving from LinkedIn who want a clearer professional summary
 
 ## Primary Keywords
 - Brian Oduor portfolio
 - Brian Oduor LinkedIn
-- Brian Oduor professional portfolio
-- Brian Oduor personal brand
-- Brian Oduor profile website
-- Brian Oduor contact
+- Brian Oduor operations manager
+- Brian Oduor sustainability
+- Brian Oduor circular economy
+- Brian Oduor Nairobi
 
 ## Secondary Keywords
-- professional portfolio website
-- LinkedIn-ready personal brand
-- modern personal portfolio
-- clean professional website
-- executive profile website
+- operations manager portfolio
+- circular economy professional
+- recycling operations
+- EPR sustainability
+- material recovery
+- Nairobi Kenya professional profile
 
 ## Metadata
 Title:
-Brian Oduor | Professional Portfolio
+Brian Oduor | Operations and Sustainability Portfolio
 
 Meta Description:
-A polished personal portfolio for Brian Oduor, featuring a professional headshot, a clear brand statement, and a direct link to his LinkedIn profile.
+Brian Oduor is an Operations Manager at Shabi Solutions focused on circular economy systems, recycling, EPR, and practical sustainability delivery.
 
 Suggested URL Slug:
-/ 
+/
 
 Canonical Intent:
-Use the homepage as the primary entry point and keep navigation simple with anchored sections.
+Keep the homepage as the main entry point and use anchored sections for experience, education, skills, and contact.
 
 ## Social Metadata
 - `og:type`: website
-- `og:title`: Brian Oduor | Professional Portfolio
-- `og:description`: A polished personal portfolio for Brian Oduor, built for credibility, clarity, and easy connection.
+- `og:title`: Brian Oduor | Operations and Sustainability Portfolio
+- `og:description`: Brian Oduor is an Operations Manager at Shabi Solutions focused on circular economy systems, recycling, EPR, and practical sustainability delivery.
 - `og:image`: assets/og-image.jpg
 - `og:image:width`: 1200
 - `og:image:height`: 630
@@ -202,84 +258,83 @@ Use the homepage as the primary entry point and keep navigation simple with anch
 - Hero
 - Trust strip
 - About
-- Professional snapshot
-- Highlights
-- LinkedIn link
-- Contact CTA
+- Experience
+- Education
+- Skills and certifications
+- Contact
 
 ## Internal Link Map
 - `#hero`
 - `#about`
-- `#highlights`
-- `#linkedin`
+- `#experience`
+- `#education`
+- `#skills`
 - `#contact`
 
 ## Content Notes
-- Keep copy concise and premium.
-- Avoid fabricating roles, employers, awards, or metrics.
-- Prioritize Brianâ€™s name, portrait, LinkedIn presence, and connection path.
-- Keep the page readable on mobile with short paragraphs and clear section headings.
+- Keep wording factual and sourced.
+- Avoid adding employers, awards, or metrics not present in the source PDF.
+- Use Brianâ€™s full name and role early in the page for clarity and SEO.
+- Keep contact details visible and easy to scan.
 
 
 === COPY PACKAGE: design-direction.md ===
 # Design Direction - Brian Oduor
 
 ## Visual Goal
-Create a premium, calm, and credibility-first personal portfolio that feels refined, modern, and human.
+Create a premium personal portfolio that feels practical, composed, and credible, with an understated sustainability-forward tone.
 
 ## Brand Feeling
-- Confident
-- Polished
-- Warm
+- Professional
+- Calm
+- Practical
 - Trustworthy
-- Minimal without feeling cold
+- Modern
 
 ## Color Direction
-- Deep burgundy: primary accent that complements the suit in the headshot
-- Ink navy: for structure, depth, and headline contrast
-- Warm ivory: for the main background and breathing room
-- Soft gold: for subtle highlights and premium detail
-- Cool slate: for supporting text and dividers
+- Deep forest green: main accent for sustainability and authority
+- Charcoal: primary text and contrast
+- Warm sand: background warmth and softness
+- Muted gold: subtle premium highlights
+- Slate blue: supporting contrast that fits the portrait and keeps the page cool
 
 ## Typography Mood
-- Headings: an elegant serif with presence and character
-- Body: a clean sans-serif with strong readability
-- Type feel: editorial, composed, and modern
-- Avoid generic corporate defaults and overly playful display fonts
+- Headings: refined serif with editorial weight
+- Body: clean sans-serif with strong readability
+- Type feel: polished, measured, and contemporary
+- Avoid generic startup and app-like defaults
 
 ## Layout Direction
-- Hero-first composition with the supplied headshot as the visual anchor
-- Large, confident name treatment
-- Short, high-impact supporting copy
-- Card-based sections with generous spacing
-- Strong contrast between hero and supporting content
-- Mobile layout should stack cleanly without losing hierarchy
+- Hero-first layout with the supplied portrait as the anchor
+- Large name treatment with a concise role line
+- Short sections with strong hierarchy
+- Cards and panels that feel orderly and precise
+- Enough spacing to make the page feel premium, not crowded
 
 ## UI Style
-- Soft gradient or textured background instead of flat white
-- Rounded but restrained cards
-- Subtle shadows and borders
-- One strong accent color used sparingly
-- Clear CTA buttons with distinct primary and secondary styling
-- Simple navigation with anchor links
+- Soft gradient or subtly textured background
+- Rounded but restrained containers
+- Thin borders and light shadows
+- Clear primary and secondary CTA buttons
+- Simple anchor navigation with obvious labels
 
 ## Imagery Direction
-- Use the provided portrait in the hero section
-- Generate and link favicon from the same image
-- Generate and link social card image at `assets/og-image.jpg`
-- Keep image presentation crisp and intentional
+- Use the supplied headshot in the hero section
+- Generate favicon from the same image
+- Generate and link `assets/og-image.jpg`
+- Keep the image presentation crisp, bright, and professional
 
 ## Interaction Direction
-- Gentle reveal effects on scroll
-- Light hover states on cards and buttons
-- No heavy motion, no distracting effects
-- Keep transitions smooth and understated
+- Gentle fade and lift on section reveals
+- Subtle hover states on cards and links
+- No heavy motion or gimmicky effects
+- Keep interactions clean and dependable
 
 ## Copy Treatment
-- Use the supplied copy exactly as the source of truth
-- Keep lines short and scannable
-- Let the portrait and typography carry most of the visual weight
+- Use the verified copy package as the source of truth
+- Keep copy short, factual, and easy to skim
+- Let the portrait, role, and structure do most of the work
 
 ## Overall Direction
-This should feel like a premium personal brand landing page rather than a generic resume site. The page should be sparse, elegant, and easy to trust at a glance.
+The final site should feel like a strong personal brand page for an operations professional who works in sustainability and circular economy systems. It should be refined, trustworthy, and practical.
 
