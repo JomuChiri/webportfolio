@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<script>
+      (function () {
+        const path = window.location.pathname;
+        const last = path.split('/').pop() || '';
+        const hasExtension = last.includes('.');
+        if (!path.endsWith('/') && !hasExtension) {
+          const base = document.createElement('base');
+          base.href = path + '/';
+          document.head.prepend(base);
+        }
+      })();
+    </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brian Oduor | Professional Portfolio</title>
+<!-- Meta Tags -->
+<meta content="A polished personal portfolio for Brian Oduor, built for credibility, clarity, and easy connection." name="description"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Brian Oduor | Professional Portfolio"/>
+<meta property="og:description" content="Professional portfolio website generated from verified profile information."/>
+<meta property="og:image" content="assets/og-image.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#735c00",
+                    "primary-fixed": "#ffdada",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#3f465c",
+                    "surface-container": "#efeeeb",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f4f3f1",
+                    "inverse-primary": "#ffb3b5",
+                    "primary": "#570013",
+                    "tertiary-fixed": "#ffe088",
+                    "secondary-fixed": "#dae2fd",
+                    "background": "#faf9f6",
+                    "surface-tint": "#af2b3e",
+                    "secondary": "#565e74",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#8c7071",
+                    "surface-container-high": "#e9e8e5",
+                    "on-primary-fixed": "#40000b",
+                    "surface": "#faf9f6",
+                    "on-background": "#1a1c1a",
+                    "on-surface": "#1a1c1a",
+                    "primary-fixed-dim": "#ffb3b5",
+                    "tertiary-container": "#cca730",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#241a00",
+                    "surface-dim": "#dbdad7",
+                    "secondary-fixed-dim": "#bec6e0",
+                    "surface-variant": "#e3e2e0",
+                    "secondary-container": "#dae2fd",
+                    "primary-container": "#800020",
+                    "on-surface-variant": "#584141",
+                    "on-primary-fixed-variant": "#8e0f28",
+                    "surface-bright": "#faf9f6",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "on-secondary-container": "#5c647a",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e3e2e0",
+                    "inverse-surface": "#2f312f",
+                    "outline-variant": "#e0bfbf",
+                    "inverse-on-surface": "#f2f1ee",
+                    "on-secondary-fixed": "#131b2e",
+                    "on-primary-container": "#ff828a",
+                    "on-tertiary-container": "#4f3d00",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#574500"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "section-gap-desktop": "120px",
+                    "container-max": "1200px",
+                    "unit": "8px",
+                    "section-gap-mobile": "64px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Playfair Display"],
+                    "headline-sm": ["Playfair Display"],
+                    "label-caps": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Playfair Display"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .grainy-bg {
+            background-color: #faf9f6;
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+        .soft-gold-border {
+            border-color: rgba(115, 92, 0, 0.3);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+  <link rel="icon" type="image/png" href="assets/favicon.png"/>
+  <link rel="apple-touch-icon" href="assets/favicon.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:image" content="assets/og-image.jpg"/>
+</head>
+<body class="grainy-bg text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto bg-background/95 backdrop-blur-sm border-b border-outline-variant/30">
+<div class="flex items-center h-20 w-full justify-between max-w-container-max mx-auto">
+<a class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary transition-transform active:scale-95 cursor-pointer" href="#hero">Brian Oduor</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-headline-sm text-secondary hover:text-primary transition-colors duration-300" href="#about">About</a>
+<a class="font-headline-sm text-secondary hover:text-primary transition-colors duration-300" href="#highlights">Highlights</a>
+<a class="font-headline-sm text-secondary hover:text-primary transition-colors duration-300" href="#linkedin">LinkedIn</a>
+<a class="font-headline-sm text-secondary hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
+<a class="px-6 py-2 bg-primary text-on-primary font-label-caps uppercase tracking-widest rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-all active:scale-95" href="#">Connect</a>
+</nav>
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-4xl">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-margin-mobile md:px-gutter py-section-gap-mobile md:py-section-gap-desktop" id="hero">
+<div class="max-w-container-max mx-auto w-full asymmetric-grid gap-y-12">
+<div class="col-span-12 md:col-span-7 flex flex-col justify-center order-2 md:order-1">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6 reveal">
+                        Brian Oduor
+                    </h1>
+<p class="font-body-lg text-body-lg text-secondary mb-10 max-w-lg reveal" style="transition-delay: 200ms;">
+                        A polished digital introduction designed to bridge the gap between a resume and a professional relationship. Focused on credibility, clarity, and ease of connection.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 reveal" style="transition-delay: 400ms;">
+<a class="px-8 py-4 bg-primary text-on-primary font-label-caps uppercase tracking-widest rounded-lg flex items-center justify-center gap-2 hover:bg-primary-container transition-all active:scale-95 shadow-lg" href="https://linkedin.com">
+                            Connect on LinkedIn
+                            <span class="material-symbols-outlined">north_east</span>
+</a>
+<a class="px-8 py-4 border border-tertiary text-primary font-label-caps uppercase tracking-widest rounded-lg flex items-center justify-center gap-2 hover:bg-surface-container transition-all active:scale-95" href="#about">
+                            View Profile
+                        </a>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 relative order-1 md:order-2 reveal" style="transition-delay: 300ms;">
+<div class="aspect-[4/5] overflow-hidden rounded-xl shadow-2xl relative group">
+<img alt="Brian Oduor" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="assets/hero.jpg"/>
+<div class="absolute inset-0 border-[1px] border-tertiary/20 rounded-xl pointer-events-none"></div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -bottom-6 -left-6 w-32 h-32 border-l border-b soft-gold-border hidden md:block"></div>
+</div>
+</div>
+</section>
+<!-- Trust Strip -->
+<section class="bg-surface-container-low py-12 border-y border-outline-variant/30 overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-wrap justify-between items-center gap-8 md:gap-12 opacity-60">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">verified</span>
+<span class="font-label-caps uppercase text-secondary">Professional headshot-led introduction</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">link</span>
+<span class="font-label-caps uppercase text-secondary">Built for LinkedIn-first discovery</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">architecture</span>
+<span class="font-label-caps uppercase text-secondary">Aesthetic focused on credibility</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">bolt</span>
+<span class="font-label-caps uppercase text-secondary">Minimalist high-impact layout</span>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-background px-margin-mobile md:px-gutter" id="about">
+<div class="max-w-container-max mx-auto asymmetric-grid">
+<div class="col-span-12 md:col-start-2 md:col-span-10">
+<div class="border-l-2 border-primary pl-8 md:pl-12">
+<h2 class="font-headline-md text-headline-md text-primary mb-8 reveal">A Clear First Impression</h2>
+<div class="space-y-6 max-w-3xl">
+<p class="font-body-lg text-body-lg text-on-surface reveal" style="transition-delay: 100ms;">
+                                In a world of digital noise, clarity is the ultimate luxury. This portfolio isnâ€™t a collection of every project ever completed; it is a curated entry point into a professional journey. Itâ€™s designed to provide immediate context for who I am and the value I bring.
+                            </p>
+<p class="font-body-lg text-body-lg text-on-surface reveal" style="transition-delay: 200ms;">
+                                By blending high-end design with strategic communication, this site acts as a bridge between a casual discovery and a meaningful connection. Every element is chosen to reflect a commitment to quality and attention to detail.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Professional Snapshot (Bento) -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-gutter bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary text-center mb-16 reveal">What This Portfolio Communicates</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="md:col-span-2 bg-background p-10 rounded-xl shadow-sm border border-outline-variant/20 hover:border-tertiary transition-colors reveal">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">workspace_premium</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Credibility</h3>
+<p class="font-body-md text-body-md text-secondary">A professional presence that validates expertise before the first conversation begins.</p>
+</div>
+<!-- Card 2 -->
+<div class="md:col-span-2 bg-background p-10 rounded-xl shadow-sm border border-outline-variant/20 hover:border-tertiary transition-colors reveal" style="transition-delay: 100ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">ads_click</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Intentionality</h3>
+<p class="font-body-md text-body-md text-secondary">Strategic layout and messaging focused on high-value professional outcomes.</p>
+</div>
+<!-- Card 3 -->
+<div class="md:col-span-2 bg-background p-10 rounded-xl shadow-sm border border-outline-variant/20 hover:border-tertiary transition-colors reveal" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">stylus_laser_pointer</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Quality</h3>
+<p class="font-body-md text-body-md text-secondary">Refined typography and visual balance representing a standard of excellence.</p>
+</div>
+<!-- Card 4 -->
+<div class="md:col-span-2 bg-background p-10 rounded-xl shadow-sm border border-outline-variant/20 hover:border-tertiary transition-colors reveal" style="transition-delay: 300ms;">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">handshake</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Accessibility</h3>
+<p class="font-body-md text-body-md text-secondary">Clear calls-to-action designed to facilitate easy networking and collaboration.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Highlights Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-gutter" id="highlights">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row gap-16 items-start">
+<div class="w-full md:w-1/2">
+<h2 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-8 reveal">Designed for Clarity</h2>
+<div class="w-24 h-1 bg-tertiary/30 mb-8"></div>
+</div>
+<div class="w-full md:w-1/2 space-y-12">
+<div class="flex gap-6 reveal" style="transition-delay: 100ms;">
+<span class="font-display-lg text-primary/10">01</span>
+<div>
+<h4 class="font-headline-sm mb-2">High-resolution visual storytelling</h4>
+<p class="font-body-md text-secondary">Professional-grade imagery that sets a tone of authority and polished execution.</p>
+</div>
+</div>
+<div class="flex gap-6 reveal" style="transition-delay: 200ms;">
+<span class="font-display-lg text-primary/10">02</span>
+<div>
+<h4 class="font-headline-sm mb-2">Direct LinkedIn integration</h4>
+<p class="font-body-md text-secondary">Optimized for recruiters and partners to transition from portfolio to profile seamlessly.</p>
+</div>
+</div>
+<div class="flex gap-6 reveal" style="transition-delay: 300ms;">
+<span class="font-display-lg text-primary/10">03</span>
+<div>
+<h4 class="font-headline-sm mb-2">Responsive mobile-first experience</h4>
+<p class="font-body-md text-secondary">Perfectly composed on any device, ensuring a world-class impression everywhere.</p>
+</div>
+</div>
+<div class="flex gap-6 reveal" style="transition-delay: 400ms;">
+<span class="font-display-lg text-primary/10">04</span>
+<div>
+<h4 class="font-headline-sm mb-2">Modern typography-led layout</h4>
+<p class="font-body-md text-secondary">A balance of serif headers and sans-serif body text for an editorial, high-end feel.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LinkedIn Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-primary px-margin-mobile md:px-gutter relative overflow-hidden" id="linkedin">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-[120px] -mr-48 -mt-48"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-tertiary rounded-full blur-[120px] -ml-48 -mb-48"></div>
+</div>
+<div class="max-w-container-max mx-auto text-center relative z-10">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-primary mb-10 reveal">Continue on LinkedIn</h2>
+<p class="font-body-lg text-on-primary-container max-w-2xl mx-auto mb-12 opacity-90 reveal" style="transition-delay: 100ms;">
+                    This portfolio is a curated snapshot. For a full professional history, endorsement details, and real-time updates, please visit my official LinkedIn profile.
+                </p>
+<a class="inline-flex items-center gap-4 px-10 py-5 bg-background text-primary font-label-caps uppercase tracking-widest rounded-full hover:bg-on-primary-container hover:text-primary transition-all shadow-2xl reveal" href="#" style="transition-delay: 200ms;">
+                    Open LinkedIn Profile
+                    <span class="material-symbols-outlined">launch</span>
+</a>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-gutter" id="contact">
+<div class="max-w-container-max mx-auto asymmetric-grid">
+<div class="col-span-12 md:col-span-6 mb-12 md:mb-0">
+<h2 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-6 reveal">Let's Connect</h2>
+<p class="font-body-lg text-secondary max-w-md reveal" style="transition-delay: 100ms;">
+                        Whether itâ€™s a potential collaboration, a professional inquiry, or a simple greeting, I look forward to hearing from you.
+                    </p>
+<div class="mt-12 space-y-4 reveal" style="transition-delay: 200ms;">
+<div class="flex items-center gap-4 text-secondary">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="font-body-md">hello@brianoduor.com</span>
+</div>
+<div class="flex items-center gap-4 text-secondary">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-body-md">Available for Global Remote Work</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 bg-surface-container p-8 md:p-12 rounded-xl reveal" style="transition-delay: 300ms;">
+<form class="space-y-6">
+<div>
+<label class="block font-label-caps uppercase text-secondary mb-2">Full Name</label>
+<input class="w-full bg-transparent border-b border-outline focus:border-primary focus:ring-0 transition-colors py-2 outline-none" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps uppercase text-secondary mb-2">Email Address</label>
+<input class="w-full bg-transparent border-b border-outline focus:border-primary focus:ring-0 transition-colors py-2 outline-none" type="email"/>
+</div>
+<div>
+<label class="block font-label-caps uppercase text-secondary mb-2">Message</label>
+<textarea class="w-full bg-transparent border-b border-outline focus:border-primary focus:ring-0 transition-colors py-2 outline-none resize-none" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary font-label-caps uppercase tracking-widest rounded-lg hover:bg-primary-container transition-all active:scale-95 shadow-md" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap-mobile md:py-16 px-margin-mobile md:px-gutter flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto border-t border-tertiary/30 bg-surface-container dark:bg-surface-dim">
+<div class="flex flex-col md:flex-row items-center gap-8 w-full justify-between">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Brian Oduor</span>
+<p class="font-body-md text-body-md text-secondary opacity-70">Brian Oduor | Professional Portfolio | LinkedIn-Ready Personal Brand</p>
+</div>
+<nav class="flex gap-6">
+<a class="text-secondary hover:text-tertiary transition-colors duration-200 font-label-caps uppercase" href="#hero">Home</a>
+<a class="text-secondary hover:text-tertiary transition-colors duration-200 font-label-caps uppercase" href="#about">About</a>
+<a class="text-secondary hover:text-tertiary transition-colors duration-200 font-label-caps uppercase" href="#highlights">Highlights</a>
+<a class="text-secondary hover:text-tertiary transition-colors duration-200 font-label-caps uppercase" href="#contact">Contact</a>
+</nav>
+</div>
+</footer>
+<script>
+        // Simple Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
+        window.addEventListener("load", reveal);
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.add('bg-background');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body></html>

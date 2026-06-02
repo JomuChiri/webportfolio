@@ -12,7 +12,7 @@ Hard requirements:
 - Apply metadata and information architecture intent from the SEO pack.
 - Apply visual language, palette, typography mood, and component guidance from design direction.
 - Social/Media requirements:
-- A user profile image is available at: C:\Users\muchi\OneDrive\Documents\brian oduor.jpg
+- A user profile image is available at: C:\Users\muchi\OneDrive\Documents\webportfolio\brian-oduor\assets\brian oduor.jpg
 - Use this user image in the hero section (real image, not placeholder).
 - Use the user image as browser icon source by linking favicon to ./assets/favicon.png.
 - Set Open Graph/Twitter preview image to ./assets/og-image.jpg.
