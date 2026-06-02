@@ -55,7 +55,7 @@ Keep the homepage as the main entry point and use anchored sections for mission,
 - Hero
 - Trust strip
 - About
-- Sustainability mission
+- Sustainability focus
 - What Brian does
 - Experience
 - Education

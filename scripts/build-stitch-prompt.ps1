@@ -19,9 +19,9 @@ foreach ($f in @($websiteCopy, $seoPack, $designDirection)) {
   }
 }
 
-$websiteCopyText = Get-Content $websiteCopy -Raw
-$seoPackText = Get-Content $seoPack -Raw
-$designDirectionText = Get-Content $designDirection -Raw
+$websiteCopyText = Get-Content $websiteCopy -Raw -Encoding utf8
+$seoPackText = Get-Content $seoPack -Raw -Encoding utf8
+$designDirectionText = Get-Content $designDirection -Raw -Encoding utf8
 
 $projectName = Split-Path $projectPath -Leaf
 $outPath = Join-Path $projectPath $OutFile
@@ -86,10 +86,13 @@ Hard requirements:
 - Do not invent facts, credentials, dates, metrics, IDs, or company claims not present in the copy package.
 - Preserve factual values exactly where specified (for example certification IDs, percentages, and timelines).
 - Return a complete, valid HTML document (<!doctype html> ... </html>) for web deployment.
+- Never return SVG, icon art, logo art, or a standalone graphic.
 - Do not return markdown, prose explanations, or copy-package text dumps as final output.
 - Generate semantic, accessible HTML with clear heading hierarchy and keyboard-friendly navigation.
 - Include a homepage at index.html and ensure all internal navigation links resolve correctly.
 - Keep copy faithful to source text while improving layout, readability, and visual hierarchy.
+- Preserve a sustainability brand presentation, not a résumé layout.
+- Keep the hero portrait clearly visible on desktop and mobile. Do not hide it behind low opacity or heavy grayscale treatment.
 - Apply metadata and information architecture intent from the SEO pack.
 - Apply visual language, palette, typography mood, and component guidance from design direction.
 - Social/Media requirements:

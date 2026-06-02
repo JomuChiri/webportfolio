@@ -44,6 +44,7 @@ Create a premium sustainability brand website that feels practical, composed, an
 - Generate favicon from the same image
 - Generate and link `assets/og-image.jpg`
 - Keep the image presentation crisp, bright, and professional
+- Make the portrait clearly visible on desktop and mobile
 
 ## Interaction Direction
 - Gentle fade and lift on section reveals

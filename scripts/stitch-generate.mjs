@@ -54,7 +54,12 @@ async function main() {
   }
 
   const project = stitch.project(projectId);
-  const screen = await project.generate(prompt, deviceType);
+  async function generateScreen(inputPrompt) {
+    return await project.generate(inputPrompt, deviceType);
+  }
+
+  const retryPrompt = `${prompt}\n\nCRITICAL RETRY INSTRUCTION:\nReturn a complete multi-section HTML portfolio page only. Do not return SVG, icon art, logo art, illustration, or any non-HTML asset.`;
+  let screen = await generateScreen(prompt);
   let htmlUrl = await screen.getHtml();
   let imageUrl = await screen.getImage();
 
@@ -75,14 +80,26 @@ async function main() {
     /<!doctype\s+html/i.test(html) ||
     /<\s*body[\s>]/i.test(html);
   if (!looksLikeHtml) {
-    // Force a fresh get_screen lookup in case cached generation payload has stale URLs.
-    const refreshed = await project.getScreen(screen.screenId || screen.id);
-    htmlUrl = await refreshed.getHtml();
-    html = await fetchText(htmlUrl);
-    looksLikeHtml =
-      /<\s*html[\s>]/i.test(html) ||
-      /<!doctype\s+html/i.test(html) ||
-      /<\s*body[\s>]/i.test(html);
+    const preview = String(html || "").slice(0, 180).replace(/\s+/g, " ");
+    if (/^<svg[\s>]/i.test(preview) || /<svg[\s>]/i.test(preview)) {
+      screen = await generateScreen(retryPrompt);
+      htmlUrl = await screen.getHtml();
+      imageUrl = await screen.getImage();
+      if (!htmlUrl && screen?.data?.htmlCode?.downloadUrl) {
+        htmlUrl = screen.data.htmlCode.downloadUrl;
+      }
+      if (!imageUrl && screen?.data?.screenshot?.downloadUrl) {
+        imageUrl = screen.data.screenshot.downloadUrl;
+      }
+      if (!htmlUrl) {
+        throw new Error("Stitch retry returned no HTML download URL.");
+      }
+      html = await fetchText(htmlUrl);
+      looksLikeHtml =
+        /<\s*html[\s>]/i.test(html) ||
+        /<!doctype\s+html/i.test(html) ||
+        /<\s*body[\s>]/i.test(html);
+    }
   }
   if (!looksLikeHtml) {
     const preview = String(html || "").slice(0, 180).replace(/\s+/g, " ");

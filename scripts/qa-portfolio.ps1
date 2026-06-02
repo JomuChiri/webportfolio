@@ -37,7 +37,7 @@ if ($RequireStitchEnv) {
 if (!(Test-Path $indexPath)) {
   $errors.Add("Missing index.html: $indexPath")
 } else {
-  $html = Get-Content -Path $indexPath -Raw
+  $html = Get-Content -Path $indexPath -Raw -Encoding utf8
 
   if ($html -notmatch '<meta\s+[^>]*name="viewport"') {
     $errors.Add("index.html missing viewport meta tag.")
@@ -49,7 +49,7 @@ if (!(Test-Path $indexPath)) {
   }
 
   if (Test-Path $manifestPath) {
-    $manifest = Get-Content -Path $manifestPath -Raw | ConvertFrom-Json
+    $manifest = Get-Content -Path $manifestPath -Raw -Encoding utf8 | ConvertFrom-Json
     if ($manifest.mode -eq "image") {
       foreach ($asset in @("hero.jpg", "favicon.png", "og-image.jpg")) {
         if (!(Test-Path (Join-Path $assetsDir $asset))) {

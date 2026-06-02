@@ -16,8 +16,8 @@ if (!(Test-Path $manifestPath)) {
   throw "media-manifest.json not found: $manifestPath"
 }
 
-$html = Get-Content -Path $indexPath -Raw
-$manifest = Get-Content -Path $manifestPath -Raw | ConvertFrom-Json
+$html = Get-Content -Path $indexPath -Raw -Encoding utf8
+$manifest = Get-Content -Path $manifestPath -Raw -Encoding utf8 | ConvertFrom-Json
 
 function Ensure-BaseHrefScript {
   param([string]$Html)

@@ -5,10 +5,13 @@ Hard requirements:
 - Do not invent facts, credentials, dates, metrics, IDs, or company claims not present in the copy package.
 - Preserve factual values exactly where specified (for example certification IDs, percentages, and timelines).
 - Return a complete, valid HTML document (<!doctype html> ... </html>) for web deployment.
+- Never return SVG, icon art, logo art, or a standalone graphic.
 - Do not return markdown, prose explanations, or copy-package text dumps as final output.
 - Generate semantic, accessible HTML with clear heading hierarchy and keyboard-friendly navigation.
 - Include a homepage at index.html and ensure all internal navigation links resolve correctly.
 - Keep copy faithful to source text while improving layout, readability, and visual hierarchy.
+- Preserve a sustainability brand presentation, not a rÃ©sumÃ© layout.
+- Keep the hero portrait clearly visible on desktop and mobile. Do not hide it behind low opacity or heavy grayscale treatment.
 - Apply metadata and information architecture intent from the SEO pack.
 - Apply visual language, palette, typography mood, and component guidance from design direction.
 - Social/Media requirements:
@@ -30,6 +33,7 @@ Output intent:
 - LinkedIn profile URL: `https://www.linkedin.com/in/brian-oduor-794a113a2`
 - Supplied headshot: `brian oduor.jpg`
 - Verified summary PDF source: `Profile.pdf`
+- Client feedback brief: add education timeline, sustainability focus, and full learning history
 
 ## Voice Profile
 - Professional, calm, and practical
@@ -102,30 +106,24 @@ Section Title:
 Practical Work, Simple Approach
 
 Body:
-Brian Oduor describes his approach as simple and practical. He works within an environmental enterprise that is helping drive Africaâ€™s transition toward a circular economy, with a clear focus on turning waste into value and supporting responsible production and consumption.
+Brian Oduor describes his approach as simple and practical. He works within an environmental enterprise that is helping drive Africa’s transition toward a circular economy, with a clear focus on turning waste into value and supporting responsible production and consumption.
 
 Support Line:
 His work centers on building systems that support recycling, Extended Producer Responsibility (EPR), and material recovery.
 
-### Sustainability Mission Section
+### Sustainability Focus Section
 Section Title:
-Sustainability Mission
+Sustainability Focus
 
 Body:
-Brianâ€™s mission is rooted in circular economy principles, sustainable resource management, and community-centered environmental responsibility. He is motivated by the belief that recycling ecosystems can create practical value when people, systems, and stakeholders work together with a shared sense of purpose.
-
-Support Points:
-- Promote responsible production and consumption
-- Support recycling ecosystems that keep materials in use
-- Advance community empowerment through practical environmental solutions
-- Strengthen collaboration across the circular economy value chain
+Brian Oduor integrates circular economy principles with waste management innovation. His certifications demonstrate a commitment to battery recycling and end-of-life management, carbon finance and market systems, climate-smart agribusiness and adaptation, textile circularity, and digital safety. This portfolio reflects his dedication to building sustainable systems that balance environmental responsibility with practical business solutions.
 
 ### What Brian Does Section
 Section Title:
 What Brian Does
 
 Section Intro:
-Brianâ€™s work is best understood through outcomes. He supports the systems and relationships that make circular economy operations more coordinated, traceable, and effective.
+Brian’s work is best understood through outcomes. He supports the systems and relationships that make circular economy operations more coordinated, traceable, and effective.
 
 Cards:
 - Material recovery systems that support circular value chains
@@ -171,49 +169,45 @@ Brian also has hospitality experience, adding service-oriented communication and
 
 ### Education Section
 Section Title:
-Education
+Education & Learning
 
-Education Item 1:
-ATINGI - Bachelorâ€™s Degree, Social media marketer
-Dates:
-December 2025 - February 2026
-
-Education Item 2:
-Kenya Coast National Polytechnic - Diploma in Hospitality and Hotel Management
-Dates:
-February 2016 - November 2019
+Education Timeline:
+- KCPE — 2010
+- KCSE — 2014
+- Kenya Coast National Polytechnic — Diploma in Hospitality and Hotel Management — February 2016 to November 2019
+- ATINGI — Bachelor’s Degree, Social media marketer — December 2025 to February 2026
 
 ### Professional Development Section
 Section Title:
 Professional Development
 
 Intro:
-Brianâ€™s learning profile shows a commitment to environmental sustainability, digital capability, and practical business thinking. Where issue dates were provided, they are listed below. Where they were not, they are marked clearly.
+Brian’s learning profile shows a commitment to environmental sustainability, digital capability, and practical business thinking. Where issue dates were provided, they are listed below. Where they were not, they are marked clearly.
 
 Certifications:
-- Midjourney â€” Issued: 7 January 2026
-- Agribusiness 1 â€” Issued: 23 January 2026
-- Digital and Social Media Marketing â€” Issued: 23 January 2026
-- Agriculture as a Business â€“ Part 1 â€” Issued: 25 January 2026
-- Business Model Canvas for Agribusinesses â€” Issued: 28 January 2026
-- Climate Smart Agribusiness: Adaptation â€” Issued: 28 January 2026
-- Conflict Management and Resolution â€” Issued: 30 January 2026
-- Climate Action Training for the Fashion Industry â€” Issued: 25 March 2026
-- Digital Safety and Security â€” Issued: 14 April 2026
+- Midjourney — Issued: 7 January 2026
+- Agribusiness 1 — Issued: 23 January 2026
+- Digital and Social Media Marketing — Issued: 23 January 2026
+- Agriculture as a Business – Part 1 — Issued: 25 January 2026
+- Business Model Canvas for Agribusinesses — Issued: 28 January 2026
+- Climate Smart Agribusiness: Adaptation — Issued: 28 January 2026
+- Conflict Management and Resolution — Issued: 30 January 2026
+- Climate Action Training for the Fashion Industry — Issued: 25 March 2026
+- Digital Safety and Security — Issued: 14 April 2026
 
 Additional Courses:
-- Battery End-of-Life Management and Recycling â€” Date not provided
-- Circularity for Decision-Makers in the Textile and Apparel Industry â€” Date not provided
-- Carbon Finance and Markets â€” Date not provided
-- Cooling Carbon Markets â€” Date not provided
-- Data Protection Basics â€” Date not provided
+- Battery End-of-Life Management and Recycling — Date not provided
+- Circularity for Decision-Makers in the Textile and Apparel Industry — Date not provided
+- Carbon Finance and Markets — Date not provided
+- Cooling Carbon Markets — Date not provided
+- Data Protection Basics — Date not provided
 
 ### Areas of Interest Section
 Section Title:
 Areas of Interest
 
 Body:
-Brianâ€™s ongoing interests reflect a sustainability-oriented professional who is actively thinking about how systems can be improved over time.
+Brian’s ongoing interests reflect a sustainability-oriented professional who is actively thinking about how systems can be improved over time.
 
 Interest List:
 - Waste Management
@@ -248,8 +242,9 @@ Body:
 Brian is open to professional networking, sustainability partnerships, circular economy discussions, waste management initiatives, recycling operations, and community impact conversations.
 
 Contact Details:
+- Contact reference: `34412-80118`
+- Work: `+254716095480`
 - Email: `ochiengoduorbrian2022@gmail.com`
-- Phone: `+254716095480`
 - Location: Nairobi, Nairobi County, Kenya
 - LinkedIn: `https://www.linkedin.com/in/brian-oduor-794a113a2`
 
@@ -271,7 +266,7 @@ Create a searchable sustainability and circular economy brand website for Brian 
 
 ## Target Search Intent
 - People searching for Brian Oduor by name
-- Recruiters reviewing Brianâ€™s operations and sustainability profile
+- Recruiters reviewing Brian’s operations and sustainability profile
 - Sustainability and circular economy partners looking for collaboration
 - Visitors arriving from LinkedIn who want a clearer professional summary
 
@@ -321,7 +316,7 @@ Keep the homepage as the main entry point and use anchored sections for mission,
 - Hero
 - Trust strip
 - About
-- Sustainability mission
+- Sustainability focus
 - What Brian does
 - Experience
 - Education
@@ -341,7 +336,7 @@ Keep the homepage as the main entry point and use anchored sections for mission,
 ## Content Notes
 - Keep wording factual and sourced.
 - Avoid adding employers, awards, or metrics not present in the source PDF.
-- Use Brianâ€™s full name and role early in the page for clarity and SEO.
+- Use Brian’s full name and role early in the page for clarity and SEO.
 - Keep contact details visible and easy to scan.
 
 
@@ -392,6 +387,7 @@ Create a premium sustainability brand website that feels practical, composed, an
 - Generate favicon from the same image
 - Generate and link `assets/og-image.jpg`
 - Keep the image presentation crisp, bright, and professional
+- Make the portrait clearly visible on desktop and mobile
 
 ## Interaction Direction
 - Gentle fade and lift on section reveals

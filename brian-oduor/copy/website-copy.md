@@ -5,6 +5,7 @@
 - LinkedIn profile URL: `https://www.linkedin.com/in/brian-oduor-794a113a2`
 - Supplied headshot: `brian oduor.jpg`
 - Verified summary PDF source: `Profile.pdf`
+- Client feedback brief: add education timeline, sustainability focus, and full learning history
 
 ## Voice Profile
 - Professional, calm, and practical
@@ -82,18 +83,12 @@ Brian Oduor describes his approach as simple and practical. He works within an e
 Support Line:
 His work centers on building systems that support recycling, Extended Producer Responsibility (EPR), and material recovery.
 
-### Sustainability Mission Section
+### Sustainability Focus Section
 Section Title:
-Sustainability Mission
+Sustainability Focus
 
 Body:
-Brian’s mission is rooted in circular economy principles, sustainable resource management, and community-centered environmental responsibility. He is motivated by the belief that recycling ecosystems can create practical value when people, systems, and stakeholders work together with a shared sense of purpose.
-
-Support Points:
-- Promote responsible production and consumption
-- Support recycling ecosystems that keep materials in use
-- Advance community empowerment through practical environmental solutions
-- Strengthen collaboration across the circular economy value chain
+Brian Oduor integrates circular economy principles with waste management innovation. His certifications demonstrate a commitment to battery recycling and end-of-life management, carbon finance and market systems, climate-smart agribusiness and adaptation, textile circularity, and digital safety. This portfolio reflects his dedication to building sustainable systems that balance environmental responsibility with practical business solutions.
 
 ### What Brian Does Section
 Section Title:
@@ -146,17 +141,13 @@ Brian also has hospitality experience, adding service-oriented communication and
 
 ### Education Section
 Section Title:
-Education
+Education & Learning
 
-Education Item 1:
-ATINGI - Bachelor’s Degree, Social media marketer
-Dates:
-December 2025 - February 2026
-
-Education Item 2:
-Kenya Coast National Polytechnic - Diploma in Hospitality and Hotel Management
-Dates:
-February 2016 - November 2019
+Education Timeline:
+- KCPE — 2010
+- KCSE — 2014
+- Kenya Coast National Polytechnic — Diploma in Hospitality and Hotel Management — February 2016 to November 2019
+- ATINGI — Bachelor’s Degree, Social media marketer — December 2025 to February 2026
 
 ### Professional Development Section
 Section Title:
