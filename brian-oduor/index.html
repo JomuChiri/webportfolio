@@ -221,6 +221,44 @@
           flex-direction: column;
         }
       }
+      /* === Mobile Optimization for Contact Form & Buttons === */
+      @media (max-width: 768px) {
+        .contact-form {
+          width: 100%;
+          padding: 1rem;
+        }
+      
+        .contact-form label {
+          display: block;
+          font-size: 0.95rem;
+          margin-bottom: 0.3rem;
+        }
+      
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+          width: 100%;
+          font-size: 1rem;
+          padding: 0.75rem;
+          border-radius: 8px;
+          margin-bottom: 1rem;
+        }
+      
+        .contact-form button {
+          width: 100%;
+          font-size: 1.05rem;
+          padding: 0.9rem;
+          border-radius: 10px;
+          background-color: var(--primary);
+          color: var(--on-primary);
+          font-weight: 600;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+      
+        .contact-form button:hover {
+          background-color: var(--primary-hover);
+        }
+      }
 
     </style>
   <link rel="icon" type="image/png" href="assets/favicon.png"/>
@@ -1102,7 +1140,7 @@
 <span class="font-label-md">Environmental Impact</span>
 </div>
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">clean_energy</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">eco</span>
 <span class="font-label-md">Climate Action</span>
 </div>
 <div class="flex items-center gap-2">
