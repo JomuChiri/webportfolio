@@ -148,6 +148,80 @@
                 object-position: center 12%;
             }
         }
+      /* === Mobile Optimization Patch for Brian Oduor Portfolio === */
+      @media (max-width: 768px) {
+        header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 1rem;
+          text-align: center;
+        }
+      
+        .menu-icon {
+          margin-top: 0.5rem;
+        }
+      
+        .interest-section,
+        .interest-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1rem;
+          text-align: center;
+          padding: 1rem;
+        }
+      
+        .interest-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+      
+        .interest-item img,
+        .interest-item svg {
+          width: 22px;
+          height: 22px;
+        }
+      
+        h1, h2, h3 {
+          font-size: 1.3rem;
+        }
+      
+        p, li {
+          font-size: 0.95rem;
+          line-height: 1.5;
+        }
+      
+        .case-block,
+        .article-content {
+          width: 100%;
+          margin: 0 auto;
+          padding: 1rem;
+        }
+      
+        footer {
+          text-align: center;
+          padding: 1.5rem 1rem;
+          font-size: 0.9rem;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.4rem;
+        }
+        h2 {
+          font-size: 1.2rem;
+        }
+        p, li {
+          font-size: 0.9rem;
+        }
+        .interest-item {
+          flex-direction: column;
+        }
+      }
+
     </style>
   <link rel="icon" type="image/png" href="assets/favicon.png"/>
   <link rel="apple-touch-icon" href="assets/favicon.png"/>
