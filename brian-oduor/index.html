@@ -287,7 +287,27 @@
           padding: 1rem;
         }
       }
-  
+        /* === Background Enhancement for Contact Section === */
+      #contact {
+        background: linear-gradient(180deg, #f9f9f7 0%, #f3f3f0 100%);
+        position: relative;
+      }
+      
+      #contact::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+        opacity: 0.04;
+        pointer-events: none;
+        z-index: 0;
+      }
+      
+      #contact > div {
+        position: relative;
+        z-index: 1;
+      }
+
     </style>
   <link rel="icon" type="image/png" href="assets/favicon.png"/>
   <link rel="apple-touch-icon" href="assets/favicon.png"/>
@@ -1212,77 +1232,82 @@
 </div>
 </section>
 <!-- Contact Section -->
-<section class="py-32 relative overflow-hidden" id="contact">
-<!-- Decorative Gradient -->
-<div class="absolute inset-0 bg-surface-container-low z-0"></div>
-<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
-<div class="flex flex-col lg:flex-row gap-16 px-6 py-12">
-<div class="lg:w-1/2">
-<h2 class="font-headline-xl text-headline-xl text-primary mb-8">Let's Build Sustainable Recovery Systems Together</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 leading-relaxed">
-                            Brian is open to professional networking, sustainability partnerships, circular economy discussions, waste management initiatives, recycling operations, and community impact conversations.
-                        </p>
-<div class="space-y-6">
-<div class="flex items-center gap-6 group">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-white">tag</span>
-</div>
-<div>
-<p class="font-headline-md text-headline-md text-primary">Postal Address</p>
-<p class="text-body-md text-on-surface-variant">34412-80118</p>
-</div>
-</div>
-<a class="flex items-center gap-6 group" href="tel:+254716095480">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-white">call</span>
-</div>
-<span class="font-headline-md text-headline-md text-primary">+254716095480</span>
-</a>
-<a class="flex items-center gap-6 group" href="mailto:ochiengoduorbrian2022@gmail.com">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-white">mail</span>
-</div>
-<span class="font-headline-md text-headline-md text-primary">ochiengoduorbrian2022@gmail.com</span>
-</a>
-<a class="flex items-center gap-6 group" href="https://www.linkedin.com/in/brian-oduor-794a113a2" target="_blank">
-<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-white">share</span>
-</div>
-<span class="font-headline-md text-headline-md text-primary">Connect on LinkedIn</span>
-</a>
-</div>
-</div>
-<div class="lg:w-1/2">
-<form class="space-y-6">
-<div class="grid grid-cols-2 gap-6">
-<div class="flex flex-col gap-2">
-<label class="font-label-md text-primary uppercase text-[10px] tracking-widest">Full Name</label>
-<input class="w-full bg-surface-container p-4 rounded-lg border-none focus:ring-2 focus:ring-primary transition-all" placeholder="Your name" type="text"/>
-</div>
-<div class="flex flex-col gap-2">
-<label class="font-label-md text-primary uppercase text-[10px] tracking-widest">Email Address</label>
-<input class="w-full bg-surface-container p-4 rounded-lg border-none focus:ring-2 focus:ring-primary transition-all" placeholder="you@company.com" type="email"/>
-</div>
-</div>
-<div class="flex flex-col gap-2">
-<label class="font-label-md text-primary uppercase text-[10px] tracking-widest">Inquiry Type</label>
-<select class="w-full bg-surface-container p-4 rounded-lg border-none focus:ring-2 focus:ring-primary transition-all">
-<option>Consultancy</option>
-<option>EPR Systems</option>
-<option>Logistics Optimization</option>
-<option>Other</option>
-</select>
-</div>
-<div class="flex flex-col gap-2">
-<label class="font-label-md text-primary uppercase text-[10px] tracking-widest">Your Message</label>
-<textarea class="w-full bg-surface-container p-4 rounded-lg border-none focus:ring-2 focus:ring-primary transition-all" placeholder="How can Brian help your organization?" rows="4"></textarea>
-</div>
-<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold hover:opacity-90 active:scale-95 transition-all" type="submit">Send Message</button>
-</form>
-</div>
-</div>
-</div>
+<section id="contact" class="py-20 px-6 bg-surface-container-low">
+  <div class="max-w-container-max mx-auto flex flex-col gap-12">
+
+    <!-- Contact Info -->
+    <div class="space-y-8 text-center">
+      <h2 class="font-headline-xl text-primary mb-4">
+        Let's Build Sustainable Recovery Systems Together
+      </h2>
+      <p class="font-body-lg text-on-surface-variant leading-relaxed">
+        Brian is open to professional networking, sustainability partnerships,
+        circular economy discussions, waste management initiatives, recycling
+        operations, and community impact conversations.
+      </p>
+
+      <div class="space-y-6">
+        <div class="flex flex-col items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-3xl">tag</span>
+          <p class="font-headline-md text-primary">Postal Address</p>
+          <p class="text-body-md text-on-surface-variant">34412‑80118</p>
+        </div>
+
+        <a href="tel:+254716095480" class="flex flex-col items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-3xl">call</span>
+          <span class="font-headline-md text-primary break-all">+254716095480</span>
+        </a>
+
+        <a href="mailto:ochiengoduorbrian2022@gmail.com" class="flex flex-col items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-3xl">mail</span>
+          <span class="font-headline-md text-primary break-all">ochiengoduorbrian2022@gmail.com</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/brian-oduor-794a113a2" target="_blank"
+           class="flex flex-col items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-3xl">share</span>
+          <span class="font-headline-md text-primary">Connect on LinkedIn</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="space-y-6 max-w-md mx-auto">
+      <div class="flex flex-col gap-2">
+        <label class="font-label-md text-primary uppercase text-[10px] tracking-widest">Full Name</label>
+        <input type="text" placeholder="Your name"
+               class="w-full bg-surface-container p-4 rounded-lg focus:ring-2 focus:ring-primary transition-all" />
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label class="font-label-md text-primary uppercase text-[10px] tracking-widest">Email Address</label>
+        <input type="email" placeholder="you@example.com"
+               class="w-full bg-surface-container p-4 rounded-lg focus:ring-2 focus:ring-primary transition-all" />
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label class="font-label-md text-primary uppercase text-[10px] tracking-widest">Inquiry Type</label>
+        <select class="w-full bg-surface-container p-4 rounded-lg focus:ring-2 focus:ring-primary transition-all">
+          <option>Consultancy</option>
+          <option>Partnership</option>
+          <option>Networking</option>
+        </select>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label class="font-label-md text-primary uppercase text-[10px] tracking-widest">Your Message</label>
+        <textarea rows="4" placeholder="How can Brian help your organization?"
+                  class="w-full bg-surface-container p-4 rounded-lg focus:ring-2 focus:ring-primary transition-all"></textarea>
+      </div>
+
+      <button type="submit"
+              class="w-full bg-primary text-on-primary font-semibold py-3 rounded-lg hover:bg-primary/90 transition-colors">
+        Send Message
+      </button>
+    </form>
+  </div>
 </section>
+
 </main>
 <!-- Footer -->
 <footer class="bg-surface-container-lowest py-16 border-t border-outline-variant/50">
