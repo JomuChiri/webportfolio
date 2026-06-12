@@ -307,6 +307,51 @@
         position: relative;
         z-index: 1;
       }
+      /* === Responsive Contact Section with Divider === */
+      #contact {
+        padding: 2rem 1rem;
+      }
+      
+      @media (min-width: 1024px) {
+        #contact {
+          padding: 4rem 2rem;
+        }
+      
+        #contact > div {
+          display: flex;
+          flex-direction: row;
+          gap: 3rem;
+          background: #ffffff;
+          border-radius: 1.5rem;
+          box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+          padding: 3rem;
+        }
+      
+        #contact h2 {
+          font-size: 2.2rem;
+          line-height: 1.3;
+          text-align: left;
+        }
+      
+        #contact p {
+          font-size: 1.1rem;
+          text-align: left;
+        }
+      
+        #contact .lg\:w-1\/2:first-child {
+          border-right: 1px solid rgba(0,0,0,0.08);
+          padding-right: 2rem;
+        }
+      
+        #contact .lg\:w-1\/2:last-child {
+          padding-left: 2rem;
+        }
+      
+        #contact form {
+          max-width: 480px;
+          margin-left: auto;
+        }
+      }
 
     </style>
   <link rel="icon" type="image/png" href="assets/favicon.png"/>
@@ -1233,7 +1278,7 @@
 </section>
 <!-- Contact Section -->
 <section id="contact" class="py-20 px-6 bg-surface-container-low">
-  <div class="max-w-container-max mx-auto flex flex-col gap-12">
+  <div class="max-w-container-max mx-auto flex flex-col lg:flex-row gap-16">
 
     <!-- Contact Info -->
     <div class="space-y-8 text-center">
