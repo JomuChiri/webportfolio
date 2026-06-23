@@ -1,0 +1,413 @@
+﻿Design and generate a complete multi-section professional personal brand portfolio website for brian-kipkoech using the EXACT content package below.
+
+Hard requirements:
+- Use the actual provided copy. Do not use placeholder text.
+- Do not invent facts, credentials, dates, metrics, IDs, or company claims not present in the copy package.
+- Preserve factual values exactly where specified (for example certification IDs, percentages, and timelines).
+- Return a complete, valid HTML document (<!doctype html> ... </html>) for web deployment.
+- Never return SVG, icon art, logo art, or a standalone graphic.
+- Do not return markdown, prose explanations, or copy-package text dumps as final output.
+- Generate semantic, accessible HTML with clear heading hierarchy and keyboard-friendly navigation.
+- Include a homepage at index.html and ensure all internal navigation links resolve correctly.
+- Keep copy faithful to source text while improving layout, readability, and visual hierarchy.
+- Preserve a premium personal brand presentation, not a resume layout.
+- Keep the hero portrait clearly visible on desktop and mobile. Do not hide it behind low opacity or heavy grayscale treatment.
+- Apply metadata and information architecture intent from the SEO pack.
+- Apply visual language, palette, typography mood, and component guidance from design direction.
+- Social/Media requirements:
+- A user profile image is available and has already been prepared into project assets.
+- Use ./assets/hero.jpg in the hero section (real image, not placeholder).
+- Use ./assets/favicon.png for the browser icon.
+- Set Open Graph/Twitter preview image to ./assets/og-image.jpg.
+- Include these social tags in <head>: og:type, og:title, og:description, og:image, og:image:width=1200, og:image:height=630, twitter:card=summary_large_image, twitter:image.
+
+Output intent:
+- Professional, modern personal brand style aligned to the copy package domain.
+- Designed for desktop-first responsiveness, with solid mobile behavior.
+
+=== COPY PACKAGE: website-copy.md ===
+# Website Copy Package - Brian Kipkoech
+
+## Source Basis
+- Client name: Brian Kipkoech
+- Supplied CV/profile PDF: `Brian-kipkoech.pdf`
+- Supplied profile image: `brian Image Jun 23, 2026, 04_04_42 PM.png`
+- LinkedIn profile URL: `https://www.linkedin.com/in/brian-kipkoech-4a212b325`
+- Location: Eldoret, Uasin Gishu County, Kenya
+- Contact: `0797796057`, `briankipkoech822@gmail.com`
+
+## Voice Profile
+- Scientific, precise, and grounded
+- Professional without sounding overproduced
+- Research-focused and practical
+- Clear for academic, laboratory, and biotechnology audiences
+- Confident, but careful with claims
+
+## Personal Brand Conversion Framework
+
+### Positioning Statement
+Brian Kipkoech is a molecular biology and biotechnology professional with hands-on experience in PCR, gel electrophoresis, microbiological isolation, sample preparation, and research support at the University of Eldoret.
+
+### Ideal Client Profile
+- Research laboratories and academic teams needing biotechnology support
+- Agricultural biotechnology projects involving microbial isolation and characterization
+- Genetics, genomics, and biodiversity research groups
+- Recruiters evaluating molecular biology, biosafety, and biotechnology talent
+- Institutions seeking organized student leadership and research coordination
+
+### Signature Offer/Service Framing
+Research support for molecular biology and biotechnology projects, including sample handling, DNA extraction workflows, PCR support, gel electrophoresis, microbiological techniques, contamination-conscious laboratory practice, and experimental data interpretation.
+
+### Proof Stack
+- Research Assistant at the University of Eldoret
+- Research Project Assistant experience in Rhizobium isolation and characterization
+- Molecular classification work for dung beetles from Namibian sites
+- Hands-on PCR and gel electrophoresis experience
+- Biotechnology and Biosafety education at the University of Eldoret
+- Program Representative for more than 100 biotechnology students
+- Reported protocol optimization that improved isolation efficiency by an estimated 40% and reduced contamination risks
+
+### CTA Strategy
+- Primary CTA: `Discuss a Research Collaboration`
+- Secondary CTA: `Connect on LinkedIn`
+
+## Homepage (`/`)
+
+### Hero
+Eyebrow:
+Molecular Biology and Biotechnology
+
+Headline:
+Brian Kipkoech
+
+Subheadline:
+Molecular biologist and biotechnology researcher supporting PCR workflows, gel electrophoresis, microbial characterization, and genetics-focused research at the University of Eldoret.
+
+Primary CTA:
+Discuss a Research Collaboration
+
+Secondary CTA:
+Connect on LinkedIn
+
+Hero Support Line:
+Hands-on laboratory support for careful sample preparation, contamination control, molecular analysis, and research data interpretation.
+
+### Trust Strip
+- Molecular biology and biotechnology
+- Real-time PCR operation
+- Gel electrophoresis
+- Contamination control
+- Eldoret, Kenya
+
+### About Section
+Section Title:
+Focused Laboratory Work for Better Research Outcomes
+
+Body:
+Brian Kipkoech works across biotechnology, biosafety, and molecular biology, with practical experience in PCR, gel electrophoresis, microbiological sample handling, and research support. His work is grounded in careful laboratory technique, accurate documentation, and a strong interest in genetics, biosafety, and agricultural biotechnology.
+
+Support Line:
+He brings a research assistant's discipline to projects that depend on clean samples, reliable protocols, and meaningful interpretation of experimental data.
+
+### Research Focus Section
+Section Title:
+Research Focus
+
+Body:
+Brian's research experience includes isolating and characterizing Rhizobium bacteria from root nodules, supporting agricultural biotechnology applications, and contributing to molecular classification work involving dung beetles from Namibian sites. His work connects laboratory precision with broader questions in biodiversity, genetics, and biosafety.
+
+Focus Cards:
+- PCR amplification and molecular workflow support
+- Gel electrophoresis for DNA analysis and classification work
+- Microbiological isolation and culture initiation
+- Sample preparation and contamination-conscious handling
+- Experimental data interpretation for viability and symbiotic efficiency
+- Research coordination within interdisciplinary laboratory teams
+
+### Experience Section
+Section Title:
+Experience
+
+Role 1 Title:
+Research Assistant
+
+Role 1 Organization:
+University of Eldoret
+
+Role 1 Date:
+June 2025 - Present
+
+Role 1 Body:
+Brian supports biotechnology research through laboratory preparation, molecular biology workflows, and careful interpretation of experimental data.
+
+Role 2 Title:
+Research Project Assistant
+
+Role 2 Organization:
+University of Eldoret
+
+Role 2 Date:
+September 2024 - Present
+
+Role 2 Body:
+Brian isolated and characterized Rhizobium bacteria from root nodules using microbiological techniques, including culture initiation and sample preparation. He interpreted experimental data to assess bacterial viability and symbiotic efficiency, supporting agricultural biotechnology applications.
+
+Role 2 Highlights:
+- Optimized laboratory protocols, improving isolation efficiency by an estimated 40%
+- Reduced contamination risks through improved handling and protocol discipline
+- Supported agricultural biotechnology research through reliable microbiological work
+
+Role 3 Title:
+Research Project Assistant
+
+Role 3 Organization:
+University of Eldoret, Fish Genomics and Genetics Lab
+
+Role 3 Date:
+June 2024 - Present
+
+Role 3 Body:
+Brian executed molecular classification work for dung beetles from Namibian sites, including DNA extraction, PCR amplification, and gel electrophoresis to support taxonomic research and regional biodiversity studies.
+
+Role 3 Highlights:
+- Supported genetic data analysis for species diversity identification
+- Worked with an interdisciplinary research team
+- Maintained sample handling protocols and data integrity
+
+Role 4 Title:
+Program Representative
+
+Role 4 Organization:
+University of Eldoret
+
+Role 4 Date:
+2022 - Present
+
+Role 4 Body:
+Brian serves as a liaison for more than 100 students, advocating for curriculum improvements, addressing academic and welfare needs, and helping facilitate workshops and educational events within the biotechnology program.
+
+Role 5 Title:
+Biotechnology Intern
+
+Role 5 Organization:
+University of Eldoret
+
+Role 5 Date:
+May 2025 - June 2025
+
+Role 5 Body:
+Brian completed a biotechnology internship in Eldoret, Uasin Gishu County, Kenya, strengthening his practical exposure to biotechnology and laboratory settings.
+
+Role 6 Title:
+Computer Specialist
+
+Role 6 Organization:
+Kongoi Cyber Cafe
+
+Role 6 Date:
+2020 - 2021
+
+Role 6 Body:
+Brian provided technical support for computer systems and managed printing, scanning, and photocopying services, building a foundation in practical problem-solving and service delivery.
+
+### Education Section
+Section Title:
+Education
+
+Education Timeline:
+- University of Eldoret - Biotechnology and Biosafety, Gene/Genetic Therapy - August 2022 to November 2026
+- University of Eldoret - Biotechnology and Biosafety, Biological Sciences Vaccine Research - August 2022 to April 2026
+- University of Eldoret - Bachelor's in Biotechnology and Biosafety, Human/Medical Genetics - August 2022 to April 2026
+- University of Eldoret - Bachelor of Science
+- University of Eldoret - Bachelor's degree in Biotechnology and Biosafety, Molecular Biology - August 2022 to November 2026
+
+### Skills Section
+Section Title:
+Selected Skills
+
+Skills List:
+- Real-time PCR operation
+- PCR amplification
+- Gel electrophoresis
+- DNA extraction support
+- Microbiological isolation
+- Culture initiation
+- Sample preparation
+- Contamination control
+- Experimental data interpretation
+- Food technology
+- Swahili
+- Student representation and workshop coordination
+
+### Contact Section
+Section Title:
+Discuss a Research Collaboration
+
+Body:
+Brian is open to biotechnology research conversations, academic collaboration, molecular biology roles, laboratory support opportunities, and genetics-focused projects.
+
+Contact Details:
+- Phone: `0797796057`
+- Email: `briankipkoech822@gmail.com`
+- Location: Eldoret, Uasin Gishu County, Kenya
+- LinkedIn: `https://www.linkedin.com/in/brian-kipkoech-4a212b325`
+- Contact reference: `1127-1300`
+
+Primary CTA:
+Discuss a Research Collaboration
+
+Secondary CTA:
+Connect on LinkedIn
+
+## Footer Copy
+Brian Kipkoech | Molecular Biology | Biotechnology and Biosafety | Eldoret, Kenya
+
+
+=== COPY PACKAGE: seo-pack.md ===
+# SEO Pack - Brian Kipkoech
+
+## Primary Goal
+Create a searchable molecular biology and biotechnology personal brand website for Brian Kipkoech, grounded in his verified laboratory, research, and University of Eldoret experience.
+
+## Target Search Intent
+- People searching for Brian Kipkoech by name
+- Recruiters reviewing Brian's molecular biology and biotechnology background
+- Research teams evaluating PCR, gel electrophoresis, or laboratory support experience
+- Academic collaborators looking for genetics, genomics, biosafety, or agricultural biotechnology support
+- Visitors arriving from LinkedIn who need a clearer professional profile
+
+## Primary Keywords
+- Brian Kipkoech portfolio
+- Brian Kipkoech molecular biologist
+- Brian Kipkoech biotechnology
+- Brian Kipkoech University of Eldoret
+- Brian Kipkoech PCR
+- Brian Kipkoech gel electrophoresis
+- Brian Kipkoech LinkedIn
+
+## Secondary Keywords
+- molecular biology portfolio Kenya
+- biotechnology researcher Eldoret
+- PCR and gel electrophoresis
+- real-time PCR operation
+- microbiological isolation
+- Rhizobium characterization
+- fish genomics genetics lab
+- biotechnology and biosafety
+- contamination control laboratory
+
+## Metadata
+Title:
+Brian Kipkoech | Molecular Biology and Biotechnology Portfolio
+
+Meta Description:
+Brian Kipkoech is a molecular biology and biotechnology professional with hands-on PCR, gel electrophoresis, microbiological isolation, and research support experience at the University of Eldoret.
+
+Suggested URL Slug:
+/
+
+Canonical Intent:
+Keep the homepage as the main entry point and use anchored sections for research focus, experience, education, skills, and contact.
+
+## Social Metadata
+- `og:type`: website
+- `og:title`: Brian Kipkoech | Molecular Biology and Biotechnology Portfolio
+- `og:description`: Brian Kipkoech supports biotechnology and molecular biology research through PCR workflows, gel electrophoresis, microbiological isolation, and careful sample handling.
+- `og:image`: assets/og-image.jpg
+- `og:image:width`: 1200
+- `og:image:height`: 630
+- `twitter:card`: summary_large_image
+- `twitter:image`: assets/og-image.jpg
+
+## Information Architecture
+- Hero
+- Trust strip
+- About
+- Research focus
+- Experience
+- Education
+- Skills
+- Contact
+
+## Internal Link Map
+- `#hero`
+- `#about`
+- `#research`
+- `#experience`
+- `#education`
+- `#skills`
+- `#contact`
+
+## Content Notes
+- Keep copy factual and sourced to the PDF/profile information.
+- Do not invent awards, publications, employers, certifications, or metrics beyond the source.
+- Use Brian's full name and molecular biology positioning early for search clarity.
+- Keep laboratory terminology accurate, readable, and accessible to both technical and non-technical visitors.
+- Feature contact details clearly without making the page feel like a static CV.
+
+
+=== COPY PACKAGE: design-direction.md ===
+# Design Direction - Brian Kipkoech
+
+## Visual Goal
+Create a premium scientific personal brand website for a molecular biology and biotechnology professional. The page should feel precise, research-oriented, trustworthy, and modern without becoming cold or generic.
+
+## Brand Feeling
+- Scientific
+- Calm
+- Precise
+- Credible
+- Focused
+- Professional
+
+## Color Direction
+- Deep laboratory green: primary accent for bioscience, growth, and trust
+- Ink charcoal: primary text and strong contrast
+- Clean white: main reading surface
+- Soft microscope blue: secondary accent for molecular biology and technical clarity
+- Warm ivory: subtle page background warmth
+- Muted amber: restrained highlight for achievement and calls to action
+
+## Typography Mood
+- Headings: strong contemporary serif or high-contrast editorial display type
+- Body: clean scientific sans-serif with excellent legibility
+- Type feel: precise, composed, and easy to scan
+- Avoid playful, startup-like, or overly decorative type choices
+
+## Layout Direction
+- Hero-first layout with Brian's supplied portrait clearly visible
+- Large name treatment with molecular biology role line
+- Research focus section near the top for immediate relevance
+- Experience timeline with laboratory highlights separated from leadership experience
+- Skills grouped into molecular workflows, laboratory practice, and coordination
+- Contact section that feels professional and collaboration-oriented
+
+## UI Style
+- Thin borders and controlled shadows
+- Clean section bands with generous spacing
+- Compact scientific cards for skills and research highlights
+- Clear primary and secondary CTA buttons
+- Navigation labels should map to anchored sections
+- Use restrained rounded corners, no oversized pill-heavy interface
+
+## Imagery Direction
+- Use the supplied headshot in the hero section
+- Generate favicon from the same image
+- Generate and link `assets/og-image.jpg`
+- Keep the portrait crisp, visible, and professional on desktop and mobile
+- Avoid dark overlays that hide the face
+
+## Interaction Direction
+- Subtle hover states on cards and links
+- Gentle section reveal or lift is acceptable
+- No distracting motion, animated science gimmicks, or decorative clutter
+
+## Copy Treatment
+- Use the verified copy package as the source of truth
+- Make technical experience readable and structured
+- Keep claims careful and factual
+- Present the page as a personal brand portfolio, not a plain resume
+
+## Overall Direction
+The final site should feel like a polished biotechnology profile for a molecular biology professional who can support research teams with careful laboratory technique, molecular workflows, data interpretation, and dependable academic collaboration.
+

@@ -79,7 +79,7 @@ if ($hasUserImage) {
 }
 
 $prompt = @"
-Design and generate a complete multi-section sustainability and circular economy brand website for $projectName using the EXACT content package below.
+Design and generate a complete multi-section professional personal brand portfolio website for $projectName using the EXACT content package below.
 
 Hard requirements:
 - Use the actual provided copy. Do not use placeholder text.
@@ -91,7 +91,7 @@ Hard requirements:
 - Generate semantic, accessible HTML with clear heading hierarchy and keyboard-friendly navigation.
 - Include a homepage at index.html and ensure all internal navigation links resolve correctly.
 - Keep copy faithful to source text while improving layout, readability, and visual hierarchy.
-- Preserve a sustainability brand presentation, not a résumé layout.
+- Preserve a premium personal brand presentation, not a resume layout.
 - Keep the hero portrait clearly visible on desktop and mobile. Do not hide it behind low opacity or heavy grayscale treatment.
 - Apply metadata and information architecture intent from the SEO pack.
 - Apply visual language, palette, typography mood, and component guidance from design direction.
@@ -99,7 +99,7 @@ Hard requirements:
 $mediaInstruction
 
 Output intent:
-- Professional, modern sustainability brand style.
+- Professional, modern personal brand style aligned to the copy package domain.
 - Designed for desktop-first responsiveness, with solid mobile behavior.
 
 === COPY PACKAGE: website-copy.md ===
