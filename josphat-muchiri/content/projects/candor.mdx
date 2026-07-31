@@ -1,0 +1,67 @@
+---
+title: Candor SOC Assistant
+description: Modular Python CLI platform for IT and cybersecurity operations, automation, parsing, validation, and reporting.
+date: 2026-07-30
+status: Active
+featured: true
+category: Security Automation
+difficulty: Advanced
+stack:
+  - Python
+  - Bash
+  - Linux
+  - JSON
+  - Git
+tags:
+  - SOC
+  - Automation
+  - CLI
+github: https://github.com/JomuChiri
+order: 1
+---
+
+## Overview
+
+Candor is a modular Python operations assistant designed to simplify technical support and cybersecurity workflows through command parsing, validation, configuration management, structured logging, and extensible automation modules.
+
+<Callout title="Portfolio evidence">
+Candor demonstrates Josphat's practical approach: build a real system, debug it, document the workflows, and keep improving the architecture.
+</Callout>
+
+## Problem
+
+Many operational tasks require repeated command execution, manual validation, scattered notes, and inconsistent reporting. Candor turns those workflows into structured CLI commands that can be reused, tested, and documented.
+
+## Architecture
+
+<Mermaid chart={`flowchart LR
+  User[Analyst or Support Engineer] --> CLI[Command Interface]
+  CLI --> Parser[Parser and Validation]
+  Parser --> Engine[Tool Execution Engine]
+  Engine --> Modules[Automation Modules]
+  Modules --> Logs[Structured Logs]
+  Modules --> Report[Operational Report]
+`} />
+
+## Features
+
+- Command parsing and validation
+- Configuration management
+- Modular architecture
+- CLI interface
+- Tool execution engine
+- Structured logging
+- Error handling
+- Automation workflows
+- Extensible plugin system
+
+## Example Workflow
+
+```powershell
+python candor.py run network-check --target workstation-07 --report json
+```
+
+## Lessons Learned
+
+Building Candor strengthens practical debugging, configuration management, CLI design, error handling, and technical documentation skills that are directly useful in security operations and application support.
+

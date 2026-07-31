@@ -1,0 +1,257 @@
+﻿Design and generate a complete multi-section professional personal brand portfolio website for josphat-muchiri using the EXACT content package below.
+
+Hard requirements:
+- Use the actual provided copy. Do not use placeholder text.
+- Do not invent facts, credentials, dates, metrics, IDs, or company claims not present in the copy package.
+- Preserve factual values exactly where specified (for example certification IDs, percentages, and timelines).
+- Return a complete, valid HTML document (<!doctype html> ... </html>) for web deployment.
+- Never return SVG, icon art, logo art, or a standalone graphic.
+- Do not return markdown, prose explanations, or copy-package text dumps as final output.
+- Generate semantic, accessible HTML with clear heading hierarchy and keyboard-friendly navigation.
+- Include a homepage at index.html and ensure all internal navigation links resolve correctly.
+- Keep copy faithful to source text while improving layout, readability, and visual hierarchy.
+- Preserve a premium personal brand presentation, not a resume layout.
+- Keep the hero portrait clearly visible on desktop and mobile. Do not hide it behind low opacity or heavy grayscale treatment.
+- Apply metadata and information architecture intent from the SEO pack.
+- Apply visual language, palette, typography mood, and component guidance from design direction.
+- Social/Media requirements:
+- A user profile image is available and has already been prepared into project assets.
+- Use ./assets/hero.jpg in the hero section (real image, not placeholder).
+- Use ./assets/favicon.png for the browser icon.
+- Set Open Graph/Twitter preview image to ./assets/og-image.jpg.
+- Include these social tags in <head>: og:type, og:title, og:description, og:image, og:image:width=1200, og:image:height=630, twitter:card=summary_large_image, twitter:image.
+
+Output intent:
+- Professional, modern personal brand style aligned to the copy package domain.
+- Designed for desktop-first responsiveness, with solid mobile behavior.
+
+=== COPY PACKAGE: website-copy.md ===
+# Website Copy Package - Josphat Muchiri
+
+## Intake Summary
+
+- Client name: Josphat Muchiri
+- Phone: +254 725 873 673
+- Email: muchirijosmuchiri@gmail.com
+- LinkedIn: https://linkedin.com/in/muchiri-josphat-965396114
+- GitHub: https://github.com/JomuChiri
+- Supplied profile image: `Josphat Muchiri.jpg`
+- Supplied resume PDF: `Josphat_Muchiri_CV2.pdf`
+
+## Positioning Statement
+
+Josphat Muchiri is a cybersecurity analyst, SOC-focused engineer, and Python developer who builds practical security systems through hands-on labs, automation, and technical documentation.
+
+## Hero Copy
+
+Josphat Muchiri
+
+Cybersecurity Analyst
+
+SOC | Detection Engineering | Python Automation
+
+Building practical cybersecurity solutions through real-world labs, automation, and security research.
+
+Primary CTA: View Projects
+
+Secondary CTA: Explore Labs
+
+Resume CTA: Download Resume
+
+## Professional Summary
+
+Josphat Muchiri works at the intersection of cybersecurity operations, Python development, application support, and technical documentation. He develops practical security tools, maintains hands-on lab environments, investigates security scenarios, and turns complex technical findings into clear, actionable insight.
+
+His experience includes Windows and Linux support, Microsoft 365 troubleshooting, Python and Bash automation, incident triage, software debugging, log analysis, root cause analysis, and documentation for repeatable support and security workflows. His flagship project, Candor, reflects his approach: build real systems, test them in practical environments, document the lessons, and keep improving.
+
+## Brand Message
+
+I do not only study cybersecurity. I build, document, investigate, and engineer practical security solutions.
+
+## Ideal Audience
+
+- SOC analyst and cybersecurity recruiter audiences
+- Security engineering teams reviewing hands-on evidence
+- Technical support and application support hiring managers
+- Detection engineering, blue team, and security operations professionals
+- Peers looking for practical cybersecurity documentation
+
+## Proof Stack
+
+- Built Candor, a modular Python operations assistant for IT and cybersecurity workflows.
+- Maintains Windows, Linux, Active Directory, and networking lab environments.
+- Automates operational workflows using Python and Bash.
+- Documents troubleshooting procedures, lab notes, runbooks, and knowledge base material.
+- Has experience supporting Microsoft 365, authentication, account access, networking, and user support issues.
+- Resolved approximately 95 percent of first-level technical issues without escalation.
+- Holds cybersecurity, networking, Microsoft Learn, SQL, and support-focused certifications.
+
+## Homepage Sections
+
+### Featured Projects
+
+Candor SOC Assistant
+
+A modular Python command-line platform for IT and cybersecurity operations. Candor includes command parsing, configuration management, structured logging, automation workflows, an extensible plugin system, and a tool execution engine.
+
+Enterprise SOC Lab
+
+A long-term lab environment for learning detection engineering, SIEM operations, Windows and Linux monitoring, Active Directory security, vulnerability management, and incident response.
+
+BreakBuddy
+
+A desktop wellness assistant designed for developers, SOC analysts, gamers, and students who need structured focus sessions, break reminders, idle detection, and activity prompts.
+
+### Current Learning
+
+- University of the People - Computer Science
+- Cisco CyberOps
+- LetsDefend
+- TryHackMe
+- Microsoft Learn
+- Fortinet and security operations topics
+
+### Latest Investigations
+
+- Brute Force Detection
+- PowerShell Abuse
+- MITRE Mapping
+- Vulnerability Assessment
+
+## Resume Page Copy
+
+Josphat Muchiri is a Technical Support Engineer, cybersecurity learner, and Python developer based in Nairobi, Kenya. His resume shows practical experience across technical support, application support, Linux and Windows environments, Microsoft 365, Python automation, incident triage, debugging, root cause analysis, log analysis, and technical documentation.
+
+The web resume should present the same source content as the downloadable PDF, optimized for web reading, search visibility, and quick recruiter scanning.
+
+## Contact Copy
+
+For cybersecurity, SOC, Python automation, technical support, or documentation-focused opportunities, contact Josphat through email, LinkedIn, or GitHub.
+
+Email: muchirijosmuchiri@gmail.com
+
+Phone: +254 725 873 673
+
+LinkedIn: https://linkedin.com/in/muchiri-josphat-965396114
+
+GitHub: https://github.com/JomuChiri
+
+
+
+=== COPY PACKAGE: seo-pack.md ===
+# SEO Pack - Josphat Muchiri
+
+## SEO Goal
+
+Create a searchable cybersecurity portfolio and technical knowledge platform for Josphat Muchiri that demonstrates practical security operations, Python automation, lab documentation, and technical support experience.
+
+## Primary Search Audiences
+
+- Recruiters searching for Josphat Muchiri
+- SOC analyst and detection engineering hiring teams
+- Security engineering teams reviewing hands-on projects
+- Technical support and application support employers
+- Peers looking for practical cybersecurity write-ups
+
+## Primary Keywords
+
+- Josphat Muchiri cybersecurity
+- Josphat Muchiri portfolio
+- Josphat Muchiri SOC analyst
+- Josphat Muchiri Python developer
+- Josphat Muchiri technical support engineer
+- Candor SOC Assistant
+- Python cybersecurity automation
+- SOC lab portfolio
+- cybersecurity lab documentation
+- detection engineering portfolio
+
+## Page Titles
+
+- Home: Josphat Muchiri | Cybersecurity Analyst and Python Developer
+- Projects: Security Projects | Josphat Muchiri
+- Labs: Cybersecurity Labs | Josphat Muchiri
+- Knowledge Base: Cybersecurity Knowledge Base | Josphat Muchiri
+- Investigations: SOC Investigations | Josphat Muchiri
+- Timeline: Cybersecurity Timeline | Josphat Muchiri
+- Resume: Resume | Josphat Muchiri
+- Contact: Contact Josphat Muchiri
+
+## Meta Description
+
+Josphat Muchiri is a cybersecurity analyst, SOC-focused engineer, and Python developer building practical security projects, labs, investigations, and technical documentation.
+
+## Open Graph
+
+- `og:type`: website
+- `og:title`: Josphat Muchiri | Cybersecurity Analyst and Python Developer
+- `og:description`: Practical cybersecurity portfolio covering SOC labs, Python automation, detection engineering, investigations, and technical documentation.
+- `og:image`: /images/og-image.jpg
+- `og:image:width`: 1200
+- `og:image:height`: 630
+
+## Twitter
+
+- `twitter:card`: summary_large_image
+- `twitter:image`: /images/og-image.jpg
+
+## Internal Link Strategy
+
+- Homepage links to featured projects, newest labs, latest investigations, resume, and contact.
+- Project cards link to full project documentation pages.
+- Lab pages link to related knowledge base topics and investigations.
+- Investigations link to MITRE, incident response, and detection engineering knowledge pages.
+- Resume links to projects and labs as evidence of hands-on work.
+
+
+
+=== COPY PACKAGE: design-direction.md ===
+# Design Direction - Josphat Muchiri
+
+## Visual Position
+
+Build a premium cybersecurity knowledge platform, not a generic portfolio. The interface should feel like a hybrid of GitHub Docs, Microsoft Learn, Splunk documentation, Vercel, Stripe, and Apple product pages.
+
+## Design Goals
+
+- Professional
+- Fast
+- Minimal
+- Documentation-focused
+- Responsive
+- Modern
+- No hacker cliches
+- No Matrix green
+
+## Theme
+
+- Background: dark charcoal `#111827`
+- Surface: `#172033`
+- Muted surface: `#1F2937`
+- Typography: white and cool gray
+- Accent: blue `#3B82F6`
+- Success/info accents: restrained cyan and violet only as secondary highlights
+
+## UI Language
+
+- Glassmorphism cards with thin borders
+- Large technical screenshots and documentation panels
+- Mermaid architecture diagrams
+- Syntax-highlighted command and code samples
+- Badges for tools, stacks, tags, difficulty, and status
+- Interactive tabs, filters, and content cards
+- Dense but readable documentation pages
+- Sticky navigation and strong mobile support
+
+## Typography Mood
+
+Use a modern sans-serif for interface text, clean documentation rhythm, compact metadata, and generous line-height for technical reading.
+
+## Layout Notes
+
+- First viewport should clearly show Josphat's name, role, portrait, and technical positioning.
+- Navigation should include Home, Projects, Labs, Knowledge Base, Investigations, Timeline, Resume, and Contact.
+- The homepage should surface content automatically from MDX metadata.
+- Do not show raw Markdown. MDX is a content database; React components are the presentation layer.
+
+

@@ -1,0 +1,55 @@
+---
+title: Brute Force Detection
+description: SOC-style investigation of repeated failed authentication attempts, source indicators, and containment recommendations.
+date: 2026-07-28
+status: Draft
+featured: true
+category: Authentication Attack
+difficulty: Intermediate
+stack:
+  - Windows Event Logs
+  - Wazuh
+  - Splunk
+tags:
+  - Brute Force
+  - Authentication
+  - MITRE
+mitre:
+  - T1110
+order: 1
+---
+
+## Overview
+
+This investigation examines repeated failed login attempts against a target account and shows how an analyst can move from raw log evidence to a clear security recommendation.
+
+## Timeline
+
+| Time | Event |
+| --- | --- |
+| 09:14 | Multiple failed logons observed |
+| 09:16 | Source host identified |
+| 09:20 | Account lockout confirmed |
+| 09:27 | Containment recommendation prepared |
+
+## Indicators
+
+<EvidenceGrid items={["Repeated failed logons", "Single source IP", "Targeted user account", "Account lockout event"]} />
+
+## Example Query
+
+```splunk
+index=windows EventCode=4625
+| stats count by Account_Name, Source_Network_Address
+| where count > 10
+```
+
+<MITREMatrix techniques={["T1110"]} />
+
+## Recommendations
+
+- Review targeted account activity.
+- Enforce MFA where possible.
+- Block or investigate the source host.
+- Tune detections for failed logon thresholds by time window.
+

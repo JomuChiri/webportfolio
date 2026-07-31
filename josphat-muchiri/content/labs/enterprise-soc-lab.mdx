@@ -1,0 +1,69 @@
+---
+title: Enterprise SOC Lab
+description: Long-term home lab for SIEM operations, Active Directory monitoring, endpoint visibility, vulnerability assessment, and incident response practice.
+date: 2026-07-31
+status: Active
+featured: true
+category: SOC Lab
+difficulty: Intermediate
+stack:
+  - Wazuh
+  - Splunk
+  - Sysmon
+  - Active Directory
+  - pfSense
+tags:
+  - SIEM
+  - Detection
+  - Lab
+order: 1
+---
+
+## Overview
+
+The Enterprise SOC Lab is a structured environment for learning security operations by building and documenting real systems. It supports endpoint logging, network segmentation, vulnerability scanning, SIEM ingestion, alert review, and investigation practice.
+
+## Network Diagram
+
+<Mermaid chart={`flowchart LR
+  Internet --> Firewall[pfSense]
+  Firewall --> LAN[Lab Network]
+  LAN --> DC[Active Directory Domain Controller]
+  LAN --> Win[Windows Endpoint with Sysmon]
+  LAN --> Linux[Linux Server]
+  LAN --> Kali[Kali Workstation]
+  Win --> SIEM[Wazuh and Splunk]
+  Linux --> SIEM
+  Scanner[OpenVAS] --> LAN
+`} />
+
+## Objectives
+
+- Build realistic Windows and Linux telemetry.
+- Practice alert triage and event correlation.
+- Document configuration steps and lessons learned.
+- Map detections to MITRE ATT&CK where appropriate.
+- Create reusable investigation notes.
+
+## Tools
+
+| Tool | Purpose |
+| --- | --- |
+| Wazuh | Endpoint security monitoring |
+| Splunk | Search, dashboards, and log analysis |
+| Sysmon | Windows endpoint telemetry |
+| OpenVAS | Vulnerability scanning |
+| pfSense | Firewall and network segmentation |
+| Kali | Attack simulation and testing |
+
+## Challenges
+
+- Keeping logs structured and searchable
+- Avoiding noisy detections
+- Documenting enough detail for repeatability
+- Mapping technical signals to analyst decisions
+
+## Lessons Learned
+
+The most valuable lab output is not only that the tools run. The value comes from repeatable documentation, evidence capture, clear detection logic, and lessons that can be explained during interviews.
+

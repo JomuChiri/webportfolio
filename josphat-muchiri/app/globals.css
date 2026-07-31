@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@450;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.18), transparent 32rem),
+    linear-gradient(180deg, #111827 0%, #0c1220 100%);
+  color: #f9fafb;
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.38);
+}
+
+.glass {
+  background: rgba(23, 32, 51, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 65px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(18px);
+}
+
+.code-window pre,
+.prose pre {
+  background: #0b1020 !important;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.prose {
+  --tw-prose-body: #cbd5e1;
+  --tw-prose-headings: #ffffff;
+  --tw-prose-links: #93c5fd;
+  --tw-prose-bold: #ffffff;
+  --tw-prose-counters: #93c5fd;
+  --tw-prose-bullets: #3b82f6;
+  --tw-prose-hr: rgba(255,255,255,0.12);
+  --tw-prose-quotes: #e5e7eb;
+  --tw-prose-quote-borders: #3b82f6;
+  --tw-prose-code: #bfdbfe;
+}
+
+.prose code {
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  border-radius: 0.375rem;
+  padding: 0.1rem 0.35rem;
+}
+
+.prose pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #94a3b8;
+}
+
+.token.punctuation {
+  color: #cbd5e1;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+  color: #93c5fd;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+  color: #5de6ff;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+  color: #d8b4fe;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: #facc15;
+}
+

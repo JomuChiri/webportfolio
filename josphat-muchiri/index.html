@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Josphat Muchiri | Cybersecurity Analyst and Python Developer</title>
+<link href="assets/favicon.png" rel="icon" type="image/png"/>
+<!-- SEO & Social Media -->
+<meta content="Professional portfolio of Josphat Muchiri, specializing in SOC Analysis, Detection Engineering, and Python Automation." name="description"/>
+<meta content="Josphat Muchiri | Cybersecurity Analyst" property="og:title"/>
+<meta content="Building practical cybersecurity solutions through real-world labs and automation." property="og:description"/>
+<meta property="og:image" content="assets/og-image.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="assets/og-image.jpg"/>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@450&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#8c909f",
+                    "surface-bright": "#323949",
+                    "surface-container-high": "#232a3a",
+                    "on-secondary-fixed": "#001f25",
+                    "tertiary-container": "#a078ff",
+                    "error": "#ffb4ab",
+                    "on-primary-container": "#00285d",
+                    "error-container": "#93000a",
+                    "on-primary-fixed-variant": "#004395",
+                    "on-surface": "#dce2f7",
+                    "tertiary-fixed": "#e9ddff",
+                    "surface-container-highest": "#2e3545",
+                    "surface": "#0c1322",
+                    "tertiary-fixed-dim": "#d0bcff",
+                    "on-error": "#690005",
+                    "tertiary": "#d0bcff",
+                    "on-secondary": "#00363e",
+                    "on-secondary-container": "#00515d",
+                    "surface-tint": "#adc6ff",
+                    "on-tertiary-container": "#340080",
+                    "inverse-surface": "#dce2f7",
+                    "surface-container": "#191f2f",
+                    "on-primary": "#002e6a",
+                    "on-tertiary-fixed": "#23005c",
+                    "on-tertiary-fixed-variant": "#5516be",
+                    "surface-dim": "#0c1322",
+                    "surface-container-low": "#141b2b",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#d8e2ff",
+                    "inverse-primary": "#005ac2",
+                    "secondary-container": "#00cbe6",
+                    "surface-variant": "#2e3545",
+                    "on-primary-fixed": "#001a42",
+                    "primary": "#adc6ff",
+                    "background": "#0c1322",
+                    "secondary": "#5de6ff",
+                    "on-secondary-fixed-variant": "#004e5a",
+                    "on-tertiary": "#3c0091",
+                    "outline-variant": "#424754",
+                    "secondary-fixed-dim": "#2fd9f4",
+                    "secondary-fixed": "#a2eeff",
+                    "on-surface-variant": "#c2c6d6",
+                    "inverse-on-surface": "#293040",
+                    "surface-container-lowest": "#070e1d",
+                    "on-background": "#dce2f7",
+                    "primary-container": "#4d8eff",
+                    "primary-fixed-dim": "#adc6ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-md": "16px",
+                    "stack-sm": "8px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "sidebar-width": "280px",
+                    "gutter": "24px",
+                    "stack-lg": "32px"
+            },
+            "fontFamily": {
+                    "label-caps": ["Inter"],
+                    "code-sm": ["JetBrains Mono"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "display-lg-mobile": ["Hanken Grotesk"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "code-sm": ["14px", {"lineHeight": "22px", "fontWeight": "450"}],
+                    "body-lg": ["18px", {"lineHeight": "30px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(25, 31, 47, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .code-block {
+            background: #111827;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #5de6ff;
+            box-shadow: 0 0 0 0 rgba(93, 230, 255, 0.7);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(93, 230, 255, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(93, 230, 255, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(93, 230, 255, 0); }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary/30 font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-white/10 shadow-sm">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter h-16 flex justify-between items-center">
+<div class="flex items-center gap-stack-md">
+<span class="text-body-lg font-headline-md font-bold text-on-surface">Josphat Muchiri</span>
+</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#projects">Projects</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#labs">Labs</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#knowledge">Knowledge Base</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#resume">Resume</a>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="bg-primary hover:bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-caps text-label-caps transition-all active:scale-95">
+                    Contact
+                </button>
+</div>
+</div>
+</nav>
+<!-- SideNavBar (Desktop Only) -->
+<aside class="fixed left-0 top-0 h-full w-sidebar-width hidden lg:flex flex-col bg-surface-container border-r border-white/10 p-stack-md pt-24 gap-stack-sm z-40">
+<div class="flex items-center gap-3 px-2 mb-stack-lg">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-primary/20">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of Josphat Muchiri, a cybersecurity specialist. He has a confident, approachable expression, set against a clean, modern workspace background with soft blue ambient lighting. The style is sharp, corporate, and high-fidelity, matching a dark-mode professional portfolio aesthetic." src="assets/hero.jpg"/>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-on-surface leading-tight text-sm">Josphat Muchiri</p>
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase">Cybersecurity &amp; Python</p>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 p-3 bg-primary-container text-on-primary-container rounded-lg font-bold group transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="security" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="font-label-caps text-label-caps">SOC Analyst</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="radar">radar</span>
+<span class="font-label-caps text-label-caps">Detection Eng</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+<span class="font-label-caps text-label-caps">Python Dev</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+<span class="font-label-caps text-label-caps">Labs</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="policy">policy</span>
+<span class="font-label-caps text-label-caps">Investigations</span>
+</a>
+</nav>
+<div class="mt-auto space-y-4 pt-stack-md border-t border-white/5">
+<button class="w-full py-3 bg-surface-bright text-on-surface rounded-lg font-label-caps text-label-caps hover:bg-primary/10 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">download</span>
+                Download Resume
+            </button>
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-3 p-2 text-on-surface-variant hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">settings</span>
+<span class="font-label-caps text-[10px]">Settings</span>
+</a>
+<a class="flex items-center gap-3 p-2 text-on-surface-variant hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">help</span>
+<span class="font-label-caps text-[10px]">Support</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content Well -->
+<main class="lg:ml-sidebar-width pt-16 min-h-screen">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-stack-lg">
+<!-- Hero Section -->
+<header class="relative mb-20">
+<div class="grid lg:grid-cols-12 gap-12 items-center pt-10">
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/10 border border-secondary/20 text-secondary">
+<div class="pulse-dot"></div>
+<span class="font-label-caps text-[10px] uppercase tracking-widest">Available for hire</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface leading-tight">
+                            Josphat Muchiri
+                        </h1>
+<h2 class="font-headline-md text-headline-md text-primary">Cybersecurity Analyst</h2>
+<p class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-high/50 inline-block px-3 py-1 rounded border border-white/5">
+                            SOC | DETECTION ENGINEERING | PYTHON AUTOMATION
+                        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                            Building practical cybersecurity solutions through real-world labs, automation, and security research. Specialized in defending enterprise environments with data-driven insights.
+                        </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="px-8 py-3 bg-primary text-on-primary font-bold rounded-lg hover:scale-105 transition-transform">View Projects</button>
+<button class="px-8 py-3 bg-surface-container-high text-on-surface border border-white/10 rounded-lg hover:bg-surface-bright transition-colors">Explore Labs</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative group">
+<div class="absolute -inset-4 bg-primary/20 blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+<div class="relative glass-card rounded-2xl overflow-hidden aspect-square">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of Josphat Muchiri, focusing on clarity and authority. The lighting is dramatic but clean, emphasizing a sophisticated corporate cybersecurity aesthetic. The background features subtle digital interface elements or soft-focused server rack lights, reinforcing his technical expertise in security and automation." src="assets/hero.jpg"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Proof Stack / Stats Bento -->
+<section class="mb-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="glass-card p-stack-md rounded-xl space-y-2">
+<span class="font-display-lg text-display-lg text-secondary">95%</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Issue Resolution Rate</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">shield</span>
+<span class="font-headline-md text-headline-md text-on-surface">Candor</span>
+</div>
+<p class="font-body-md text-on-surface-variant">Custom-built SOC Assistant for IT Ops automation.</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl space-y-2">
+<span class="material-symbols-outlined text-secondary">dns</span>
+<p class="font-headline-md text-headline-md text-on-surface">AD/SIEM</p>
+<p class="font-body-md text-on-surface-variant">Live Active Directory &amp; SIEM lab maintenance.</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">code</span>
+<span class="font-headline-md text-headline-md text-on-surface">Python/Bash</span>
+</div>
+<p class="font-body-md text-on-surface-variant">Automation workflows for security telemetry.</p>
+</div>
+</div>
+</section>
+<!-- Projects Grid -->
+<section class="mb-20" id="projects">
+<div class="flex justify-between items-end mb-stack-lg">
+<div class="space-y-2">
+<p class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Featured Work</p>
+<h3 class="font-display-lg text-display-lg-mobile md:text-headline-md text-on-surface">Security Projects</h3>
+</div>
+<a class="text-primary hover:underline font-label-caps text-label-caps" href="#">View All Repository</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Project 1 -->
+<div class="group glass-card rounded-2xl overflow-hidden flex flex-col hover:border-primary/50 transition-all">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A clean, dark interface showing a Python-based security tool dashboard with data visualizations and terminal windows. The aesthetic is inspired by high-end tech documentation, using blue and charcoal tones, representing the Candor SOC Assistant." src="assets/hero.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+</div>
+<div class="p-stack-md flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline-md text-on-surface">Candor SOC Assistant</h4>
+<span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6">
+                                A modular Python platform designed to streamline IT and security operations through automated triage and response.
+                            </p>
+<div class="mt-auto flex flex-wrap gap-2">
+<span class="font-code-sm text-code-sm bg-surface-container-high px-2 py-1 rounded border border-white/5">Python</span>
+<span class="font-code-sm text-code-sm bg-surface-container-high px-2 py-1 rounded border border-white/5">Automation</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group glass-card rounded-2xl overflow-hidden flex flex-col hover:border-primary/50 transition-all">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A complex network map diagram depicting an enterprise lab setup with Active Directory, SIEM servers, and multiple endpoints. The visual style is professional, using glowing blue lines and iconography for servers and shields against a dark blueprint background." src="assets/hero.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+</div>
+<div class="p-stack-md flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline-md text-on-surface">Enterprise SOC Lab</h4>
+<span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6">
+                                Integrated detection engineering environment with Splunk, Elastic, and Windows AD for attack simulation and monitoring.
+                            </p>
+<div class="mt-auto flex flex-wrap gap-2">
+<span class="font-code-sm text-code-sm bg-surface-container-high px-2 py-1 rounded border border-white/5">SIEM</span>
+<span class="font-code-sm text-code-sm bg-surface-container-high px-2 py-1 rounded border border-white/5">Active Directory</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group glass-card rounded-2xl overflow-hidden flex flex-col hover:border-primary/50 transition-all">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A minimalist desktop application UI with soft rounded corners and glassmorphism elements, showing a wellness timer and health tips for analysts. The color palette uses calming blues and greens, representing BreakBuddy for cybersecurity professionals." src="assets/hero.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+</div>
+<div class="p-stack-md flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline-md text-on-surface">BreakBuddy</h4>
+<span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6">
+                                Desktop wellness assistant for security analysts to combat fatigue through scheduled micro-breaks and eye-care tips.
+                            </p>
+<div class="mt-auto flex flex-wrap gap-2">
+<span class="font-code-sm text-code-sm bg-surface-container-high px-2 py-1 rounded border border-white/5">PyQt5</span>
+<span class="font-code-sm text-code-sm bg-surface-container-high px-2 py-1 rounded border border-white/5">Wellness</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Learning & Investigations (Two Column) -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg mb-20">
+<!-- Learning Column -->
+<div class="space-y-stack-md">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">school</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Continuous Learning</h3>
+</div>
+<div class="space-y-4">
+<div class="code-block p-4 rounded-xl flex justify-between items-center group hover:border-secondary/30 transition-all">
+<div>
+<h5 class="font-headline-md text-sm text-on-surface">University of the People</h5>
+<p class="text-xs text-on-surface-variant">Computer Science Degree (In Progress)</p>
+</div>
+<span class="font-code-sm text-[10px] text-secondary border border-secondary/20 px-2 py-0.5 rounded">Current</span>
+</div>
+<div class="code-block p-4 rounded-xl flex justify-between items-center group hover:border-secondary/30 transition-all">
+<div>
+<h5 class="font-headline-md text-sm text-on-surface">Cisco CyberOps Associate</h5>
+<p class="text-xs text-on-surface-variant">Security Operations &amp; Analysis</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">check_circle</span>
+</div>
+<div class="code-block p-4 rounded-xl flex justify-between items-center group hover:border-secondary/30 transition-all">
+<div>
+<h5 class="font-headline-md text-sm text-on-surface">PCEP - Certified Entry-Level Python</h5>
+<p class="text-xs text-on-surface-variant">Software Engineering Fundamentals</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Investigations Column -->
+<div class="space-y-stack-md">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">search</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Latest Investigations</h3>
+</div>
+<div class="space-y-4">
+<div class="glass-card p-4 rounded-xl border-l-4 border-l-primary flex items-start gap-4">
+<div class="text-primary pt-1">
+<span class="material-symbols-outlined">security_update_warning</span>
+</div>
+<div>
+<h5 class="font-headline-md text-sm text-on-surface">Brute Force Mitigation</h5>
+<p class="text-xs text-on-surface-variant mb-2">Analyzing log patterns to identify and block credential stuffing attacks.</p>
+<span class="font-label-caps text-[10px] text-primary">REPORT READY</span>
+</div>
+</div>
+<div class="glass-card p-4 rounded-xl border-l-4 border-l-secondary flex items-start gap-4">
+<div class="text-secondary pt-1">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<div>
+<h5 class="font-headline-md text-sm text-on-surface">PowerShell Abuse Detection</h5>
+<p class="text-xs text-on-surface-variant mb-2">Hunting for obfuscated command-line executions in endpoint telemetry.</p>
+<span class="font-label-caps text-[10px] text-secondary">COMPLETE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-surface-container-lowest border-t border-white/10 mt-auto">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<div class="flex flex-col items-center md:items-start">
+<p class="font-headline-md text-on-surface text-lg">Josphat Muchiri</p>
+<p class="font-body-md text-on-surface-variant text-sm">© 2024 Josphat Muchiri. Securely Architected.</p>
+</div>
+<div class="flex gap-gutter">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors active:underline" href="#">Email</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors active:underline" href="#">LinkedIn</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors active:underline" href="#">GitHub</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors active:underline" href="#">Phone</a>
+</div>
+</div>
+</footer>
+</main>
+<script>
+        // Micro-interactions and subtle hover effects
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>
+

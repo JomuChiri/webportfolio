@@ -1,0 +1,39 @@
+---
+title: Cyber Kill Chain
+description: Structured notes for attack stages, detection opportunities, lessons learned, and interview questions.
+date: 2026-07-22
+status: Published
+featured: false
+category: Security Framework
+difficulty: Foundational
+stack:
+  - Incident Response
+  - Threat Analysis
+tags:
+  - Frameworks
+  - Detection
+order: 2
+---
+
+## Overview
+
+The Cyber Kill Chain describes stages attackers may move through, from reconnaissance to actions on objectives. It helps analysts think about where detection and prevention can happen.
+
+## Stages
+
+| Stage | Detection Opportunity |
+| --- | --- |
+| Reconnaissance | External scanning and unusual enumeration |
+| Weaponization | Usually outside defender visibility |
+| Delivery | Email, web, removable media, or exposed service logs |
+| Execution | Process creation and script activity |
+| Persistence | Registry, service, startup, scheduled task changes |
+| Command and Control | Suspicious outbound network patterns |
+| Actions on Objectives | Data access, privilege activity, exfiltration signals |
+
+## Interview Questions
+
+- Where can defenders realistically detect activity?
+- Which stages generate the strongest evidence?
+- How does this model compare with MITRE ATT&CK?
+

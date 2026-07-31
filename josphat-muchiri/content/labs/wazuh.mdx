@@ -1,0 +1,41 @@
+---
+title: Wazuh SIEM Deployment
+description: Endpoint security monitoring lab for agent deployment, log collection, alert review, and detection tuning.
+date: 2026-07-18
+status: Active
+featured: false
+category: SIEM
+difficulty: Intermediate
+stack:
+  - Wazuh
+  - Linux
+  - Windows
+tags:
+  - SIEM
+  - Telemetry
+  - Detection
+order: 3
+---
+
+## Overview
+
+This lab documents Wazuh deployment and basic operations: installing the server, deploying agents, validating telemetry, reviewing alerts, and tuning noisy rules.
+
+## Configuration Checklist
+
+- Install Wazuh server.
+- Register Windows and Linux agents.
+- Confirm endpoint connectivity.
+- Generate test events.
+- Review alerts and rule metadata.
+- Document tuning decisions.
+
+```bash
+sudo systemctl status wazuh-manager
+sudo tail -f /var/ossec/logs/ossec.log
+```
+
+## Lessons Learned
+
+SIEM value depends on data quality, not only tool installation. Every alert needs context, owner, evidence, and an analyst decision.
+

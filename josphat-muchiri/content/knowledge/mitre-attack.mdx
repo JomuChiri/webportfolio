@@ -1,0 +1,36 @@
+---
+title: MITRE ATT&CK
+description: Practical notes for understanding tactics, techniques, detection mapping, evidence, and interview explanations.
+date: 2026-07-25
+status: Published
+featured: true
+category: Security Framework
+difficulty: Foundational
+stack:
+  - MITRE ATT&CK
+  - Detection Engineering
+tags:
+  - Frameworks
+  - Detection
+  - Interview Notes
+order: 1
+---
+
+## Overview
+
+MITRE ATT&CK is a knowledge base of adversary behavior. For a SOC analyst, its value is in connecting observed evidence to attacker techniques and detection opportunities.
+
+## Techniques
+
+Common beginner mappings include brute force, command and scripting interpreter, valid accounts, and credential dumping.
+
+<MITREMatrix techniques={["T1110", "T1059", "T1078", "T1003"]} />
+
+## Lab Demonstration
+
+Use lab telemetry to map what happened, not what might have happened. Evidence should drive the mapping.
+
+## Interview Notes
+
+Explain MITRE as a practical language for describing attacker behavior, improving detections, and communicating across security teams.
+

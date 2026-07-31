@@ -1,0 +1,39 @@
+---
+title: Active Directory Lab
+description: Windows domain practice environment for identity, authentication, account access, and security operations learning.
+date: 2026-07-20
+status: Active
+featured: false
+category: Identity Lab
+difficulty: Intermediate
+stack:
+  - Windows Server
+  - Active Directory
+  - Sysmon
+tags:
+  - Identity
+  - Windows
+  - Authentication
+order: 2
+---
+
+## Overview
+
+The Active Directory lab supports hands-on practice with domain users, authentication flows, account access troubleshooting, Windows logging, and security monitoring.
+
+## Objectives
+
+- Create domain users and groups.
+- Practice password resets and access troubleshooting.
+- Understand logon events and authentication evidence.
+- Connect endpoint logs to SIEM workflows.
+
+## Detection Opportunities
+
+- Failed logon bursts
+- New local administrator membership
+- Suspicious PowerShell execution
+- Account lockout patterns
+
+<MITREMatrix techniques={["T1110", "T1059", "T1078"]} />
+

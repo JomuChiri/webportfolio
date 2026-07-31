@@ -1,0 +1,54 @@
+---
+title: BreakBuddy
+description: Desktop wellness assistant for developers, SOC analysts, gamers, and students who need structured breaks and focus support.
+date: 2026-06-15
+status: Planned
+featured: true
+category: Desktop Productivity
+difficulty: Intermediate
+stack:
+  - Python
+  - Desktop UI
+  - Activity Tracking
+tags:
+  - Productivity
+  - Wellness
+  - Desktop
+github: https://github.com/JomuChiri
+order: 2
+---
+
+## Overview
+
+BreakBuddy is a desktop wellness assistant concept for people who spend long hours in technical focus work. It supports work timers, break reminders, idle detection, activity prompts, and a simple activity library.
+
+## Target Users
+
+- Developers
+- SOC analysts
+- Gamers
+- Students
+
+## Architecture
+
+<Mermaid chart={`flowchart TD
+  Timer[Work Timer] --> Reminder[Break Reminder]
+  Idle[Idle Detection] --> Reminder
+  Reminder --> Library[Activity Library]
+  Library --> Overlay[Activity Overlay]
+  Overlay --> History[Session History]
+`} />
+
+## Roadmap
+
+- Focus timer
+- Break reminders
+- Activity overlay
+- Idle detection
+- Activity library
+- User preferences
+
+## Development Journey
+
+The project connects software development with realistic user needs: reducing fatigue, improving consistency, and giving technical workers lightweight support without intrusive design.
+

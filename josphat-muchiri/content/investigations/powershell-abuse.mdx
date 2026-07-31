@@ -1,0 +1,43 @@
+---
+title: PowerShell Abuse
+description: Investigation template for suspicious PowerShell execution, command-line evidence, and containment actions.
+date: 2026-07-24
+status: Draft
+featured: true
+category: Endpoint Investigation
+difficulty: Intermediate
+stack:
+  - PowerShell
+  - Sysmon
+  - Windows
+tags:
+  - PowerShell
+  - Endpoint
+  - Detection
+mitre:
+  - T1059
+order: 2
+---
+
+## Overview
+
+PowerShell is useful for administration and frequently abused by attackers. This investigation format focuses on command line arguments, parent process, user context, network activity, and related file events.
+
+## Evidence
+
+- Process creation event
+- Encoded command usage
+- Parent process relationship
+- User account context
+- Network connection after execution
+
+```powershell
+Get-WinEvent -FilterHashtable @{LogName="Microsoft-Windows-PowerShell/Operational"; Id=4104}
+```
+
+<MITREMatrix techniques={["T1059.001"]} />
+
+## Lessons Learned
+
+Suspicious PowerShell requires context. The same command can be normal administration or malicious activity depending on user, host, timing, parent process, and follow-on behavior.
+
