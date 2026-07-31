@@ -36,6 +36,31 @@ export default function ResumePage() {
         </div>
       </div>
 
+      <section className="mt-8 rounded-3xl border border-white/10 bg-white/[0.035] p-4 sm:p-6">
+        <div className="mb-4 flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
+          <div>
+            <h2 className="font-display text-2xl font-bold text-white">Formal PDF Resume</h2>
+            <p className="mt-1 text-sm text-slate-400">Embedded for quick review, with the same PDF available for download.</p>
+          </div>
+          <ButtonLink href={site.resumePdf} variant="secondary" download>
+            <Download className="h-4 w-4" />
+            Download PDF
+          </ButtonLink>
+        </div>
+        <object
+          data={site.resumePdf}
+          type="application/pdf"
+          className="h-[720px] w-full rounded-2xl border border-white/10 bg-slate-950"
+        >
+          <div className="rounded-2xl border border-white/10 bg-slate-950 p-6 text-slate-300">
+            The PDF preview could not load in this browser.
+            <a className="ml-1 text-blue-200 underline" href={site.resumePdf}>
+              Open the resume PDF instead.
+            </a>
+          </div>
+        </object>
+      </section>
+
       <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_0.72fr]">
         <div className="space-y-8">
           <Section title="Professional Experience">

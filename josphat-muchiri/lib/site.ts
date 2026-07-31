@@ -6,11 +6,14 @@ export const site = {
   url: "https://jomuchiri.github.io/Portfolio/",
   email: "muchirijosmuchiri@gmail.com",
   phone: "+254 725 873 673",
+  phoneDigits: "254725873673",
   linkedin: "https://linkedin.com/in/muchiri-josphat-965396114",
   github: "https://github.com/JomuChiri",
   resumePdf: "/resume/Josphat_Muchiri_CV2.pdf",
   portrait: "/images/josphat-muchiri.jpg",
-  ogImage: "/images/og-image.jpg"
+  favicon: "/images/favicon.png",
+  ogImage: "/images/og-image.jpg",
+  whatsapp: "https://wa.me/254725873673"
 };
 
 export const navItems = [

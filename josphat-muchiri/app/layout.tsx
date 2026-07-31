@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     images: [site.ogImage]
   },
   icons: {
-    icon: "/images/favicon.png"
+    icon: site.favicon
   }
 };
 
