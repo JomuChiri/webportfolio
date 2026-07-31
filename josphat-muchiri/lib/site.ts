@@ -19,6 +19,7 @@ export const navItems = [
   { label: "Labs", href: "/labs" },
   { label: "Knowledge Base", href: "/knowledge" },
   { label: "Investigations", href: "/investigations" },
+  { label: "Write-ups", href: "/writeups" },
   { label: "Timeline", href: "/timeline" },
   { label: "Resume", href: "/resume" },
   { label: "Contact", href: "/contact" }
@@ -63,4 +64,3 @@ export const sectionConfig = {
 } as const;
 
 export type ContentSection = keyof typeof sectionConfig;
-

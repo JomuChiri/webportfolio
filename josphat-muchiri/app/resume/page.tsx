@@ -22,7 +22,7 @@ export default function ResumePage() {
               {resume.location} | {resume.phone} | {resume.email}
             </p>
           </div>
-          <ButtonLink href={site.resumePdf}>
+          <ButtonLink href={site.resumePdf} download>
             <Download className="h-4 w-4" />
             Download PDF
           </ButtonLink>
@@ -133,4 +133,3 @@ function Section({ title, children }: { title: string; children: React.ReactNode
     </section>
   );
 }
-

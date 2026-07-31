@@ -46,6 +46,9 @@ export default function HomePage() {
               <Download className="h-4 w-4" />
               Download Resume
             </ButtonLink>
+            <ButtonLink href="/contact" variant="ghost">
+              Contact
+            </ButtonLink>
           </div>
         </div>
         <div className="glass relative overflow-hidden rounded-3xl p-4">
@@ -143,4 +146,3 @@ export default function HomePage() {
     </div>
   );
 }
-
